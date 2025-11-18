@@ -1,0 +1,402 @@
+[
+  {
+    "doi": "10.1007/978-3-032-06665-7_10",
+    "title": "Cartoon Analysis – Chhota Bheem Character Detection and Screen Time Analysis Using YOLO (You Only Look Once)",
+    "authors": "Sakshi Korde; Rasika Kanitkar; Vaishnavi Gaikwad; Hitali Khachane; Rashmi Apte; Mangesh Bedekar; Rakhi Dongaonkar",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, ICT Systems and Sustainability"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_83",
+    "title": "Embedded IoMT System for Early Dementia Detection Using EEG Signals and Deep Learning on STM32 Microcontroller",
+    "authors": "F. Jakjoud",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.1007/978-3-032-06665-7_50",
+    "title": "Garbage Detection Solution for Smart Cities Using YOLOv8 Image Recognition",
+    "authors": "Deepak Mane; Nandika Bansal; Shreyas Mulavekar; Mayank Mittal; Atharv Mule",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, ICT Systems and Sustainability"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_123",
+    "title": "AI in Cybersecurity: A Systematic Survey of ML and DL Techniques for Enhanced Intrusion Detection",
+    "authors": "Essayad Houda; Aouad Siham",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_35",
+    "title": "High-Accuracy Spasmodic Dysphonia Detection Using Machine Learning",
+    "authors": "Hassan Ezzahori; Abdelkrim Hamimmou; Abdelghani Boudaoud; Mounaim Aqil",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.1108/add-03-2025-0019",
+    "title": "Mental health problems among women treated for alcohol or other drug problems: long-term trajectories",
+    "authors": "Lisa Skogens; Ninive von Greiff",
+    "issuedDate": "2025-10-8",
+    "abstract": "Purpose\n                  This paper aims to investigate the occurrence and management of alcohol and other drugs (AOD) and mental health problems among women who have initiated a recovery process after treatment, focusing on how the recovery processes from these problems relate to each other over time.\n               \n               \n                  Design/methodology/approach\n                  Thirty women were interviewed three times over a 10-year period. All women had undergone treatment for AOD problems. Trajectories of both AOD use and experiences of mental health problems, based on the women’s own descriptions, were analyzed.\n               \n               \n                  Findings\n                  The results are presented in flowcharts that show heterogeneous trajectories for these problems and how they relate to each other. A qualitative analysis further reveals that remaining and sometimes reoccurring problems are interpreted differently over time. This implies that the need for support varies both with the type of problem and in relation to other contextual factors during the life course.\n               \n               \n                  Originality/value\n                  The results generate new knowledge about how recovery processes from AOD and mental health problems in women relate to each other over time, from a first-person perspective.",
+    "publisher": "Emerald",
+    "type": "journal-article",
+    "journal": "Advances in Dual Diagnosis"
+  },
+  {
+    "doi": "10.1007/978-3-032-07175-0_22",
+    "title": "Enhancing Hate Speech Detection in Social Media Images Using Deep Learning and Synthetic Datasets",
+    "authors": "Nontokozo Manukuza; Skhumbuzo Zwane; Matthew Adigun",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Communications in Computer and Information Science, Applied Informatics"
+  },
+  {
+    "doi": "10.5815/ijisa.2025.05.01",
+    "title": "Optimizing Kidney Stone Detection: Exploring YOLOv8 Variants for Computational Efficiency and Enhanced Accuracy",
+    "authors": "Amol Satsangi; Shaurya Jain; Subho Upadhyay",
+    "issuedDate": "2025-10-8",
+    "abstract": "Kidney stones are solid mineral and salt deposits formed within the kidneys, causing excruciating discomfort and pain when they obstruct the urinary tract. The presence of speckle noise in CT-scan images, coupled with the limitations of manual interpretation, makes kidney stone detection challenging and highlighting the need for precise and efficient diagnosis. This research investigates the efficacy of YOLOv8 models for kidney stone detection, aiming to strike a balance between computational efficiency and detection accuracy. This study's novel evaluation framework and practical deployment considerations underscore its contributions to advance kidney stone detection technologies. It evaluates five YOLOv8 variants (nano, small, medium, large, and extra-large) using standard metrics such as precision, recall, F1-score, and mAP@50, alongside computational resources like training time, power consumption, and memory usage. The comprehensive evaluation reveals that while YOLOv8s and YOLOv8e demonstrate superior performance in traditional metrics, YOLOv8s emerges as the optimal model, offering a harmonious balance with its high precision (0.917), highest mAP@50 (0.918), moderate power consumption (150W), and efficient memory usage. Graphical analyses further elucidate the behaviour of each model across different confidence thresholds, confirming the robustness of YOLOv8s. Additionally, this research explores the impact of model size and complexity on inference speed, demonstrating that smaller YOLOv8 variants achieve real-time performance with minimal latency. The study also introduces a method for model scalability, allowing for adjustments in accuracy and computational demand based on specific clinical or resource constraints. These contributions further emphasize the importance of holistic model assessment for real-world medical applications.",
+    "publisher": "MECS Publisher",
+    "type": "journal-article",
+    "journal": "International Journal of Intelligent Systems and Applications"
+  },
+  {
+    "doi": "10.1007/978-3-032-06665-7_36",
+    "title": "Online Payment Fraud Detection Using Machine Learning",
+    "authors": "Ayush Tiwari; Ayushi Tomar; Prabhjot Kaur",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, ICT Systems and Sustainability"
+  },
+  {
+    "doi": "10.1051/0004-6361/202556035",
+    "title": "Realistic consecutive galaxy mergers form eccentric pulsar timing array sources",
+    "authors": "F. Fastidio; E. Bortolas; A. Gualandris; A. Sesana; J.I. Read; W. Dehnen",
+    "issuedDate": "2025-10-8",
+    "abstract": "Results from pulsar timing arrays (PTAs) show evidence of a gravitational wave background (GWB) consistent with a population of unresolved supermassive black hole binaries (BHBs). The observed spectrum shows a flattening at lower frequencies that can be explained by a population of eccentric BHBs. This study aims to determine the dynamical evolution and merger timescales of the most massive BHBs, which are potential sources of the GWB. We selected successive galactic major mergers from the IllustrisTNG100-1 cosmological simulation and re-simulated them at high resolution with the N-body code Griffin down to binary separations of the order of a parsec. Coalescence timescales were estimated using a semi-analytical model that incorporates gravitational wave emission and stellar hardening. Throughout our investigation, we considered the impact of prior mergers on the remnant galaxy in the form of core scouring and anisotropy, which can influence the subsequent formation and evolution of BHBs. We find that all the binaries in our sample enter the PTA band with an eccentricity of e&gt;0.85: such a large eccentricity can impact the shape of the PTA observed GWB spectrum, and it highlights the importance of including the eccentricity of binaries when interpreting the PTA signal. Furthermore, we find that: (i) starting from initial separations of a few tens of kiloparsecs, the dynamical friction phase lasts for a few hundred million years; (ii) the binary formation time is not resolution-dependent; (iii) the scatter on the eccentricity at binary formation decreases with increasing resolution; and (iv) triple systems form whenever a third galaxy interacts with a binary that has not yet reached coalescence.",
+    "publisher": "EDP Sciences",
+    "type": "journal-article",
+    "journal": "Astronomy &amp; Astrophysics"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_74",
+    "title": "A Performance-Based Comparison of Energy Detection Using Fixed and Adaptive Thresholds for CR-IoT Systems",
+    "authors": "Khadija Lahrouni; Hayat Semlali; Guillaume Andrieux; Jean-François Diouris; Abdelilah Ghammaz",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.1007/978-981-96-7480-0_37",
+    "title": "Effect of Long-Chain Hydrocarbon on the Emissions of SI Engine Fueled with Gasoline-Ethanol Blends",
+    "authors": "Harikrishna Nagwan; Raghubeer Singh Bangari; Shwetank Avikal",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Singapore",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Mechanical Engineering, Recent Advances in Mechanical Engineering"
+  },
+  {
+    "doi": "10.5815/ijem.2025.05.05",
+    "title": "Monkeypox Detection Using Support VectorMachine with a Quadratic Polynomial Kernel",
+    "authors": "Michael Chi Seng Tang; Siew Ping Yiiong; Kee Chuong Ting; Sing Ling Ong; Marcella Peter; Khairunnisa Ibrahim",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "MECS Publisher",
+    "type": "journal-article",
+    "journal": "International Journal of Engineering and Manufacturing"
+  },
+  {
+    "doi": "10.1007/978-3-032-06952-8_12",
+    "title": "Platform Powering Cognitive and Memetic Digital Twins: To Boldly Go Where Memes May Live Long and Prosper",
+    "authors": "Ulrich Schmitt",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Computer Science, Cooperative Design, Visualization, and Engineering"
+  },
+  {
+    "doi": "10.1007/978-3-032-06069-3_26",
+    "title": "Towards Semi-supervised Subspace Learning for Outlier Detection in Big Data",
+    "authors": "Muhammad Rajabinasab; Anton D. Lautrup; Peter Schneider-Kamp; Arthur Zimek",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Computer Science, Similarity Search and Applications"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_4",
+    "title": "Comparison of Feature Extraction Methods for Power-Line Insulator Defect Detection",
+    "authors": "Osatohanmwen Noghayin Enehizena; Osemwegie S. Omorogiuwa; Solomon Ogiobadan; Agbotiname Lucky Imoize; Youssef Mejdoub",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_73",
+    "title": "An Improved Phishing URL Detection Using Machine Learning Methods",
+    "authors": "Joseph Bamidele Awotunde; Christiana Oluwakemi Abikoye; Agbotiname Lucky Imoize; Youssef Mejdoub; Olamilekan Abdulazeez Imran",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_89",
+    "title": "Securing Insulin Pumps Against Malicious Injections: A TinyML-Based Anomaly Detection Approach",
+    "authors": "Khadija Tlemçani; Kebira Azbeg; Leila Fetjah; Ouail Ouchetto; Said Jai Andaloussi",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_94",
+    "title": "Intelligent Cryptosystem Recognition: AI-Driven Approaches for Real-Time Detection",
+    "authors": "Allaga Hamza; Abderrazak Farchane; Mohamed Biniz; Said Hakimi",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.1007/s00586-025-09365-z",
+    "title": "ShPCFHNet: shepherd parallel convolutional forward harmonic net for spinal cord injury detection using CT images",
+    "authors": "Bhagyashri Thakare; Bhushan Chaudhari; Madhuri Patil; Sachin Kamble",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "journal": "European Spine Journal"
+  },
+  {
+    "doi": "10.1007/978-3-032-06665-7_24",
+    "title": "Leveraging Artificial Intelligence for Detection and Filtering of Inappropriate Social Media Content",
+    "authors": "Juttiga Rohita; B. Teja Sree; Ibrapatnam Anusha; Mohammad Sharmila Begum; Nirjogi Mahathi",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, ICT Systems and Sustainability"
+  },
+  {
+    "doi": "10.1142/s0219477525400206",
+    "title": "Quantum Channel FETs for Advanced Biosensors",
+    "authors": "D. Pustovyi; M. Petrychuk; A. Fujiwara; Y. Zhang; H. Long; V. Chekubasheva; S. Vitusevich",
+    "issuedDate": "2025-10-8",
+    "abstract": "Highly sensitive high-speed biosensors are key devices for precise diagnostics, which allows the application of medical treatment in a short time. In this paper, noise spectra and characteristic time constants are studied in nanotransistors with channel sizes below 30[Formula: see text]nm. The quantization effect due to the formation of a quantum dot channel is analyzed based on the transport and noise properties of the device structures. Ultra-low flicker noise at the quantum level with a Hooge parameter of about 10[Formula: see text] is registered. A strong dependence of the characteristic switching time on the modulation effect is revealed with a slope ([Formula: see text]) that considerably exceeds the value of 1, which is typically obtained in large-area device structures. This reflects the fact that a 700% amplification of sensitivity in nanotransistor biosensors can be obtained. A dimensionless R-factor introduced by the ratio of the emission time constant to the capture time constant as a function of gate voltage reveals a slope equal to 20, which is promising for the extraction of very small signals from biomolecules with 20 times higher sensitivity.",
+    "publisher": "World Scientific Pub Co Pte Ltd",
+    "type": "journal-article",
+    "journal": "Fluctuation and Noise Letters"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_109",
+    "title": "Analyzing Packet Health in MicaZ-Crossbow WSNs and Error Detection Approach Based on the Gilbert/Elliot Model",
+    "authors": "Karim Lahma; Mohamed Hamraoui",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.1007/978-3-032-06069-3_5",
+    "title": "CF-OOD: Concentration-Free Density Estimation for Reliable Out-of-Distribution Detection",
+    "authors": "Fabrizio Angiulli; Fabio Fassetti; Maria Pia Zupi",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Computer Science, Similarity Search and Applications"
+  },
+  {
+    "doi": "10.1007/978-3-032-06952-8_9",
+    "title": "Cascaded Machine Learning Algorithm for Snoring Detection Based on Audio Signal",
+    "authors": "Wanqi Huang; Xuanyi Chen; Jinyu Du; Dingjuan Chua",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Computer Science, Cooperative Design, Visualization, and Engineering"
+  },
+  {
+    "doi": "10.1007/978-3-032-06069-3_35",
+    "title": "Double Filtering Using Short and Long Quantized Projections",
+    "authors": "Naoya Higuchi; Yasunobu Imamura; Takeshi Shinohara; Kouichi Hirata; Tetsuji Kuboyama",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Computer Science, Similarity Search and Applications"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_45",
+    "title": "Intrusion Detection in CAV Networks: A Review of Federated Learning and Hybrid Security Architecture",
+    "authors": "Kessabi Salma; Mazri Tomader",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_87",
+    "title": "Intelligent Spectral Detection with BPSK Modulation: Evaluation of SVM, NBC, TREE and KNN Model",
+    "authors": "Abdessalam El Bandoudi; Mohamed Boulouird",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.5815/ijcnis.2025.05.04",
+    "title": "Intelligent Autoencoder with LSTM based Intrusion Detection and Recommender System",
+    "authors": "V. G. Aishvarya Shree; M. Thangaraj",
+    "issuedDate": "2025-10-8",
+    "abstract": "With the swift growth of digital networks and information in both public and private sectors, it is essential to deal with the considerable threat that network attacks pose to data integrity and confidentiality. Consequently, there is a pressing requirement for the establishment of effective mechanisms to detect and provide recommendations for addressing intrusion attacks. In this paper, we propose a semantic-based intrusion detection system that aims to improve performance by incorporating semantic representations consisting of feature groups and their associated weights, leading to the creation of a weighted knowledge graph. The weights of the features are determined using sparse autoencoders. From these weights, the most significant features are normalized to a specific range. This approach comprises a combination of a Deep Auto Encoder (AE) and Long Short-Term Memory (LSTM) networks for intrusion detection. Furthermore, the ensemble method of Extreme Gradient Boosting (XGBoost) is used to identify and recommend high-probability attack scenarios. The dataset used to evaluate is the CSE-CIC-IDS dataset. Performance metrics such as accuracy, precision, recall, false positive rate, receiver operating characteristic metrics, loss, and error rate are used to measure the performance, and the results show the approach demonstrates substantial improvements in detection accuracy, minimizing false positives, enhancing reliability, and outperforming existing models. The combination of semantic knowledge, deep learning, and ensemble learning ensures a proactive and adaptive cybersecurity framework.",
+    "publisher": "MECS Publisher",
+    "type": "journal-article",
+    "journal": "International Journal of Computer Network and Information Security"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_121",
+    "title": "A Majority Voting Scheme in Wireless Sensor Networks for Network Intrusion Detection",
+    "authors": "Said Ouhmi; Abdelkarim Ait Temghart; Mbarek Marwan; Khalid Housni",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.1515/joc-2025-0381",
+    "title": "Signal detection in optical orthogonal time space modulation for efficient VLC application",
+    "authors": "Anjali Shrivastav; S. P. Meharunnisa; Surat Pyari Atti; Arun Kumar; Aziz Nanthaamornphong",
+    "issuedDate": "2025-10-8",
+    "abstract": "Abstract\n               This paper presents a detailed analysis of the bit error rate (BER) performance of a proposed maximum likelihood (ML) detection scheme for optical orthogonal time space modulation (OTSM) systems using 64-QPSK, considering practical optical impairments and diverse channel conditions. The evaluation covers scenarios with 5 % and 10 % channel estimation errors, as well as Rayleigh and Rician fading environments. Simulation results confirm that the proposed machine learning (ML) detector consistently outperforms conventional methods – including OTSM, zero-forcing equalization (ZFE), minimum mean square error (MMSE), and conventional ML – by delivering substantial SNR gains. For instance, under 10 % and 5 % estimation errors, the target BER of 10−3 is achieved at 12.2 dB and 10.8 dB, respectively, providing up to 6 dB improvement over baselines. In Rayleigh fading, the same BER is attained at 9.6 dB with a gain of 7.7 dB, while in Rician fading, the detector achieves optimal performance at only 6 dB, outperforming others by as much as 9.5 dB. These results underscore the robustness of the proposed ML approach against estimation inaccuracies and fading, making it well-suited for low-power, high-reliability applications in 6G, Internet of things (IoT), vehicular networks, and satellite communications.",
+    "publisher": "Walter de Gruyter GmbH",
+    "type": "journal-article",
+    "journal": "Journal of Optical Communications"
+  },
+  {
+    "doi": "10.5815/ijcnis.2025.05.03",
+    "title": "Novel Hybrid LOA-VCS Metaheuristic Approach with Adaptive Parameter Tuning for Network Intrusion Detection",
+    "authors": "Mohammad Othman Nassar; Feras Fares AL-Mashagba",
+    "issuedDate": "2025-10-8",
+    "abstract": "The increasing complexity and dynamism of modern cyber threats necessitate intelligent and adaptive network intrusion detection systems (NIDS). This paper proposes a novel hybrid metaheuristic approach that combines the Lion Optimization Algorithm (LOA) with the Virus Colony Search (VCS), enhanced by adaptive parameter tuning mechanisms. The proposed LOA-VCS hybrid algorithm addresses limitations in prior single and hybrid metaheuristic by alternating exploration and exploitation strategies across epochs, optimizing detection performance in high-dimensional feature spaces. Unlike previous hybrid metaheuristics that use fixed or non-adaptive control, our model uniquely alternates LOA and VCS phases adaptively across epochs to enhance convergence and detection robustness. A real-world intrusion detection dataset evaluated the LOA-VCS model with 98.4% detection accuracy, an F1-score of 0.976, and an AUC of 0.986, consistently outperforming the standalone LOA and VCS baselines. These results emphasize the power of adaptive hybrid met heuristics in maintaining low false alarms while ensuring strong recall for NIDS. The proposed approach can be deployed in scalable, high-speed systems in today’s contemporary cyber security environments.",
+    "publisher": "MECS Publisher",
+    "type": "journal-article",
+    "journal": "International Journal of Computer Network and Information Security"
+  },
+  {
+    "doi": "10.1007/978-3-032-06665-7_7",
+    "title": "Robust Online Action Detection: Advancing Multi-object Tracking in Surveillance Scenarios",
+    "authors": "Shahedhadeennisa Shaik; R. B. Abhinav; S. P. Chaitra; S. M. Sagari",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, ICT Systems and Sustainability"
+  },
+  {
+    "doi": "10.1007/978-3-032-07175-0_27",
+    "title": "ROS2 Pipeline for Open-Vocabulary Object Detection and 3D Reconstruction on Jetson Orin Nano",
+    "authors": "Sergio Oliveros; Rubén Manrique",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Communications in Computer and Information Science, Applied Informatics"
+  },
+  {
+    "doi": "10.1007/978-3-032-07175-0_15",
+    "title": "Preliminary Evaluation of Vision-Language Models for Fall Detection",
+    "authors": "Oumaima Guendoul; Adil Bahaj; Youness Tabii; Rachid Oulad Haj Thami",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Communications in Computer and Information Science, Applied Informatics"
+  },
+  {
+    "doi": "10.1007/978-3-032-06952-8_15",
+    "title": "Using Miro Collaboration Platform for Semester-Long Group Projects in Communication Design Research",
+    "authors": "Alex Ivanov; Jiashen Wang; Letwin Tawira",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Computer Science, Cooperative Design, Visualization, and Engineering"
+  },
+  {
+    "doi": "10.1007/978-3-032-06665-7_35",
+    "title": "Plant Leaf Disease Detection System Using Deep Learning",
+    "authors": "Soni R. Ragho; Rohan R. Swami; Tanuja S. Gaikwad; Aaditi P. Narke; Shubham M. Atak",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, ICT Systems and Sustainability"
+  },
+  {
+    "doi": "10.1007/978-3-032-06665-7_4",
+    "title": "ODDNet-Object Detection in Dark with Attention-Driven RGB-Event Fusion",
+    "authors": "Safa Imtihaz Sayyad; Jyoti M. Satihal; Ujwala Patil",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, ICT Systems and Sustainability"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_31",
+    "title": "Kolmogorov–Arnold Networks for Speech-Based Alzheimer’s Detection",
+    "authors": "Anass El Hallani; Adil Chakhtouna; Abdellah Adib",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_24",
+    "title": "Smart Diaper System: An IoT-Enabled Solution for Real-Time Urine Detection and Patient Monitoring",
+    "authors": "Yassir Moutia; Achraf Iderdar; Mohammed Rmioui; Aissame Abousalim; Mohamed Salha",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  }
+]

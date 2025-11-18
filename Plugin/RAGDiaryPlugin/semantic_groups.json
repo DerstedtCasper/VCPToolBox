@@ -1,0 +1,132 @@
+{
+  "config": {
+    "min_cooccurrence_to_learn": 2,
+    "min_cluster_size_for_new_group": 3,
+    "auto_save_on_learn": true
+  },
+  "groups": {
+    "编程学习": {
+      "words": [
+        "Python",
+        "算法",
+        "数据结构",
+        "编程",
+        "代码",
+        "debug",
+        "函数",
+        "JavaScript",
+        "Node.js"
+      ],
+      "auto_learned": [],
+      "weight": 1,
+      "vector_id": "c985afc5-1c6e-4060-a8f6-577df2dd8e57",
+      "last_activated": null,
+      "activation_count": 0,
+      "words_hash": "c97d1abe2a5f698b64a32f056e5b6b17258e2e302569a7fdcdeed2fbca72d54d"
+    },
+    "克莱恩·莫雷蒂": {
+      "words": [
+        "愚者",
+        "克莱恩",
+        "世界",
+        "格尔曼",
+        "道恩",
+        "侦探",
+        "塔罗会",
+        "源堡",
+        "灰雾"
+      ],
+      "auto_learned": [],
+      "weight": 1.2,
+      "vector_id": "52e4e743-cc1f-43e1-8e6c-a83cf54775fa",
+      "last_activated": null,
+      "activation_count": 0,
+      "words_hash": "c5dd431fd5322c64a932dff9a2ffaed840269a0086d0679a4d903b8c53d25809"
+    },
+    "插件工具库": {
+      "words": [
+        "文件",
+        "编辑",
+        "下载",
+        "网页查看",
+        "生图",
+        "通讯",
+        "联络agent",
+        "记日记",
+        "搜索",
+        "科学计算器",
+        "塔罗",
+        "占卜",
+        "路径"
+      ],
+      "auto_learned": [],
+      "weight": 1.3,
+      "last_activated": null,
+      "activation_count": 0,
+      "vector_id": "0554bdd8-9380-4329-9459-132262499819",
+      "words_hash": "754422b2321841deb3098f0347bf10d1358ea9a4791211db038adf4268519d05"
+    },
+    "(必需) RAG标签组名，如：小说工程。": {
+      "words": [
+        "(必需) 关键词列表，用逗号分隔。"
+      ],
+      "auto_learned": [],
+      "weight": 1,
+      "last_activated": null,
+      "activation_count": 0,
+      "vector_id": "851f44d5-4c56-4356-991e-463b557d3533",
+      "words_hash": "3d85a1e0bea210f98a0ddd0973715b5a078b0009c29ce4bb6dd2bcc8fd6a1edf"
+    },
+    "(必需) 组名，如 \"科幻概念\"。": {
+      "words": [
+        "(必需) 关联词，用逗号分隔，如 \"戴森球",
+        "曲率引擎",
+        "赛博朋克\"。"
+      ],
+      "auto_learned": [],
+      "weight": 1,
+      "last_activated": null,
+      "activation_count": 0,
+      "vector_id": "09727c6c-e099-4b42-86f7-1eb2c1554ab7",
+      "words_hash": "b3dad45e3822ddebd1a5fa38acd564e081b67098f0e92ae1ca36a8bb041daba5"
+    },
+    "科幻概念": {
+      "words": [
+        "戴森球",
+        "曲率引擎",
+        "赛博朋克"
+      ],
+      "auto_learned": [],
+      "weight": 1,
+      "last_activated": null,
+      "activation_count": 0,
+      "vector_id": "cbff9543-2500-4be5-a3ef-0611f68296f2",
+      "words_hash": "7019efe0711f8cbb6ca69685680aa24636a8b21354faa6f17e6e043d947c2278"
+    }
+  }
+}
+{
+  "config": {
+    "min_cooccurrence_to_learn": 2,
+    "min_cluster_size_for_new_group": 3,
+    "auto_save_on_learn": true
+  },
+  "groups": {
+    "编程学习": {
+      "words": ["Python", "算法", "数据结构", "编程", "代码", "debug", "函数", "JavaScript", "Node.js"],
+      "auto_learned": [],
+      "weight": 1.0,
+      "vector_id": null,
+      "last_activated": null,
+      "activation_count": 0
+    },
+    "克莱恩·莫雷蒂": {
+      "words": ["愚者", "克莱恩", "世界", "格尔曼", "道恩", "侦探", "塔罗会", "源堡", "灰雾"],
+      "auto_learned": [],
+      "weight": 1.2,
+      "vector_id": null,
+      "last_activated": null,
+      "activation_count": 0
+    }
+  }
+}

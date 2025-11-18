@@ -1,0 +1,69 @@
+{
+    "manifestVersion": "1.0.0",
+    "name": "MissAVCrawl",
+    "version": "1.6.2",
+    "displayName": "MissAV视频下载器",
+    "description": "基于missAV API的视频下载工具，支持增强版搜索（多种排序、封面图片、标题、多页搜索）、热榜和下载missav.ws的视频。",
+    "author": "VCP Plugin Developer",
+    "pluginType": "asynchronous",
+    "entryPoint": {
+        "type": "python",
+        "command": "python main.py"
+    },
+    "communication": {
+        "protocol": "stdio",
+        "timeout": 3000000
+    },
+    "configSchema": {
+        "MISSAV_DOWNLOAD_DIR": {
+            "type": "string",
+            "description": "MissAV视频下载目录路径",
+            "default": "./downloads"
+        },
+        "MISSAV_QUALITY": {
+            "type": "string",
+            "description": "视频质量设置 (best/worst/specific)",
+            "default": "best"
+        },
+        "MISSAV_DOWNLOADER": {
+            "type": "string",
+            "description": "下载器类型 (threaded/sequential)",
+            "default": "threaded"
+        },
+        "MISSAV_PROXY": {
+            "type": "string",
+            "description": "代理设置 (可选，格式: http://proxy:port)",
+            "default": ""
+        }
+    },
+    "capabilities": {
+        "systemPromptPlaceholders": [
+            {
+                "placeholder": "{{VCP_MissAV_DownloadStatus}}",
+                "description": "获取当前MissAV下载任务的状态。如果没有正在进行的下载，则显示'当前没有正在进行的MissAV下载任务'。"
+            }
+        ],
+        "invocationCommands": [
+            {
+                "commandIdentifier": "DownloadVideoAsync",
+                "description": "（异步）从MissAV下载指定视频。此任务将在后台运行。\n参数:\n- url (字符串, 必需): MissAV视频的完整URL。\n- quality (字符串, 可选): 视频质量，默认为'best'。\n调用格式:\n<<<[TOOL_REQUEST]>>>\ntool_name:「始」MissAVCrawl「末」,\ncommand:「始」DownloadVideoAsync「末」,\nurl:「始」https://missav.ws/ssis-950「末」\n<<<[END_TOOL_REQUEST]>>>",
+                "example": "<<<[TOOL_REQUEST]>>>\ntool_name:「始」MissAVCrawl「末」,\ncommand:「始」DownloadVideoAsync「末」,\nurl:「始」https://missav.ws/ssis-950「末」\n<<<[END_TOOL_REQUEST]>>>"
+            },
+            {
+                "commandIdentifier": "GetVideoInfo",
+                "description": "获取MissAV视频的详细信息（不下载）。\n参数:\n- url (字符串, 必需): MissAV视频的完整URL\n调用格式:\n<<<[TOOL_REQUEST]>>>\ntool_name:「始」MissAVCrawl「末」,\ncommand:「始」GetVideoInfo「末」,\nurl:「始」https://missav.ws/xxx「末」\n<<<[END_TOOL_REQUEST]>>>",
+                "example": "<<<[TOOL_REQUEST]>>>\ntool_name:「始」MissAVCrawl「末」,\ncommand:「始」GetVideoInfo「末」,\nurl:「始」https://missav.ws/xxx「末」\n<<<[END_TOOL_REQUEST]>>>"
+            },
+            {
+                "commandIdentifier": "SearchVideos",
+                "description": "根据关键词搜索MissAV视频（增强版）。\n参数:\n- keyword (字符串, 必需): 搜索关键词，如视频代码、演员名等\n- page (整数, 可选): 起始页码，默认为1\n- sort (字符串, 可选): 排序方式，可选值:\n  * saved: 按收藏数排序\n  * today_views: 按日流量排序\n  * weekly_views: 按周流量排序\n  * monthly_views: 按月流量排序\n  * views: 按总流量排序\n  * updated: 按最近更新排序\n  * released_at: 按发行日期排序\n- include_cover (布尔, 可选): 是否返回视频封面图片URL，默认为true\n- include_title (布尔, 可选): 是否返回视频完整标题，默认为true\n- max_results (整数, 可选): 每页最大结果数量，默认为20，最大100\n- max_pages (整数, 可选): 最大搜索页数，默认为1，最大10\n调用格式:\n<<<[TOOL_REQUEST]>>>\ntool_name:「始」MissAVCrawl「末」,\ncommand:「始」SearchVideos「末」,\nkeyword:「始」OFJE-505「末」,\npage:「始」1「末」,\nsort:「始」views「末」,\ninclude_cover:「始」true「末」,\ninclude_title:「始」true「末」,\nmax_results:「始」30「末」,\nmax_pages:「始」3「末」\n<<<[END_TOOL_REQUEST]>>>",
+                "example": "<<<[TOOL_REQUEST]>>>\ntool_name:「始」MissAVCrawl「末」,\ncommand:「始」SearchVideos「末」,\nkeyword:「始」SSIS「末」,\nsort:「始」views「末」,\ninclude_title:「始」true「末」,\nmax_results:「始」25「末」,\nmax_pages:「始」2「末」\n<<<[END_TOOL_REQUEST]>>>"
+            },
+            {
+                "commandIdentifier": "GetHotVideos",
+                "description": "获取MissAV热榜视频。\n参数:\n- category (字符串, 可选): 热榜分类，可选值: 'daily'(每日热门), 'weekly'(每周热门), 'monthly'(每月热门), 'new'(最新), 'popular'(最受欢迎), 'trending'(趋势)，默认为'daily'\n- page (整数, 可选): 页码，默认为1\n调用格式:\n<<<[TOOL_REQUEST]>>>\ntool_name:「始」MissAVCrawl「末」,\ncommand:「始」GetHotVideos「末」,\ncategory:「始」daily「末」,\npage:「始」1「末」\n<<<[END_TOOL_REQUEST]>>>",
+                "example": "<<<[TOOL_REQUEST]>>>\ntool_name:「始」MissAVCrawl「末」,\ncommand:「始」GetHotVideos「末」,\ncategory:「始」daily「末」\n<<<[END_TOOL_REQUEST]>>>"
+            }
+        ]
+    }
+}

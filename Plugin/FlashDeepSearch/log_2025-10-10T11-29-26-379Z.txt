@@ -1,0 +1,22 @@
+[FlashDeepSearch] 2025-10-10T11:29:26.464Z: 插件启动，接收到请求。
+[FlashDeepSearch] 2025-10-10T11:29:26.465Z: 研究主题: "探讨人工智能在气候变化建模中的应用及其伦理影响。", 搜索广度: 10
+[FlashDeepSearch] 2025-10-10T11:29:26.465Z: 步骤 1: 生成研究关键词...
+[FlashDeepSearch] 2025-10-10T11:29:26.465Z: 调用模型: gemini-2.5-flash-preview-09-2025
+[FlashDeepSearch] 2025-10-10T11:29:33.055Z: DeepSearchModel 原始响应: [KeyWord1:] AI climate model uncertainty[KeyWord2:] 深度学习 气候预测 偏差[KeyWord3:] Algorithmic bias climate justice[KeyWord4:] 人工智能 黑箱模型 气候治理[KeyWord5:] AI carbon market regulation[KeyWord6:] 气候脆弱性 AI 决策公平[KeyWord7:] Limits of AI Earth System Models[KeyWord8:] 大模型 碳足迹 能耗[KeyWord9:] History of climate modeling complexity[KeyWord10:] Global AI governance climate policy
+[FlashDeepSearch] 2025-10-10T11:29:33.055Z: 成功提取到 10 个关键词。
+[FlashDeepSearch] 2025-10-10T11:29:33.055Z: 步骤 2: 并发执行 10 个搜索任务...
+[FlashDeepSearch] 2025-10-10T11:29:33.055Z: 调用模型: gemini-2.5-flash-preview-09-2025
+[FlashDeepSearch] 2025-10-10T11:29:33.056Z: 调用模型: gemini-2.5-flash-preview-09-2025
+[FlashDeepSearch] 2025-10-10T11:29:33.056Z: 调用模型: gemini-2.5-flash-preview-09-2025
+[FlashDeepSearch] 2025-10-10T11:29:33.057Z: 调用模型: gemini-2.5-flash-preview-09-2025
+[FlashDeepSearch] 2025-10-10T11:29:33.057Z: 调用模型: gemini-2.5-flash-preview-09-2025
+[FlashDeepSearch] 2025-10-10T11:29:49.502Z: 调用模型: gemini-2.5-flash-preview-09-2025
+[FlashDeepSearch] 2025-10-10T11:29:49.503Z: 调用模型: gemini-2.5-flash-preview-09-2025
+[FlashDeepSearch] 2025-10-10T11:29:49.503Z: 调用模型: gemini-2.5-flash-preview-09-2025
+[FlashDeepSearch] 2025-10-10T11:29:49.504Z: 调用模型: gemini-2.5-flash-preview-09-2025
+[FlashDeepSearch] 2025-10-10T11:29:49.504Z: 调用模型: gemini-2.5-flash-preview-09-2025
+[FlashDeepSearch] 2025-10-10T11:30:04.634Z: 成功完成 10 个搜索任务。
+[FlashDeepSearch] 2025-10-10T11:30:04.634Z: 步骤 3: 生成最终研究报告...
+[FlashDeepSearch] 2025-10-10T11:30:04.634Z: 调用模型: gemini-2.5-flash-preview-09-2025
+[FlashDeepSearch] 2025-10-10T11:30:23.111Z: 最终报告已生成。
+[FlashDeepSearch] 2025-10-10T11:30:23.112Z: 报告已成功保存到: D:\AI bot\VCPToolBox\file\document\2025-10-10T11-30-23-112Z_探讨人工智能在气候变化建模中的应用及其伦.txt

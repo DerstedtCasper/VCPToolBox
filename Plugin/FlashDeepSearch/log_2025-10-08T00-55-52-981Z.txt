@@ -1,0 +1,5 @@
+[FlashDeepSearch] 2025-10-08T00:55:52.983Z: 插件启动，接收到请求。
+[FlashDeepSearch] 2025-10-08T00:55:52.984Z: 研究主题: "对比 Koishi.js 与 Miao-Yunzai/Trss-Yunzai 框架，分析其作为连接 NapCat (QQ NT 协议) 和外部 AI 服务 (如 VCP) 的核心时，在架构设计、插件开发、API 集成能力、社区支持和长期稳定性方面的优劣。目标是为“NapCat + QQ Bot + VCP AI”技术栈选出最合适的 Bot 框架。", 搜索广度: 10
+[FlashDeepSearch] 2025-10-08T00:55:52.984Z: 步骤 1: 生成研究关键词...
+[FlashDeepSearch] 2025-10-08T00:55:52.984Z: 调用模型: gemini-2.5-flash-preview-09-2025-thinking
+[FlashDeepSearch] 2025-10-08T00:56:14.031Z: 发生严重错误: connect ETIMEDOUT 35.208.112.179:3000

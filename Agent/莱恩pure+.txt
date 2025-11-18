@@ -1,0 +1,3825 @@
+[[VCP元思考:default::Group:2-1-1-1-1]]
+{
+  "id": "4a3e4c50-f38b-4531-8f57-8b91ef9a01c0",
+  "revision": 0,
+  "last_node_id": 120,
+  "last_link_id": 125,
+  "nodes": [
+    {
+      "id": 6,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1335.6434326171875,
+        -352.7138366699219
+      ],
+      "size": [
+        210,
+        78
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "CLIP",
+          "localized_name": "clip",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 30
+        },
+        {
+          "label": "鏂囨湰",
+          "localized_name": "鏂囨湰",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 33
+        }
+      ],
+      "outputs": [
+        {
+          "label": "鏉′欢",
+          "localized_name": "鏉′欢",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "slot_index": 0,
+          "links": [
+            20,
+            44,
+            115
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27",
+        "Node name for S&R": "CLIPTextEncode",
+        "widget_ue_connectable": {
+          "text": true
+        }
+      },
+      "widgets_values": [
+        "masterpiece, best quality,kafka_\\(honkai:_star_rail\\), 1girl, solo, long_hair, breasts, looking_at_viewer, blush, smile, shirt, large_breasts, long_sleeves, gloves, holding, hair_between_eyes, closed_mouth, jewelry, sitting, jacket, purple_eyes, white_shirt, purple_hair, sidelocks, thighs, pantyhose, earrings, boots, open_clothes, shorts, collared_shirt, indoors, black_footwear, black_jacket, cup, feet_out_of_frame, window, black_shorts, thigh_boots, sunglasses, crossed_legs, holding_cup, eyewear_on_head, couch, drinking_glass, zipper, alcohol, brown_pantyhose, round_eyewear, purple_gloves, on_couch, wine_glass, pantyhose_under_shorts, harness, wine, chest_harness, purple_pantyhose, pince-nez, high-waist_shorts, single_thigh_boot",
+        [
+          false,
+          true
+        ]
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1336.2786865234375,
+        -311.0519714355469
+      ],
+      "size": [
+        210,
+        78
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "CLIP",
+          "localized_name": "clip",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 16
+        },
+        {
+          "label": "鏂囨湰",
+          "localized_name": "鏂囨湰",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 24
+        }
+      ],
+      "outputs": [
+        {
+          "label": "鏉′欢",
+          "localized_name": "鏉′欢",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "slot_index": 0,
+          "links": [
+            6,
+            45,
+            116
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27",
+        "Node name for S&R": "CLIPTextEncode",
+        "widget_ue_connectable": {
+          "text": true
+        }
+      },
+      "widgets_values": [
+        "worst quality, low quality, bad anatomy, bad hands, blurry, lowres",
+        [
+          false,
+          true
+        ]
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 8,
+      "type": "VAEDecode",
+      "pos": [
+        1239.2080078125,
+        4.415457248687744
+      ],
+      "size": [
+        210,
+        46
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "Latent",
+          "localized_name": "Latent",
+          "name": "samples",
+          "type": "LATENT",
+          "link": 7
+        },
+        {
+          "label": "VAE",
+          "localized_name": "vae",
+          "name": "vae",
+          "type": "VAE",
+          "link": 49
+        }
+      ],
+      "outputs": [
+        {
+          "label": "鍥惧儚",
+          "localized_name": "鍥惧儚",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            36,
+            72,
+            83
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27",
+        "Node name for S&R": "VAEDecode",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 15,
+      "type": "CLIPSetLastLayer",
+      "pos": [
+        1315,
+        -460
+      ],
+      "size": [
+        210,
+        58
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "CLIP",
+          "localized_name": "clip",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 48
+        },
+        {
+          "localized_name": "鍋滄鍦–LIP灞?,
+          "name": "stop_at_clip_layer",
+          "type": "INT",
+          "widget": {
+            "name": "stop_at_clip_layer"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "CLIP",
+          "localized_name": "CLIP",
+          "name": "CLIP",
+          "type": "CLIP",
+          "slot_index": 0,
+          "links": [
+            16,
+            26,
+            41
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27",
+        "Node name for S&R": "CLIPSetLastLayer",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        -2
+      ]
+    },
+    {
+      "id": 16,
+      "type": "ModelSamplingDiscrete",
+      "pos": [
+        868.949951171875,
+        12.116841316223145
+      ],
+      "size": [
+        310.7987365722656,
+        82
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 4,
+      "inputs": [
+        {
+          "label": "妯″瀷",
+          "localized_name": "妯″瀷",
+          "name": "model",
+          "type": "MODEL",
+          "link": 28
+        },
+        {
+          "localized_name": "閲囨牱",
+          "name": "sampling",
+          "type": "COMBO",
+          "widget": {
+            "name": "sampling"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "瑙勬牸鍖栦俊鍣瘮",
+          "name": "zsnr",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "zsnr"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "妯″瀷",
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            18,
+            42
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27",
+        "Node name for S&R": "ModelSamplingDiscrete",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "v_prediction",
+        false
+      ]
+    },
+    {
+      "id": 20,
+      "type": "Note",
+      "pos": [
+        -807,
+        -132
+      ],
+      "size": [
+        598.1527099609375,
+        451.9707336425781
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "闆屽皬楝?mesugaki\n闃块粦棰?ahegao\n鑵归儴鍑歌捣 stomach bulge\nbig belly\ncum inflation\n鏉傚織椋?(magazine cover:1.1), \n楂樻姮鑵?(standing split:1.2),\n<lora:Pussy_Lily_v5_XL:0.5>锛屽畬缇巔ussy.閰嶅悎鎻愮ず璇峱ussy_front锛宲ussy_rear锛宼oys_front锛宼oys_rear\n<lora:add-detail-xl:1>, 寮哄寲鏌愪簺涓嶅父鐢ㄧ敾闈㈢粏鑺傜殑lora\n<lora:Expressive_H-000001:1>,瓒呯骇鑹茶壊lora锛佽鐢婚潰鍙樺緱瓒呯骇鏈夆€滃姩鎰熲€濆拰鑹叉皵锛乗n<lora:Wai-style00*:1>,WaiAnime涓撶敤lora锛?0绉嶉鏍硷紝璇﹁椋庢牸琛ㄣ€俓n<lora:Concept Art Eclipse Style LoRA_Pony XL v6:1>,pony娌圭敾璐ㄦ劅\nferal,anthro,骞挎硾鎰忎箟涓婄殑furry瑙掕壊锛屽寘鎷ぇ閮ㄥ垎闈炰汉绫诲舰鎬併€俓nslit pupils,淇閮ㄥ垎lora涓嬪鑷磃urry瑙掕壊鐪肩潧鑹插潡鐨則ag\n浠庝笅寰€涓婄湅/瑁欏簳椋庡厜 from below,\n\n浜洪潰鐘琝n1girl,furry,dog,smile, fang, open mouth, full body, harelip, perfect anatomy,(feral:1.7),breasts tattoo, on all fours,quadruped,(FETISH:1.3),BREASTS, nude,tattoo, chest tattoo,\n\n鍒嗗舰鐖卞績缁勫悎\nnyalia, plana \\(blue archive\\),arona \\(blue archive\\), 2girls, (idol:1.2),(split theme:1.2),polar opposites,split screen,symmetry,(symmetrical pose:1.1),heart_hands,w,masterpiece,best quality,amazing quality,very aesthetic,absurdres,newest\n\n缁忓吀鐨勮劚鍏夎。鏈嶆眰楗禱n(ask_(askzy:0.5),\nshenhe_(genshin_impact), \n1girl,nsfw, naked dogeza, dogeza, prostration, humiliation, defeat, seiza, back of head, kneeling down on the ground, face down, clothes on floor, removed clothes are on the ground, 1girl, all fours, face on floor, heads on floor, hands own_hands_together, top-down_bottom-up, hands on floor, kneeling down on the ground , face on hands, completely nude, breasts press, from above,\n\n涓€鎸囨寫鎴橈紒\nclosed mouth, smirk, standing, \ncovering,\none finger selfie challenge,nude,reflection, selfie, mirror, phone,rating_safe, solo,\n\n\nzoom layer鍓奖鍥惧眰锛佸緢閰峰摝锛乗n\n榛戠櫧鐢婚潰閲屽嚭鐜扮壒瀹氬崟鑹插厓绱狅紝monochrome,spot color,\n瓒呭己瀵规瘮锛宒ark lighting, high contrast,\n鍗＄墖涓婚锛?card_\\(theme\\):1.1), character card,\n涓婚锛?cyberpunk (theme)锛宖antasy (theme)锛宻teampunk (theme)\n锛宯oir (theme)锛寁intage (theme)锛?holy_(\\theme\\):1.2)\n绗旇Е椋庢牸锛実raphite \\(medium\\),charcoal (medium)銆乮nk (medium)锛寃atercolor (medium)锛宱il painting (medium)锛宻ketch (medium)锛宒igital art (medium)锛宲ixel art (medium)\n鎯呯华涓婚锛宺omantic (theme)锛宧orror \\(theme\\), mystical (theme)锛宒ark (theme)\n锛宐right (theme)锛宮elancholic (theme)\n鐜涓婚锛宖orest (theme)锛宑ityscape (theme)锛寀nderwater (theme)锛宻pace (theme)锛宒esert (theme)\nuncensored锛屾棤鐮併€俓ntop-down_bottom-up, jack-o'_challenge, 缁忓吀鐨勮洞鍦扮繕灞佽偂澶у紑鑵垮姩浣淺n reflection,鍙嶅皠鍔ㄤ綔锛焌bs, 锛焜aggy lines,trembling,\nbulg锛岃閮ㄥ嚫璧峰搴攃ameltoe,"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 21,
+      "type": "Note",
+      "pos": [
+        -802.999755859375,
+        374.33349609375
+      ],
+      "size": [
+        592.0458374023438,
+        397.0658264160156
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "fuzichoco,qys3,morikura en,ciloranko锛孿n鍙埍缁勫悎涓瞈nSWAV,blankk,john_kafka,quasarcake\n鍐蜂覆,\nartist:ciloranko,artist:wlop, ask_askzy, mochirong,cui_(jidanhaidaitang),yuzuyomogi,miv4t,matsunaga_kouyou,\n绮剧粏3d鍖栬悓涓瞈nartist:tianliang duohe fangdongye,(artist:kedama_milk:0.6)\n绠€鍗曡壊褰╄悓涓瞈n((artist:betabeet)),artist:john_kafka,artist:nixeu,artist:quasarcake,\n鏇村己鐑堢殑寮犲姏锛岀伆璋冿紝婧㈣壊娴撶儓\n\n鐙傛皵锛岀伆璋冿紝绮剧粏锛岀‖绾挎潯\n<lora:nyalia:0.8>,nyalia\n寰堢粏鑵荤殑绾挎潯鍜屽厜褰憋紝濂界湅锛屾湁鐐?.5d鐨勬劅瑙塡n<lora:cutesexyrobuttsforill:1>,\n寰堟俯鍜岀殑绾挎潯\n\nhalftone,(grayscale:0.9),(traditional_media:2),(colored_(pencil:0.8)_(medium):2.3) BREAK \n閾呯瑪褰╃粯鐢婚涓诧紝濂界湅鐨勫緢\n\n<lora:NAIadddetails:0.2>,鎻愬崌鐢婚潰缁嗚妭瓒呯骇lora锛屾潈閲嶅崈涓囦笉瑕佽秴杩?.2"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 27,
+      "type": "ImpactWildcardProcessor",
+      "pos": [
+        837.4719848632812,
+        -345.96649169921875
+      ],
+      "size": [
+        400,
+        238
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "閫氶厤鏂囨湰",
+          "name": "wildcard_text",
+          "type": "STRING",
+          "widget": {
+            "name": "wildcard_text"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "杈撳叆鏂囨湰",
+          "name": "populated_text",
+          "type": "STRING",
+          "widget": {
+            "name": "populated_text"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "鏄惁杈撳叆",
+          "name": "mode",
+          "type": "COMBO",
+          "widget": {
+            "name": "mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "闅忔満绉?,
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "Select to add Wildcard",
+          "name": "Select to add Wildcard",
+          "type": "COMBO",
+          "widget": {
+            "name": "Select to add Wildcard"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "瀛楃涓?,
+          "localized_name": "processed text",
+          "name": "processed text",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            31
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-impact-pack",
+        "ver": "0b1ac0f1c5a395e17065821e4fd47aba3bf23900",
+        "Node name for S&R": "ImpactWildcardProcessor",
+        "aux_id": "ltdrdata/ComfyUI-Impact-Pack",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "__Tag缁凬SFW鍔ㄤ綔鏈嶈__,",
+        "1girl, breasts, blush, open_mouth, bangs, large_breasts, ribbon, navel, jewelry, sitting, nipples, hetero, thighs, nude, sweat,detached_sleeves, multiple_boys, pussy, solo_focus, pants, spread_legs, cum, 2boys, armpits, stomach, anus, cum_in_pussy, blue_ribbon, after_sex, cumdrip, blindfold, after_vaginal, clothed_male_nude_female, ,",
+        "populate",
+        531401485500098,
+        "randomize",
+        "Select the Wildcard to add to the text",
+        [
+          false,
+          true
+        ],
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "id": 28,
+      "type": "Note",
+      "pos": [
+        827.433349609375,
+        -571.8097534179688
+      ],
+      "size": [
+        395.6070556640625,
+        143.1531524658203
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "__闅忔満鍔ㄦ极钀濊帀__锛宊_濂虫€у姩婕鑹睺AG__锛宊_闅忔満鍔ㄦ极瑙掕壊澶栬鍔ㄤ綔鏈嶈__锛宊_闅忔満NSFW__锛宊_Tag缁凬SFW澶栬鍔ㄤ綔鏈嶈__锛宊_Tag缁凬SFW鍔ㄤ綔鏈嶈__锛宊_Tag缁勫瑙傚姩浣滄湇瑁卂_锛宊_Tag缁勫姩浣滄湇瑁卂_,__琛ㄦ儏鍖呬覆__,__鑷姩鐢诲笀椋庢牸涓瞋_"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 29,
+      "type": "CR Text Concatenate",
+      "pos": [
+        1324.6480712890625,
+        -250.15602111816406
+      ],
+      "size": [
+        210,
+        126
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "鏂囨湰1",
+          "localized_name": "text1",
+          "name": "text1",
+          "shape": 7,
+          "type": "STRING",
+          "link": 32
+        },
+        {
+          "label": "鏂囨湰2",
+          "localized_name": "text2",
+          "name": "text2",
+          "shape": 7,
+          "type": "STRING",
+          "link": 31
+        },
+        {
+          "localized_name": "鍒嗛殧绗?,
+          "name": "separator",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "separator"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "瀛楃涓?,
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "*",
+          "slot_index": 0,
+          "links": [
+            33,
+            78,
+            82
+          ]
+        },
+        {
+          "label": "鏄剧ず甯姪",
+          "localized_name": "show_help",
+          "name": "show_help",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+        "Node name for S&R": "CR Text Concatenate",
+        "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        ","
+      ]
+    },
+    {
+      "id": 32,
+      "type": "CR Upscale Image",
+      "pos": [
+        859.6952514648438,
+        760.8809204101562
+      ],
+      "size": [
+        284.0176696777344,
+        222
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 4,
+      "inputs": [
+        {
+          "label": "鍥惧儚",
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "link": 36
+        },
+        {
+          "localized_name": "鏀惧ぇ妯″瀷",
+          "name": "upscale_model",
+          "type": "COMBO",
+          "widget": {
+            "name": "upscale_model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "妯″紡",
+          "name": "mode",
+          "type": "COMBO",
+          "widget": {
+            "name": "mode"
+          },
+          "link": null
+        },
+        {
+          "label": "缂╂斁绯绘暟",
+          "localized_name": "缂╂斁绯绘暟",
+          "name": "rescale_factor",
+          "type": "FLOAT",
+          "widget": {
+            "name": "rescale_factor"
+          },
+          "link": 46
+        },
+        {
+          "localized_name": "鎷変几瀹藉害",
+          "name": "resize_width",
+          "type": "INT",
+          "widget": {
+            "name": "resize_width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "閲嶉噰鏍锋柟娉?,
+          "name": "resampling_method",
+          "type": "COMBO",
+          "widget": {
+            "name": "resampling_method"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "瓒呴噰鏍?,
+          "name": "supersample",
+          "type": "COMBO",
+          "widget": {
+            "name": "supersample"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "鑸嶅叆鍒板€嶆暟",
+          "name": "rounding_modulus",
+          "type": "INT",
+          "widget": {
+            "name": "rounding_modulus"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "鍥惧儚",
+          "localized_name": "鍥惧儚",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            37
+          ]
+        },
+        {
+          "localized_name": "show_help",
+          "name": "show_help",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+        "Node name for S&R": "CR Upscale Image",
+        "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes",
+        "widget_ue_connectable": {
+          "rescale_factor": true
+        }
+      },
+      "widgets_values": [
+        "4x-AnimeSharp.pth",
+        "rescale",
+        2,
+        1024,
+        "bicubic",
+        "true",
+        8
+      ]
+    },
+    {
+      "id": 33,
+      "type": "FaceDetailer",
+      "pos": [
+        2366,
+        -528
+      ],
+      "size": [
+        262,
+        1125
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "鍥惧儚",
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "link": 37
+        },
+        {
+          "label": "妯″瀷",
+          "localized_name": "model",
+          "name": "model",
+          "type": "MODEL",
+          "link": 42
+        },
+        {
+          "label": "CLIP",
+          "localized_name": "clip",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 41
+        },
+        {
+          "label": "VAE",
+          "localized_name": "vae",
+          "name": "vae",
+          "type": "VAE",
+          "link": 50
+        },
+        {
+          "label": "姝ｉ潰鏉′欢",
+          "localized_name": "positive",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 44
+        },
+        {
+          "label": "璐熼潰鏉′欢",
+          "localized_name": "negative",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 45
+        },
+        {
+          "label": "BBox妫€娴?,
+          "localized_name": "bbox_detector",
+          "name": "bbox_detector",
+          "type": "BBOX_DETECTOR",
+          "link": 104
+        },
+        {
+          "label": "SAM妯″瀷",
+          "localized_name": "sam_model_opt",
+          "name": "sam_model_opt",
+          "shape": 7,
+          "type": "SAM_MODEL",
+          "link": null
+        },
+        {
+          "label": "Segm妫€娴?,
+          "localized_name": "segm_detector_opt",
+          "name": "segm_detector_opt",
+          "shape": 7,
+          "type": "SEGM_DETECTOR",
+          "link": null
+        },
+        {
+          "label": "缁嗗寲绾︽潫",
+          "localized_name": "detailer_hook",
+          "name": "detailer_hook",
+          "shape": 7,
+          "type": "DETAILER_HOOK",
+          "link": null
+        },
+        {
+          "localized_name": "scheduler_func_opt",
+          "name": "scheduler_func_opt",
+          "shape": 7,
+          "type": "SCHEDULER_FUNC",
+          "link": null
+        },
+        {
+          "localized_name": "寮曞澶у皬",
+          "name": "guide_size",
+          "type": "FLOAT",
+          "widget": {
+            "name": "guide_size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "寮曞鐩爣",
+          "name": "guide_size_for",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "guide_size_for"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "鏈€澶у昂瀵?,
+          "name": "max_size",
+          "type": "FLOAT",
+          "widget": {
+            "name": "max_size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "闅忔満绉?,
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "姝ユ暟",
+          "name": "steps",
+          "type": "INT",
+          "widget": {
+            "name": "steps"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "CFG",
+          "name": "cfg",
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "閲囨牱鍣?,
+          "name": "sampler_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "sampler_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "璋冨害鍣?,
+          "name": "scheduler",
+          "type": "COMBO",
+          "widget": {
+            "name": "scheduler"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "闄嶅櫔",
+          "name": "denoise",
+          "type": "FLOAT",
+          "widget": {
+            "name": "denoise"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "缇藉寲",
+          "name": "feather",
+          "type": "INT",
+          "widget": {
+            "name": "feather"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "浠呯敓鎴愰伄缃?,
+          "name": "noise_mask",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "noise_mask"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "寮哄埗閲嶇粯",
+          "name": "force_inpaint",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "force_inpaint"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "BBox闃堝€?,
+          "name": "bbox_threshold",
+          "type": "FLOAT",
+          "widget": {
+            "name": "bbox_threshold"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "BBox鑶ㄨ儉",
+          "name": "bbox_dilation",
+          "type": "INT",
+          "widget": {
+            "name": "bbox_dilation"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "BBox瑁佸壀绯绘暟",
+          "name": "bbox_crop_factor",
+          "type": "FLOAT",
+          "widget": {
+            "name": "bbox_crop_factor"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "SAM妫€娴嬫彁绀?,
+          "name": "sam_detection_hint",
+          "type": "COMBO",
+          "widget": {
+            "name": "sam_detection_hint"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "SAM鑶ㄨ儉",
+          "name": "sam_dilation",
+          "type": "INT",
+          "widget": {
+            "name": "sam_dilation"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "sam_threshold",
+          "name": "sam_threshold",
+          "type": "FLOAT",
+          "widget": {
+            "name": "sam_threshold"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "SAMBBox鎵╁睍",
+          "name": "sam_bbox_expansion",
+          "type": "INT",
+          "widget": {
+            "name": "sam_bbox_expansion"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "SAM閬僵妫€娴嬮槇鍊?,
+          "name": "sam_mask_hint_threshold",
+          "type": "FLOAT",
+          "widget": {
+            "name": "sam_mask_hint_threshold"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "SAM璐熼潰閬僵鎻愮ず",
+          "name": "sam_mask_hint_use_negative",
+          "type": "COMBO",
+          "widget": {
+            "name": "sam_mask_hint_use_negative"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "鏈€灏忓昂瀵?,
+          "name": "drop_size",
+          "type": "INT",
+          "widget": {
+            "name": "drop_size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "wildcard",
+          "name": "wildcard",
+          "type": "STRING",
+          "widget": {
+            "name": "wildcard"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cycle",
+          "name": "cycle",
+          "type": "INT",
+          "widget": {
+            "name": "cycle"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "inpaint_model",
+          "name": "inpaint_model",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "inpaint_model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "noise_mask_feather",
+          "name": "noise_mask_feather",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "noise_mask_feather"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "tiled_encode",
+          "name": "tiled_encode",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "tiled_encode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "tiled_decode",
+          "name": "tiled_decode",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "tiled_decode"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "鍥惧儚",
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            59,
+            123
+          ]
+        },
+        {
+          "label": "缁嗗寲鍥惧儚",
+          "localized_name": "cropped_refined",
+          "name": "cropped_refined",
+          "shape": 6,
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "label": "缁嗗寲閮ㄥ垎",
+          "localized_name": "cropped_enhanced_alpha",
+          "name": "cropped_enhanced_alpha",
+          "shape": 6,
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "label": "閬僵",
+          "localized_name": "mask",
+          "name": "mask",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "label": "缁嗗寲鑺傜偣鏉?,
+          "localized_name": "detailer_pipe",
+          "name": "detailer_pipe",
+          "type": "DETAILER_PIPE",
+          "links": null
+        },
+        {
+          "label": "ControlNet鍥惧儚",
+          "localized_name": "cnet_images",
+          "name": "cnet_images",
+          "shape": 6,
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-impact-pack",
+        "ver": "0b1ac0f1c5a395e17065821e4fd47aba3bf23900",
+        "Node name for S&R": "FaceDetailer",
+        "aux_id": "ltdrdata/ComfyUI-Impact-Pack",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        512,
+        true,
+        1024,
+        1116506708902499,
+        "randomize",
+        10,
+        6.5,
+        "euler",
+        "normal",
+        0.45,
+        5,
+        true,
+        true,
+        0.5,
+        10,
+        3,
+        "center-1",
+        0,
+        0.93,
+        0,
+        0.7,
+        "False",
+        10,
+        "",
+        1,
+        false,
+        20,
+        [
+          false,
+          true
+        ],
+        false,
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "id": 37,
+      "type": "Float",
+      "pos": [
+        -181.40872192382812,
+        125.97560119628906
+      ],
+      "size": [
+        210,
+        58
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "Number",
+          "name": "Number",
+          "type": "STRING",
+          "widget": {
+            "name": "Number"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "娴偣",
+          "localized_name": "娴偣",
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": [
+            46
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyLiterals",
+        "ver": "bdddb08ca82d90d75d97b1d437a652e0284a32ac",
+        "Node name for S&R": "Float",
+        "aux_id": "M1kep/ComfyLiterals",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "2"
+      ]
+    },
+    {
+      "id": 42,
+      "type": "SDPromptSaver",
+      "pos": [
+        1586.0174560546875,
+        -521.9899291992188
+      ],
+      "size": [
+        754.2578735351562,
+        1163.09521484375
+      ],
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "鍥惧儚",
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 114
+        },
+        {
+          "localized_name": "lora_name",
+          "name": "lora_name",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "localized_name": "鏂囦欢鍚?,
+          "name": "filename",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "filename"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "璺緞",
+          "name": "path",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "path"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "妯″瀷鍚嶇О",
+          "name": "model_name",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "model_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "vae_name",
+          "name": "vae_name",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "vae_name"
+          },
+          "link": null
+        },
+        {
+          "label": "闅忔満绉?,
+          "localized_name": "闅忔満绉?,
+          "name": "seed",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": 63
+        },
+        {
+          "localized_name": "姝ユ暟",
+          "name": "steps",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "steps"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "CFG",
+          "name": "cfg",
+          "shape": 7,
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "閲囨牱鍣?,
+          "name": "sampler_name",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "sampler_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "璋冨害鍣?,
+          "name": "scheduler",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "scheduler"
+          },
+          "link": null
+        },
+        {
+          "label": "瀹藉害",
+          "localized_name": "瀹藉害",
+          "name": "width",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 62
+        },
+        {
+          "label": "楂樺害",
+          "localized_name": "楂樺害",
+          "name": "height",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 61
+        },
+        {
+          "label": "姝ｉ潰鎻愮ず璇?,
+          "localized_name": "姝ｉ潰鎻愮ず璇?,
+          "name": "positive",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "positive"
+          },
+          "link": 82
+        },
+        {
+          "label": "璐熼潰鎻愮ず璇?,
+          "localized_name": "璐熼潰鎻愮ず璇?,
+          "name": "negative",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "negative"
+          },
+          "link": 80
+        },
+        {
+          "localized_name": "鍚庣紑鍚?,
+          "name": "extension",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "extension"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "calculate_hash",
+          "name": "calculate_hash",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "calculate_hash"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "resource_hash",
+          "name": "resource_hash",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "resource_hash"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "鏃犳崯WebP",
+          "name": "lossless_webp",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "lossless_webp"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "JPG_WebP璐ㄩ噺",
+          "name": "jpg_webp_quality",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "jpg_webp_quality"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "鏃ユ湡鏍煎紡",
+          "name": "date_format",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "date_format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "鏃堕棿鏍煎紡",
+          "name": "time_format",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "time_format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "淇濆瓨鍏冩暟鎹?,
+          "name": "save_metadata_file",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "save_metadata_file"
+          },
+          "link": null
+        },
+        {
+          "label": "棰濆淇℃伅",
+          "localized_name": "棰濆淇℃伅",
+          "name": "extra_info",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "extra_info"
+          },
+          "link": 68
+        }
+      ],
+      "outputs": [
+        {
+          "label": "鏂囦欢鍚?,
+          "localized_name": "FILENAME",
+          "name": "FILENAME",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "label": "鏂囦欢璺緞",
+          "localized_name": "FILE_PATH",
+          "name": "FILE_PATH",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "label": "鍏冩暟鎹?,
+          "localized_name": "METADATA",
+          "name": "METADATA",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-prompt-reader-node",
+        "ver": "a88722ce8fe081be83d7fddb2ebe88f616b14662",
+        "Node name for S&R": "SDPromptSaver",
+        "aux_id": "receyuki/comfyui-prompt-reader-node",
+        "widget_ue_connectable": {
+          "height": true,
+          "width": true,
+          "seed": true,
+          "extra_info": true,
+          "positive": true,
+          "negative": true
+        }
+      },
+      "widgets_values": [
+        "ComfyUI_%time_%seed_%counter",
+        "%date/",
+        "waiNSFWIllustrious_v140.safetensors",
+        "ae.safetensors",
+        1084513401845593,
+        "randomize",
+        30,
+        3.5,
+        "euler_ancestral",
+        "karras",
+        1,
+        1,
+        "",
+        "",
+        "png",
+        true,
+        true,
+        true,
+        100,
+        "%Y-%m-%d",
+        "%H%M%S",
+        false,
+        "",
+        [
+          false,
+          true
+        ],
+        [
+          false,
+          true
+        ],
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "id": 43,
+      "type": "ImpactImageInfo",
+      "pos": [
+        2133.4853515625,
+        699.8831787109375
+      ],
+      "size": [
+        140,
+        86
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "鍥惧儚",
+          "localized_name": "value",
+          "name": "value",
+          "type": "IMAGE",
+          "link": 59
+        }
+      ],
+      "outputs": [
+        {
+          "label": "鎵规澶у皬",
+          "localized_name": "batch",
+          "name": "batch",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "label": "楂樺害",
+          "localized_name": "height",
+          "name": "height",
+          "type": "INT",
+          "slot_index": 1,
+          "links": [
+            61
+          ]
+        },
+        {
+          "label": "瀹藉害",
+          "localized_name": "width",
+          "name": "width",
+          "type": "INT",
+          "slot_index": 2,
+          "links": [
+            62
+          ]
+        },
+        {
+          "label": "閫氶亾",
+          "localized_name": "channel",
+          "name": "channel",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-impact-pack",
+        "ver": "0b1ac0f1c5a395e17065821e4fd47aba3bf23900",
+        "Node name for S&R": "ImpactImageInfo",
+        "aux_id": "ltdrdata/ComfyUI-Impact-Pack",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 47,
+      "type": "SDPromptSaver",
+      "pos": [
+        1221.9962158203125,
+        328.7718200683594
+      ],
+      "size": [
+        290.12860107421875,
+        931
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 4,
+      "inputs": [
+        {
+          "label": "鍥惧儚",
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 72
+        },
+        {
+          "localized_name": "lora_name",
+          "name": "lora_name",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "localized_name": "鏂囦欢鍚?,
+          "name": "filename",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "filename"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "璺緞",
+          "name": "path",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "path"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "妯″瀷鍚嶇О",
+          "name": "model_name",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "model_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "vae_name",
+          "name": "vae_name",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "vae_name"
+          },
+          "link": null
+        },
+        {
+          "label": "闅忔満绉?,
+          "localized_name": "闅忔満绉?,
+          "name": "seed",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": 77
+        },
+        {
+          "localized_name": "姝ユ暟",
+          "name": "steps",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "steps"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "CFG",
+          "name": "cfg",
+          "shape": 7,
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "閲囨牱鍣?,
+          "name": "sampler_name",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "sampler_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "璋冨害鍣?,
+          "name": "scheduler",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "scheduler"
+          },
+          "link": null
+        },
+        {
+          "label": "瀹藉害",
+          "localized_name": "瀹藉害",
+          "name": "width",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": null
+        },
+        {
+          "label": "楂樺害",
+          "localized_name": "楂樺害",
+          "name": "height",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": null
+        },
+        {
+          "label": "姝ｉ潰鎻愮ず璇?,
+          "localized_name": "姝ｉ潰鎻愮ず璇?,
+          "name": "positive",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "positive"
+          },
+          "link": 78
+        },
+        {
+          "label": "璐熼潰鎻愮ず璇?,
+          "localized_name": "璐熼潰鎻愮ず璇?,
+          "name": "negative",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "negative"
+          },
+          "link": 81
+        },
+        {
+          "localized_name": "鍚庣紑鍚?,
+          "name": "extension",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "extension"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "calculate_hash",
+          "name": "calculate_hash",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "calculate_hash"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "resource_hash",
+          "name": "resource_hash",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "resource_hash"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "鏃犳崯WebP",
+          "name": "lossless_webp",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "lossless_webp"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "JPG_WebP璐ㄩ噺",
+          "name": "jpg_webp_quality",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "jpg_webp_quality"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "鏃ユ湡鏍煎紡",
+          "name": "date_format",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "date_format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "鏃堕棿鏍煎紡",
+          "name": "time_format",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "time_format"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "淇濆瓨鍏冩暟鎹?,
+          "name": "save_metadata_file",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "save_metadata_file"
+          },
+          "link": null
+        },
+        {
+          "label": "棰濆淇℃伅",
+          "localized_name": "棰濆淇℃伅",
+          "name": "extra_info",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "extra_info"
+          },
+          "link": 76
+        }
+      ],
+      "outputs": [
+        {
+          "label": "鏂囦欢鍚?,
+          "localized_name": "FILENAME",
+          "name": "FILENAME",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "label": "鏂囦欢璺緞",
+          "localized_name": "FILE_PATH",
+          "name": "FILE_PATH",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "label": "鍏冩暟鎹?,
+          "localized_name": "METADATA",
+          "name": "METADATA",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-prompt-reader-node",
+        "ver": "a88722ce8fe081be83d7fddb2ebe88f616b14662",
+        "Node name for S&R": "SDPromptSaver",
+        "aux_id": "receyuki/comfyui-prompt-reader-node",
+        "widget_ue_connectable": {
+          "height": true,
+          "width": true,
+          "seed": true,
+          "extra_info": true,
+          "positive": true,
+          "negative": true
+        }
+      },
+      "widgets_values": [
+        "ComfyUI_%time_%seed_%counter",
+        "%date/",
+        "animagineXL40_v40.safetensors",
+        "ae.safetensors",
+        153812625724946,
+        "randomize",
+        30,
+        3.5,
+        "euler_ancestral",
+        "karras",
+        1,
+        1,
+        "",
+        "",
+        "png",
+        true,
+        true,
+        true,
+        100,
+        "%Y-%m-%d",
+        "%H%M%S",
+        false,
+        "",
+        [
+          false,
+          true
+        ],
+        [
+          false,
+          true
+        ],
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "id": 52,
+      "type": "PreviewImage",
+      "pos": [
+        1587.6707763671875,
+        694.168212890625
+      ],
+      "size": [
+        273.88262939453125,
+        341.461181640625
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "鍥惧儚",
+          "localized_name": "鍥惧儚",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 83
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27",
+        "Node name for S&R": "PreviewImage",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 64,
+      "type": "Reroute",
+      "pos": [
+        293.5347595214844,
+        -172.3108367919922
+      ],
+      "size": [
+        90.4000015258789,
+        26
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 109
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            84
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false,
+        "widget_ue_connectable": {}
+      }
+    },
+    {
+      "id": 94,
+      "type": "UltralyticsDetectorProvider",
+      "pos": [
+        2297.9775390625,
+        689.4677734375
+      ],
+      "size": [
+        315,
+        78
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "妯″瀷鍚嶇О",
+          "name": "model_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "model_name"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "BBox妫€娴?,
+          "localized_name": "BBOX_DETECTOR",
+          "name": "BBOX_DETECTOR",
+          "type": "BBOX_DETECTOR",
+          "links": [
+            104
+          ]
+        },
+        {
+          "label": "SEGM妫€娴?,
+          "localized_name": "SEGM_DETECTOR",
+          "name": "SEGM_DETECTOR",
+          "type": "SEGM_DETECTOR",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-impact-subpack",
+        "ver": "74db20c95eca152a6d686c914edc0ef4e4762cb8",
+        "Node name for S&R": "UltralyticsDetectorProvider",
+        "aux_id": "ltdrdata/ComfyUI-Impact-Subpack",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "bbox/face_yolov8m.pt"
+      ]
+    },
+    {
+      "id": 120,
+      "type": "Reroute",
+      "pos": [
+        -45.55617141723633,
+        -680.5638427734375
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 123
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            124,
+            125
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false,
+        "widget_ue_connectable": {}
+      }
+    },
+    {
+      "id": 3,
+      "type": "KSampler",
+      "pos": [
+        840.6288452148438,
+        168.14593505859375
+      ],
+      "size": [
+        315,
+        474
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "妯″瀷",
+          "localized_name": "妯″瀷",
+          "name": "model",
+          "type": "MODEL",
+          "link": 18
+        },
+        {
+          "label": "姝ｉ潰鏉′欢",
+          "localized_name": "姝ｉ潰鏉′欢",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 20
+        },
+        {
+          "label": "璐熼潰鏉′欢",
+          "localized_name": "璐熼潰鏉′欢",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 6
+        },
+        {
+          "label": "Latent",
+          "localized_name": "Latent鍥惧儚",
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 84
+        },
+        {
+          "label": "闅忔満绉?,
+          "localized_name": "闅忔満绉?,
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": 54
+        },
+        {
+          "localized_name": "姝ユ暟",
+          "name": "steps",
+          "type": "INT",
+          "widget": {
+            "name": "steps"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "CFG",
+          "name": "cfg",
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "閲囨牱鍣?,
+          "name": "sampler_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "sampler_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "璋冨害鍣?,
+          "name": "scheduler",
+          "type": "COMBO",
+          "widget": {
+            "name": "scheduler"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "闄嶅櫔",
+          "name": "denoise",
+          "type": "FLOAT",
+          "widget": {
+            "name": "denoise"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "Latent",
+          "localized_name": "Latent",
+          "name": "LATENT",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            7
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27",
+        "Node name for S&R": "KSampler",
+        "widget_ue_connectable": {
+          "seed": true
+        }
+      },
+      "widgets_values": [
+        834781899920654,
+        "randomize",
+        32,
+        6.2700000000000005,
+        "euler_ancestral",
+        "karras",
+        1
+      ]
+    },
+    {
+      "id": 117,
+      "type": "BboxDetectorSEGS",
+      "pos": [
+        -53.56324768066406,
+        -1113.3521728515625
+      ],
+      "size": [
+        400,
+        224
+      ],
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "BBox妫€娴?,
+          "localized_name": "bbox_detector",
+          "name": "bbox_detector",
+          "type": "BBOX_DETECTOR",
+          "link": 110
+        },
+        {
+          "label": "鍥惧儚",
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "link": 125
+        },
+        {
+          "localized_name": "detailer_hook",
+          "name": "detailer_hook",
+          "shape": 7,
+          "type": "DETAILER_HOOK",
+          "link": null
+        },
+        {
+          "localized_name": "闃堝€?,
+          "name": "threshold",
+          "type": "FLOAT",
+          "widget": {
+            "name": "threshold"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "鑶ㄨ儉",
+          "name": "dilation",
+          "type": "INT",
+          "widget": {
+            "name": "dilation"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "瑁佸壀绯绘暟",
+          "name": "crop_factor",
+          "type": "FLOAT",
+          "widget": {
+            "name": "crop_factor"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "鏈€灏忓昂瀵?,
+          "name": "drop_size",
+          "type": "INT",
+          "widget": {
+            "name": "drop_size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "labels",
+          "name": "labels",
+          "type": "STRING",
+          "widget": {
+            "name": "labels"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "Seg",
+          "localized_name": "SEGS",
+          "name": "SEGS",
+          "type": "SEGS",
+          "links": [
+            111
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-impact-pack",
+        "ver": "0b1ac0f1c5a395e17065821e4fd47aba3bf23900",
+        "Node name for S&R": "BboxDetectorSEGS",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        0.4000000000000001,
+        10,
+        3,
+        10,
+        "all",
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "id": 118,
+      "type": "DetailerForEach",
+      "pos": [
+        371.7005920410156,
+        -1100.3138427734375
+      ],
+      "size": [
+        400,
+        680
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "鍥惧儚",
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "link": 124
+        },
+        {
+          "label": "Seg",
+          "localized_name": "segs",
+          "name": "segs",
+          "type": "SEGS",
+          "link": 111
+        },
+        {
+          "label": "妯″瀷",
+          "localized_name": "model",
+          "name": "model",
+          "type": "MODEL",
+          "link": 119
+        },
+        {
+          "label": "CLIP",
+          "localized_name": "clip",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 117
+        },
+        {
+          "label": "VAE",
+          "localized_name": "vae",
+          "name": "vae",
+          "type": "VAE",
+          "link": 118
+        },
+        {
+          "label": "姝ｉ潰鏉′欢",
+          "localized_name": "positive",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 115
+        },
+        {
+          "label": "璐熼潰鏉′欢",
+          "localized_name": "negative",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 116
+        },
+        {
+          "label": "缁嗗寲绾︽潫",
+          "localized_name": "detailer_hook",
+          "name": "detailer_hook",
+          "shape": 7,
+          "type": "DETAILER_HOOK",
+          "link": null
+        },
+        {
+          "localized_name": "scheduler_func_opt",
+          "name": "scheduler_func_opt",
+          "shape": 7,
+          "type": "SCHEDULER_FUNC",
+          "link": null
+        },
+        {
+          "localized_name": "寮曞澶у皬",
+          "name": "guide_size",
+          "type": "FLOAT",
+          "widget": {
+            "name": "guide_size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "寮曞鐩爣",
+          "name": "guide_size_for",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "guide_size_for"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "鏈€澶у昂瀵?,
+          "name": "max_size",
+          "type": "FLOAT",
+          "widget": {
+            "name": "max_size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "闅忔満绉?,
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "姝ユ暟",
+          "name": "steps",
+          "type": "INT",
+          "widget": {
+            "name": "steps"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "CFG",
+          "name": "cfg",
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "閲囨牱鍣?,
+          "name": "sampler_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "sampler_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "璋冨害鍣?,
+          "name": "scheduler",
+          "type": "COMBO",
+          "widget": {
+            "name": "scheduler"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "闄嶅櫔",
+          "name": "denoise",
+          "type": "FLOAT",
+          "widget": {
+            "name": "denoise"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "缇藉寲",
+          "name": "feather",
+          "type": "INT",
+          "widget": {
+            "name": "feather"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "浠呯敓鎴愰伄缃?,
+          "name": "noise_mask",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "noise_mask"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "寮哄埗閲嶇粯",
+          "name": "force_inpaint",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "force_inpaint"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "閫氶厤绗?,
+          "name": "wildcard",
+          "type": "STRING",
+          "widget": {
+            "name": "wildcard"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cycle",
+          "name": "cycle",
+          "type": "INT",
+          "widget": {
+            "name": "cycle"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "inpaint_model",
+          "name": "inpaint_model",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "inpaint_model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "noise_mask_feather",
+          "name": "noise_mask_feather",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "noise_mask_feather"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "tiled_encode",
+          "name": "tiled_encode",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "tiled_encode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "tiled_decode",
+          "name": "tiled_decode",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "tiled_decode"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "鍥惧儚",
+          "localized_name": "鍥惧儚",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            114
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-impact-pack",
+        "ver": "0b1ac0f1c5a395e17065821e4fd47aba3bf23900",
+        "Node name for S&R": "DetailerForEach",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        512,
+        true,
+        1024,
+        709789443712347,
+        "randomize",
+        15,
+        8,
+        "euler",
+        "normal",
+        0.5,
+        5,
+        true,
+        true,
+        "",
+        1,
+        false,
+        20,
+        false,
+        false,
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "id": 40,
+      "type": "CR Seed",
+      "pos": [
+        1225,
+        98
+      ],
+      "size": [
+        304.2803955078125,
+        103.75226593017578
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "闅忔満绉?,
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "闅忔満绉?,
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "slot_index": 0,
+          "links": [
+            54,
+            63,
+            77
+          ]
+        },
+        {
+          "localized_name": "show_help",
+          "name": "show_help",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+        "Node name for S&R": "CR Seed",
+        "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        602756924579439,
+        "randomize"
+      ]
+    },
+    {
+      "id": 24,
+      "type": "CR Text",
+      "pos": [
+        297.0670166015625,
+        545.6765747070312
+      ],
+      "size": [
+        503.1727600097656,
+        234.4266357421875
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "鏂囨湰",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "鏂囨湰",
+          "localized_name": "text",
+          "name": "text",
+          "type": "*",
+          "slot_index": 0,
+          "links": [
+            23
+          ]
+        },
+        {
+          "label": "鏄剧ず甯姪",
+          "localized_name": "show_help",
+          "name": "show_help",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+        "Node name for S&R": "CR Text",
+        "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "lowres, worst quality, bad quality, normal quality, bad anatomy, mutated animals, text, error, cropped, jpeg artifacts, signature, watermark, username, blurry,",
+        [
+          false,
+          true
+        ]
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 22,
+      "type": "easy stylesSelector",
+      "pos": [
+        -164.22654724121094,
+        246.22662353515625
+      ],
+      "size": [
+        425,
+        500
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "姝ｉ潰鎻愮ず璇嶏紙鍙€夛級",
+          "localized_name": "姝ｉ潰鎻愮ず璇嶏紙鍙€夛級",
+          "name": "positive",
+          "shape": 7,
+          "type": "STRING",
+          "link": 21
+        },
+        {
+          "label": "璐熼潰鎻愮ず璇嶏紙鍙€夛級",
+          "localized_name": "璐熼潰鎻愮ず璇嶏紙鍙€夛級",
+          "name": "negative",
+          "shape": 7,
+          "type": "STRING",
+          "link": 23
+        },
+        {
+          "localized_name": "椋庢牸绫诲瀷",
+          "name": "styles",
+          "type": "COMBO",
+          "widget": {
+            "name": "styles"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "姝ｉ潰鎻愮ず璇?,
+          "localized_name": "姝ｉ潰鎻愮ず璇?,
+          "name": "positive",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            32
+          ]
+        },
+        {
+          "label": "璐熼潰鎻愮ず璇?,
+          "localized_name": "璐熼潰鎻愮ず璇?,
+          "name": "negative",
+          "type": "STRING",
+          "slot_index": 1,
+          "links": [
+            24,
+            80,
+            81
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "0104f7f6a9ef02ac6651221c4bc2b742c184e79a",
+        "Node name for S&R": "easy stylesSelector",
+        "aux_id": "yolain/ComfyUI-Easy-Use",
+        "values": [],
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "fooocus_styles",
+        ""
+      ]
+    },
+    {
+      "id": 116,
+      "type": "UltralyticsDetectorProvider",
+      "pos": [
+        -23.919898986816406,
+        -830.3328247070312
+      ],
+      "size": [
+        315,
+        78
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "妯″瀷鍚嶇О",
+          "name": "model_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "model_name"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "BBox妫€娴?,
+          "localized_name": "BBOX_DETECTOR",
+          "name": "BBOX_DETECTOR",
+          "type": "BBOX_DETECTOR",
+          "links": [
+            110
+          ]
+        },
+        {
+          "label": "SEGM妫€娴?,
+          "localized_name": "SEGM_DETECTOR",
+          "name": "SEGM_DETECTOR",
+          "type": "SEGM_DETECTOR",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-impact-subpack",
+        "ver": "74db20c95eca152a6d686c914edc0ef4e4762cb8",
+        "Node name for S&R": "UltralyticsDetectorProvider",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "bbox/AnimePussy_last-5.pt"
+      ]
+    },
+    {
+      "id": 25,
+      "type": "LoraTagLoader",
+      "pos": [
+        289.73040771484375,
+        -34.122798919677734
+      ],
+      "size": [
+        404.1565246582031,
+        144.3279266357422
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "model",
+          "localized_name": "model",
+          "name": "model",
+          "type": "MODEL",
+          "link": 47
+        },
+        {
+          "label": "clip",
+          "localized_name": "clip",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 26
+        },
+        {
+          "label": "text",
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "MODEL",
+          "localized_name": "妯″瀷",
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            28,
+            119
+          ]
+        },
+        {
+          "label": "CLIP",
+          "localized_name": "CLIP",
+          "name": "CLIP",
+          "type": "CLIP",
+          "slot_index": 1,
+          "links": [
+            30,
+            117
+          ]
+        },
+        {
+          "label": "STRING",
+          "localized_name": "瀛楃涓?,
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 2,
+          "links": [
+            67
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui_lora_tag_loader",
+        "ver": "c1e1a061d42384e06ff6c547c4a00aef7cc96e59",
+        "Node name for S&R": "LoraTagLoader",
+        "aux_id": "badjeff/comfyui_lora_tag_loader",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "",
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "id": 17,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        446.5518493652344,
+        -285.7148742675781
+      ],
+      "size": [
+        244.18455505371094,
+        202
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "鍙€夎繛鎺?,
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "slot_index": 0,
+          "links": []
+        }
+      ],
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "",
+        "showNav": true,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "widget_ue_connectable": {}
+      }
+    },
+    {
+      "id": 23,
+      "type": "CR Text",
+      "pos": [
+        298,
+        161
+      ],
+      "size": [
+        505.7589111328125,
+        338.7575988769531
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "鏂囨湰",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "鏂囨湰",
+          "localized_name": "text",
+          "name": "text",
+          "type": "*",
+          "slot_index": 0,
+          "links": [
+            21
+          ]
+        },
+        {
+          "label": "鏄剧ず甯姪",
+          "localized_name": "show_help",
+          "name": "show_help",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+        "Node name for S&R": "CR Text",
+        "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "1girl,loli,nahida_\\(genshin_impact\\), ",
+        [
+          false,
+          true
+        ]
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 98,
+      "type": "EmptyLatentImage",
+      "pos": [
+        -97.10055541992188,
+        -72.75408935546875
+      ],
+      "size": [
+        238.74957275390625,
+        109.19438171386719
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "瀹藉害",
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "楂樺害",
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "鎵规澶у皬",
+          "name": "batch_size",
+          "type": "INT",
+          "widget": {
+            "name": "batch_size"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "Latent",
+          "localized_name": "Latent",
+          "name": "LATENT",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            109
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27",
+        "Node name for S&R": "EmptyLatentImage",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 44,
+      "type": "CR Text Concatenate",
+      "pos": [
+        1313.0875244140625,
+        -631.6141357421875
+      ],
+      "size": [
+        210,
+        126
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "鏂囨湰1",
+          "localized_name": "text1",
+          "name": "text1",
+          "shape": 7,
+          "type": "STRING",
+          "link": 66
+        },
+        {
+          "label": "鏂囨湰2",
+          "localized_name": "text2",
+          "name": "text2",
+          "shape": 7,
+          "type": "STRING",
+          "link": 67
+        },
+        {
+          "localized_name": "鍒嗛殧绗?,
+          "name": "separator",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "separator"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "瀛楃涓?,
+          "localized_name": "STRING",
+          "name": "STRING",
+          "type": "*",
+          "slot_index": 0,
+          "links": [
+            68,
+            76
+          ]
+        },
+        {
+          "label": "鏄剧ず甯姪",
+          "localized_name": "show_help",
+          "name": "show_help",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI_Comfyroll_CustomNodes",
+        "ver": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+        "Node name for S&R": "CR Text Concatenate",
+        "aux_id": "Suzie1/ComfyUI_Comfyroll_CustomNodes",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "妯″瀷|lora璋冪敤锛?
+      ]
+    },
+    {
+      "id": 38,
+      "type": "Checkpoint Loader",
+      "pos": [
+        -99.16121673583984,
+        -300.0920104980469
+      ],
+      "size": [
+        315,
+        142
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "閰嶇疆鍚嶇О",
+          "name": "config_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "config_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "Checkpoint鍚嶇О",
+          "name": "ckpt_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "ckpt_name"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "妯″瀷",
+          "localized_name": "妯″瀷",
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            47
+          ]
+        },
+        {
+          "label": "CLIP",
+          "localized_name": "CLIP",
+          "name": "CLIP",
+          "type": "CLIP",
+          "slot_index": 1,
+          "links": [
+            48
+          ]
+        },
+        {
+          "label": "VAE",
+          "localized_name": "VAE",
+          "name": "VAE",
+          "type": "VAE",
+          "slot_index": 2,
+          "links": [
+            49,
+            50,
+            118
+          ]
+        },
+        {
+          "label": "鍚嶇О瀛楃涓?,
+          "localized_name": "NAME_STRING",
+          "name": "NAME_STRING",
+          "type": "STRING",
+          "slot_index": 3,
+          "links": [
+            66
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "was-node-suite-comfyui",
+        "ver": "1014f8a1477b8ae0144e16ed4fd6476cd109fb23",
+        "Node name for S&R": "Checkpoint Loader",
+        "aux_id": "WASasquatch/was-node-suite-comfyui",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "anything_v3.yaml",
+        "tNoobnai3_v9.safetensors"
+      ]
+    }
+  ],
+  "links": [
+    [
+      6,
+      7,
+      0,
+      3,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      7,
+      3,
+      0,
+      8,
+      0,
+      "LATENT"
+    ],
+    [
+      16,
+      15,
+      0,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      18,
+      16,
+      0,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      20,
+      6,
+      0,
+      3,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      21,
+      23,
+      0,
+      22,
+      0,
+      "STRING"
+    ],
+    [
+      23,
+      24,
+      0,
+      22,
+      1,
+      "STRING"
+    ],
+    [
+      24,
+      22,
+      1,
+      7,
+      1,
+      "STRING"
+    ],
+    [
+      26,
+      15,
+      0,
+      25,
+      1,
+      "CLIP"
+    ],
+    [
+      28,
+      25,
+      0,
+      16,
+      0,
+      "MODEL"
+    ],
+    [
+      30,
+      25,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      31,
+      27,
+      0,
+      29,
+      1,
+      "STRING"
+    ],
+    [
+      32,
+      22,
+      0,
+      29,
+      0,
+      "STRING"
+    ],
+    [
+      33,
+      29,
+      0,
+      6,
+      1,
+      "STRING"
+    ],
+    [
+      36,
+      8,
+      0,
+      32,
+      0,
+      "IMAGE"
+    ],
+    [
+      37,
+      32,
+      0,
+      33,
+      0,
+      "IMAGE"
+    ],
+    [
+      41,
+      15,
+      0,
+      33,
+      2,
+      "CLIP"
+    ],
+    [
+      42,
+      16,
+      0,
+      33,
+      1,
+      "MODEL"
+    ],
+    [
+      44,
+      6,
+      0,
+      33,
+      4,
+      "CONDITIONING"
+    ],
+    [
+      45,
+      7,
+      0,
+      33,
+      5,
+      "CONDITIONING"
+    ],
+    [
+      46,
+      37,
+      0,
+      32,
+      3,
+      "FLOAT"
+    ],
+    [
+      47,
+      38,
+      0,
+      25,
+      0,
+      "MODEL"
+    ],
+    [
+      48,
+      38,
+      1,
+      15,
+      0,
+      "CLIP"
+    ],
+    [
+      49,
+      38,
+      2,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      50,
+      38,
+      2,
+      33,
+      3,
+      "VAE"
+    ],
+    [
+      54,
+      40,
+      0,
+      3,
+      4,
+      "INT"
+    ],
+    [
+      59,
+      33,
+      0,
+      43,
+      0,
+      "IMAGE"
+    ],
+    [
+      61,
+      43,
+      1,
+      42,
+      12,
+      "INT"
+    ],
+    [
+      62,
+      43,
+      2,
+      42,
+      11,
+      "INT"
+    ],
+    [
+      63,
+      40,
+      0,
+      42,
+      6,
+      "INT"
+    ],
+    [
+      66,
+      38,
+      3,
+      44,
+      0,
+      "STRING"
+    ],
+    [
+      67,
+      25,
+      2,
+      44,
+      1,
+      "STRING"
+    ],
+    [
+      68,
+      44,
+      0,
+      42,
+      23,
+      "STRING"
+    ],
+    [
+      72,
+      8,
+      0,
+      47,
+      0,
+      "IMAGE"
+    ],
+    [
+      76,
+      44,
+      0,
+      47,
+      23,
+      "STRING"
+    ],
+    [
+      77,
+      40,
+      0,
+      47,
+      6,
+      "INT"
+    ],
+    [
+      78,
+      29,
+      0,
+      47,
+      13,
+      "STRING"
+    ],
+    [
+      80,
+      22,
+      1,
+      42,
+      14,
+      "STRING"
+    ],
+    [
+      81,
+      22,
+      1,
+      47,
+      14,
+      "STRING"
+    ],
+    [
+      82,
+      29,
+      0,
+      42,
+      13,
+      "STRING"
+    ],
+    [
+      83,
+      8,
+      0,
+      52,
+      0,
+      "IMAGE"
+    ],
+    [
+      84,
+      64,
+      0,
+      3,
+      3,
+      "LATENT"
+    ],
+    [
+      104,
+      94,
+      0,
+      33,
+      6,
+      "BBOX_DETECTOR"
+    ],
+    [
+      109,
+      98,
+      0,
+      64,
+      0,
+      "*"
+    ],
+    [
+      110,
+      116,
+      0,
+      117,
+      0,
+      "BBOX_DETECTOR"
+    ],
+    [
+      111,
+      117,
+      0,
+      118,
+      1,
+      "SEGS"
+    ],
+    [
+      114,
+      118,
+      0,
+      42,
+      0,
+      "IMAGE"
+    ],
+    [
+      115,
+      6,
+      0,
+      118,
+      5,
+      "CONDITIONING"
+    ],
+    [
+      116,
+      7,
+      0,
+      118,
+      6,
+      "CONDITIONING"
+    ],
+    [
+      117,
+      25,
+      1,
+      118,
+      3,
+      "CLIP"
+    ],
+    [
+      118,
+      38,
+      2,
+      118,
+      4,
+      "VAE"
+    ],
+    [
+      119,
+      25,
+      0,
+      118,
+      2,
+      "MODEL"
+    ],
+    [
+      123,
+      33,
+      0,
+      120,
+      0,
+      "*"
+    ],
+    [
+      124,
+      120,
+      0,
+      118,
+      0,
+      "IMAGE"
+    ],
+    [
+      125,
+      120,
+      0,
+      117,
+      1,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "鐩村嚭淇濆瓨",
+      "bounding": [
+        1202,
+        238,
+        330,
+        903.7804565429688
+      ],
+      "color": "#b58b2a",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "闅忔満TAG",
+      "bounding": [
+        808.9595947265625,
+        -648.9671630859375,
+        452.5965576171875,
+        595.7894897460938
+      ],
+      "color": "#a1309b",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "V閲囨牱",
+      "bounding": [
+        846,
+        -34,
+        358,
+        146
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 4,
+      "title": "淇劯",
+      "bounding": [
+        1553,
+        -614,
+        1102,
+        1700
+      ],
+      "color": "#444",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 5,
+      "title": "鏀惧ぇ",
+      "bounding": [
+        835.5983276367188,
+        673.2855224609375,
+        331.2594909667969,
+        333.04681396484375
+      ],
+      "color": "#8A8",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 6,
+      "title": "棰濆淇",
+      "bounding": [
+        -85.12918090820312,
+        -1204.69140625,
+        876.7399291992188,
+        812.3008422851562
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5989500000000009,
+      "offset": [
+        283.242960819642,
+        1353.276614538624
+      ]
+    },
+    "workspace_info": {
+      "id": "6S-X30n87CRkBEQnDmsa8"
+    },
+    "ue_links": [],
+    "links_added_by_ue": []
+  },
+  "version": 0.4,
+  "topics": [
+    {
+      "id": "default",
+      "name": "涓昏瀵硅瘽",
+      "createdAt": 1759561801221
+    }
+  ],
+  "name": "鑾辨仼pure+",
+  "systemPrompt": "",
+  "model": "gemini-2.5-flash-preview-09-2025",
+  "temperature": 0.7,
+  "contextTokenLimit": 4000,
+  "maxOutputTokens": 1000,
+  "streamOutput": true,
+  "ttsVoicePrimary": "",
+  "ttsRegexPrimary": "",
+  "ttsVoiceSecondary": "",
+  "ttsRegexSecondary": "",
+  "ttsSpeed": 1
+}

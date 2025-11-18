@@ -1,0 +1,73 @@
+{
+  "manifestVersion": "1.0.0",
+  "name": "TodoManager",
+  "version": "1.0.0",
+  "displayName": "待办事项管理器",
+  "description": "一个功能完整的待办事项管理插件，支持添加、查看、完成、删除、编辑、搜索待办事项，以及获取统计信息。",
+  "author": "VCP Developer",
+  "pluginType": "synchronous",
+  "entryPoint": {
+    "type": "nodejs",
+    "command": "node TodoManager.js"
+  },
+  "communication": {
+    "protocol": "stdio",
+    "timeout": 10000
+  },
+  "configSchema": {
+    "TODO_DATA_PATH": {
+      "type": "string",
+      "description": "待办数据文件的存储路径",
+      "default": "./PluginData/TodoManager/todos.json"
+    },
+    "DEFAULT_REMINDER_DAYS": {
+      "type": "number",
+      "description": "默认提醒天数",
+      "default": 3
+    },
+    "MAX_TODOS": {
+      "type": "number",
+      "description": "最大待办数量限制",
+      "default": 1000
+    }
+  },
+  "capabilities": {
+    "invocationCommands": [
+      {
+        "commandIdentifier": "AddTodo",
+        "description": "添加新的待办事项。\n参数:\n- title (字符串, 必需): 待办事项标题\n- description (字符串, 可选): 详细描述\n- priority (字符串, 可选): 优先级 (high/medium/low)，默认为medium\n- dueDate (字符串, 可选): 截止日期，格式为YYYY-MM-DD\n- tags (字符串, 可选): 标签，多个标签用逗号分隔\n调用格式:\n<<<[TOOL_REQUEST]>>>\ntool_name:「始」TodoManager「末」,\ncommand:「始」AddTodo「末」,\ntitle:「始」完成项目报告「末」,\ndescription:「始」准备季度总结报告「末」,\npriority:「始」high「末」,\ndueDate:「始」2025-08-15「末」,\ntags:「始」工作,重要「末」\n<<<[END_TOOL_REQUEST]>>>",
+        "example": "<<<[TOOL_REQUEST]>>>\ntool_name:「始」TodoManager「末」,\ncommand:「始」AddTodo「末」,\ntitle:「始」学习新技术「末」,\npriority:「始」medium「末」,\ntags:「始」学习「末」\n<<<[END_TOOL_REQUEST]>>>"
+      },
+      {
+        "commandIdentifier": "ListTodos",
+        "description": "查看待办事项列表。\n参数:\n- status (字符串, 可选): 筛选状态 (pending/completed/all)，默认为pending\n- priority (字符串, 可选): 筛选优先级 (high/medium/low)\n- tag (字符串, 可选): 筛选标签\n- sortBy (字符串, 可选): 排序方式 (priority/dueDate/createdAt)，默认为priority\n- limit (数字, 可选): 限制返回数量\n调用格式:\n<<<[TOOL_REQUEST]>>>\ntool_name:「始」TodoManager「末」,\ncommand:「始」ListTodos「末」,\nstatus:「始」pending「末」,\nsortBy:「始」priority「末」\n<<<[END_TOOL_REQUEST]>>>",
+        "example": "<<<[TOOL_REQUEST]>>>\ntool_name:「始」TodoManager「末」,\ncommand:「始」ListTodos「末」,\nstatus:「始」all「末」\n<<<[END_TOOL_REQUEST]>>>"
+      },
+      {
+        "commandIdentifier": "CompleteTodo",
+        "description": "标记待办事项为已完成。\n参数:\n- id (字符串, 必需): 待办事项ID\n- title (字符串, 可选): 如果不提供ID，可以通过标题匹配\n调用格式:\n<<<[TOOL_REQUEST]>>>\ntool_name:「始」TodoManager「末」,\ncommand:「始」CompleteTodo「末」,\nid:「始」todo-uuid-here「末」\n<<<[END_TOOL_REQUEST]>>>",
+        "example": "<<<[TOOL_REQUEST]>>>\ntool_name:「始」TodoManager「末」,\ncommand:「始」CompleteTodo「末」,\ntitle:「始」学习Python「末」\n<<<[END_TOOL_REQUEST]>>>"
+      },
+      {
+        "commandIdentifier": "DeleteTodo",
+        "description": "删除待办事项。\n参数:\n- id (字符串, 必需): 待办事项ID\n- title (字符串, 可选): 如果不提供ID，可以通过标题匹配\n调用格式:\n<<<[TOOL_REQUEST]>>>\ntool_name:「始」TodoManager「末」,\ncommand:「始」DeleteTodo「末」,\nid:「始」todo-uuid-here「末」\n<<<[END_TOOL_REQUEST]>>>",
+        "example": "<<<[TOOL_REQUEST]>>>\ntool_name:「始」TodoManager「末」,\ncommand:「始」DeleteTodo「末」,\ntitle:「始」过期的任务「末」\n<<<[END_TOOL_REQUEST]>>>"
+      },
+      {
+        "commandIdentifier": "EditTodo",
+        "description": "编辑现有待办事项。\n参数:\n- id (字符串, 必需): 待办事项ID\n- title (字符串, 可选): 新标题\n- description (字符串, 可选): 新描述\n- priority (字符串, 可选): 新优先级\n- dueDate (字符串, 可选): 新截止日期\n- tags (字符串, 可选): 新标签\n调用格式:\n<<<[TOOL_REQUEST]>>>\ntool_name:「始」TodoManager「末」,\ncommand:「始」EditTodo「末」,\nid:「始」todo-uuid-here「末」,\npriority:「始」high「末」,\ndueDate:「始」2025-08-20「末」\n<<<[END_TOOL_REQUEST]>>>",
+        "example": "<<<[TOOL_REQUEST]>>>\ntool_name:「始」TodoManager「末」,\ncommand:「始」EditTodo「末」,\nid:「始」todo-uuid-here「末」,\ntitle:「始」更新后的标题「末」\n<<<[END_TOOL_REQUEST]>>>"
+      },
+      {
+        "commandIdentifier": "SearchTodos",
+        "description": "搜索待办事项。\n参数:\n- keyword (字符串, 必需): 搜索关键词，会在标题和描述中搜索\n- status (字符串, 可选): 筛选状态 (pending/completed/all)，默认为all\n调用格式:\n<<<[TOOL_REQUEST]>>>\ntool_name:「始」TodoManager「末」,\ncommand:「始」SearchTodos「末」,\nkeyword:「始」项目「末」,\nstatus:「始」pending「末」\n<<<[END_TOOL_REQUEST]>>>",
+        "example": "<<<[TOOL_REQUEST]>>>\ntool_name:「始」TodoManager「末」,\ncommand:「始」SearchTodos「末」,\nkeyword:「始」学习「末」\n<<<[END_TOOL_REQUEST]>>>"
+      },
+      {
+        "commandIdentifier": "GetStats",
+        "description": "获取待办事项统计信息。\n参数: 无需参数\n调用格式:\n<<<[TOOL_REQUEST]>>>\ntool_name:「始」TodoManager「末」,\ncommand:「始」GetStats「末」\n<<<[END_TOOL_REQUEST]>>>",
+        "example": "<<<[TOOL_REQUEST]>>>\ntool_name:「始」TodoManager「末」,\ncommand:「始」GetStats「末」\n<<<[END_TOOL_REQUEST]>>>"
+      }
+    ]
+  }
+}

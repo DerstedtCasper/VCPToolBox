@@ -1,0 +1,74 @@
+{
+  "manifestVersion": "1.0.0",
+  "name": "Lean4Runner",
+  "version": "0.1.0",
+  "displayName": "Lean4 命令执行与表达式评估",
+  "description": "通过 VCP 调用 Lean4/Lake 执行任务，支持口令式与结构化两种调用模式：表达式 #check/#eval、运行 main、Lake 构建/更新等。",
+  "author": "VCP Developer",
+  "pluginType": "synchronous",
+  "entryPoint": {
+    "type": "nodejs",
+    "command": "node lean4_runner.js"
+  },
+  "communication": {
+    "protocol": "stdio",
+    "timeout": 120000
+  },
+  "configSchema": {
+    "LEAN_BIN": {
+      "type": "string",
+      "description": "可选：lean 可执行文件绝对路径（未配置则按平台在 ~/.elan/bin 或 PATH 自动探测）",
+      "default": ""
+    },
+    "LAKE_BIN": {
+      "type": "string",
+      "description": "可选：lake 可执行文件绝对路径（未配置则按平台在 ~/.elan/bin 或 PATH 自动探测）",
+      "default": ""
+    },
+    "DEFAULT_IMPORTS": {
+      "type": "string",
+      "description": "Eval/Typecheck 默认 import 列表，逗号分隔，例如：Mathlib",
+      "default": "Mathlib"
+    },
+    "WORKDIR": {
+      "type": "string",
+      "description": "可选：工作目录（Lean/Lake 命令的 cwd）。未提供则使用插件目录或传入的 workspaceDir 参数。",
+      "default": ""
+    }
+  },
+  "capabilities": {
+    "invocationCommands": [
+      {
+        "commandIdentifier": "EvalExpr",
+        "description": "在临时 Lean 文件中执行 #eval 表达式，返回其打印结果。\n参数:\n- expr (字符串, 必需): Lean 表达式\n- imports (字符串, 可选): 逗号分隔的 import 列表，默认取配置 DEFAULT_IMPORTS\n- workspaceDir (字符串, 可选): 项目根目录（若有 lake 环境可用于 lake env）",
+        "example": "<<<[TOOL_REQUEST]>>>\ntool_name:「始」Lean4Runner「末」,\ncommand:「始」EvalExpr「末」,\nexpr:「始」(List.range 10).foldl (fun a b => a + b) 0「末」,\nimports:「始」Mathlib「末」,\nworkspaceDir:「始」D:/MATH Studio/math_studio「末」\n<<<[END_TOOL_REQUEST]>>>"
+      },
+      {
+        "commandIdentifier": "Typecheck",
+        "description": "执行 #check 表达式，返回其类型。参数同 EvalExpr，字段为 expr/imports/workspaceDir。",
+        "example": "<<<[TOOL_REQUEST]>>>\ntool_name:「始」Lean4Runner「末」,\ncommand:「始」Typecheck「末」,\nexpr:「始」Nat.succ「末」,\nimports:「始」Mathlib「末」,\nworkspaceDir:「始」D:/MATH Studio/math_studio「末」\n<<<[END_TOOL_REQUEST]>>>"
+      },
+      {
+        "commandIdentifier": "RunFile",
+        "description": "运行含 def main 的 Lean 文件（lean --run），返回标准输出。\n参数:\n- file (字符串, 必需): 需要运行的 .lean 文件（相对 workspaceDir 或绝对路径）\n- workspaceDir (字符串, 可选)",
+        "example": "<<<[TOOL_REQUEST]>>>\ntool_name:「始」Lean4Runner「末」,\ncommand:「始」RunFile「末」,\nfile:「始」Playground.lean「末」,\nworkspaceDir:「始」D:/MATH Studio/math_studio「末」\n<<<[END_TOOL_REQUEST]>>>"
+      },
+      {
+        "commandIdentifier": "LakeBuild",
+        "description": "执行 lake build。\n参数:\n- workspaceDir (字符串, 必需): Lake 项目根\n- targets (字符串, 可选): 逗号分隔目标",
+        "example": "<<<[TOOL_REQUEST]>>>\ntool_name:「始」Lean4Runner「末」,\ncommand:「始」LakeBuild「末」,\nworkspaceDir:「始」D:/MATH Studio/math_studio「末」,\ntargets:「始」math_studio「末」\n<<<[END_TOOL_REQUEST]>>>"
+      },
+      {
+        "commandIdentifier": "LakeUpdate",
+        "description": "执行 lake update（更新依赖及缓存）。\n参数:\n- workspaceDir (字符串, 必需)",
+        "example": "<<<[TOOL_REQUEST]>>>\ntool_name:「始」Lean4Runner「末」,\ncommand:「始」LakeUpdate「末」,\nworkspaceDir:「始」D:/MATH Studio/math_studio「末」\n<<<[END_TOOL_REQUEST]>>>"
+      },
+      {
+        "commandIdentifier": "Token",
+        "description": "口令模式：传入一行 token，由插件内部解析并路由到上述命令。\n格式示例：\n- eval: (Nat.succ 1); imports=Mathlib\n- check: Nat.succ; imports=Mathlib\n- run: file=Main.lean\n- lake: build targets=math_studio; dir=D:/MATH Studio/math_studio\n参数:\n- token (字符串, 必需)",
+        "example": "<<<[TOOL_REQUEST]>>>\ntool_name:「始」Lean4Runner「末」,\ncommand:「始」Token「末」,\ntoken:「始」check: Nat.succ; imports=Mathlib; dir=D:/MATH Studio/math_studio「末」\n<<<[END_TOOL_REQUEST]>>>"
+      }
+    ]
+  }
+}
+

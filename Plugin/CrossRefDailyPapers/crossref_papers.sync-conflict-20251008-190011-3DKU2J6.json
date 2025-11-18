@@ -1,0 +1,942 @@
+[
+  {
+    "doi": "10.1007/978-3-032-06665-7_10",
+    "title": "Cartoon Analysis – Chhota Bheem Character Detection and Screen Time Analysis Using YOLO (You Only Look Once)",
+    "authors": "Sakshi Korde; Rasika Kanitkar; Vaishnavi Gaikwad; Hitali Khachane; Rashmi Apte; Mangesh Bedekar; Rakhi Dongaonkar",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, ICT Systems and Sustainability"
+  },
+  {
+    "doi": "10.3389/fphar.2025.1695376",
+    "title": "Impact of roxadustat on anemia management in infected patients undergoing long-term dialysis: a retrospective cohort analysis",
+    "authors": "Lulu Wang; Huimin Qiu; Xinqi Tan; Jing Liu; Ting Yang; Chunming Jiang",
+    "issuedDate": "2025-10-8",
+    "abstract": "IntroductionThe efficacy of oral roxadustat in dialysis patients with renal anemia and overt infections remains uncertain.ObjectivesIn this retrospective cohort study, 2816 such patients were screened, of whom 167 were enrolled and assigned to either roxadustat (n = 88) or recombinant human EPO (rHuEPO; n = 79) for treatment.Methods and resultsBaseline hemoglobin levels were 90.3 ± 15.2 g/L and 91.9 ± 17.8 g/L, respectively. All patients received a mean of 10.6 ± 3.3 days of infection treatment. Types of infection included pulmonary, peritoneal dialysis-associated peritonitis, catheterrelated, urinary tract, and others. Compared with rHuEPO, roxadustat led to significantly greater increases in hemoglobin and ΔHb, and more pronounced improvements in ferritin, transferrin saturation (TSAT), and hepcidin levels following infection. The analysis demonstrated that TSAT, hepcidin, dialysis modality, residual renal function, infection type, and PCT levels play critical roles in mediating the efficacy of roxadustat under active infection conditions. Among peritoneal dialysis patients, roxadustat was associated with significantly greater improvements in ΔHb, ferritin, and TSAT compared to rHuEPO. ΔHb values varied by infection type, with significantly higher increases in peritoneal dialysis-associated peritonitis and a trend toward larger ΔHb in other infections relative to those in pulmonary infections. Based on procalcitonin levels, more severe infections were correlated with lower ΔHb values.ConclusionOveral, roxadustat was more effective than rHuEPO in ameliorating renal anemia in infected dialysis patients.",
+    "publisher": "Frontiers Media SA",
+    "type": "journal-article",
+    "journal": "Frontiers in Pharmacology"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_83",
+    "title": "Embedded IoMT System for Early Dementia Detection Using EEG Signals and Deep Learning on STM32 Microcontroller",
+    "authors": "F. Jakjoud",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.3389/fmicb.2025.1655877",
+    "title": "A fluorescent bead-based multiplex assay for the detection of Brucella sp. specific antibodies in canine serum",
+    "authors": "Cassandra Guarino; Rebecca Franklin-Guild; Sanda Asbie; Toby Pinn-Woodcock; Anja Serap Sipka; Colleen Eade; Lauren Griggs; Elizabeth Altier; Kristina Ceres; Yrjo Grohn; Craig Altier; Bettina Wagner",
+    "issuedDate": "2025-10-8",
+    "abstract": "IntroductionThe zoonotic pathogen, Brucella canis, causes brucellosis in dogs. Infection with B. canis is usually diagnosed by serological testing. We developed a fluorescent bead-based multiplex assay for detection of B. canis specific antibodies in canine serum. The assay consists of two antigens detected simultaneously by canine serum antibodies. One antigen, BP26, was selected from a set of immunodominant proteins identified through western blot and proteomics analysis. The second antigen, PO1, is a 17 amino acid peptide derived from B. canis Omp31.MethodsDog sera from diagnostic submissions were tested in parallel with a reference assay consisting of a rapid slide agglutination test (2ME-RSAT) and an agar gel immunodiffusion test (AGID II). A Bayesian latent class model (BLCM) was utilized to determine sensitivity and specificity of both assays. For the model to be identifiable, two groups with differing prevalence were included; one group was composed of 1,192 diagnostic submissions, and the second group was composed of 390 samples submitted for export purposes.ResultsThe seroprevalence of B. canis specific antibodies in these two groups was estimated to be 16.1% (95% CI, 12.6–19.3%) and 0.1% (95%, 0.0–0.6%), respectively. Diagnostic sensitivity and specificity of the two-antigen assay for detecting B. canis specific antibodies were 91.6% (95% CI, 85.2–98.0%) and 94.9% (95% CI, 92.3–96.9%), respectively.DiscussionThe addition of a third cytoplasmic antigen further increased assay sensitivity. The Canine Brucella Multiplex assay is a novel and quantitative diagnostic tool for detecting B. canis antibodies in canine serum to aid in the diagnosis of brucellosis in dogs.",
+    "publisher": "Frontiers Media SA",
+    "type": "journal-article",
+    "journal": "Frontiers in Microbiology"
+  },
+  {
+    "doi": "10.3389/fped.2025.1606749",
+    "title": "Follow-up study on the long-term effectiveness of the home-visiting program “ProKind”: study protocol for a randomized controlled trial",
+    "authors": "Sören Kliem; Malte Sandner; Tilman Brand; Sebastian Fischer; Anna Lohmann; Marie Lisanne Schepan; Gabriella Conti; Dirk Baier",
+    "issuedDate": "2025-10-8",
+    "abstract": "BackgroundThe Nurse-Family Partnership (NFP) is an evidence-based home visiting program shown to improve maternal and child outcomes. Pro Kind is the first German adaptation of NFP, implemented between 2006 and 2012. While earlier evaluations demonstrated short- and medium-term benefits, no European trial has yet assessed long-term effects into adolescence.ObjectivesThis study protocol outlines the third phase of the Pro Kind randomized controlled trial (RCT), designed to evaluate the program’s effectiveness 14–16 years post-intervention. Primary aims are to assess adolescent and maternal outcomes related to mental health, parenting, risk behaviors, and life satisfaction, as well as potential long-term economic effects.MethodsThe original RCT enrolled 755 pregnant women with psychosocial risk factors, randomly assigned to an intervention (n = 394) or control group (n = 361). The intervention comprised structured home visits from midwives or tandem teams (midwife + social worker) from pregnancy until the child’s second birthday. The 15-year follow-up combines self-report data (via online interviews and questionnaires) and administrative records on employment, social benefits, and criminal justice involvement. Discussion: This study represents the first long-term follow-up of an NFP adaptation in Europe. While U.S. trials of NFP provide evidence of the program’s effectiveness, these results cannot be generalized to European welfare contexts. This underscores the need for long-term evaluations of NFP adaptations in Europe to generate evidence that can inform policy and ensure evidence-based decision making.",
+    "publisher": "Frontiers Media SA",
+    "type": "journal-article",
+    "journal": "Frontiers in Pediatrics"
+  },
+  {
+    "doi": "10.12732/ijam.v38i5s.356",
+    "title": "AN APPLIED MATHEMATICAL FRAMEWORK FOR PRIVACY-PRESERVING INTRUSION DETECTION USING FEATURE SELECTION AND FUSION MODELS.",
+    "authors": "Swetha Madireddy",
+    "issuedDate": "2025-10-8",
+    "abstract": "The widespread deployment of Internet of Things (IoT) and cloud-driven networks has raised the threat level of digital infrastructures to that of advanced cyberattacks. However, Atrad has to be distinguished from some previous work; many IDSs find it difficult to detect attacks and maintain a high detection rate while protecting sensitive user data at the same time. To help alleviate this situation, we present an applied mathematics framework for privacy-preserving intrusion detection that combines optimal feature selection with fusion classification models. The approach reduces feature space sizes using strong mathematical methods, such as the L1 Regularisation Technique, for those features that are most discriminant and non-cost-sensitive, enabling limited computational overhead in threat detection. Meanwhile, privacy-preserving mechanisms are incorporated to avoid the unauthorised exposure of sensitive traffic patterns during the detection procedure. A multi-level fusion approach, comprising both statistical, information-theoretic, and learning models, increases the robustness of detection in the presence of diverse attack families. Experimental evaluation using standard intrusion datasets demonstrates that the proposed framework outperforms the state-of-the-art in terms of accuracy, precision, and recall, and notably reduces false alarms. Additionally, the proposed mathematical optimisation of feature subsets and fusion weights will ensure scalability and applicability in practical network environments. This work paves the way for secure, efficient, and privacy-aware IDS design by bridging the gap between theoretical soundness and practical relevance in contemporary cyber defence systems.",
+    "publisher": "Academic Publications",
+    "type": "journal-article",
+    "journal": "International Journal of Applied Mathematics"
+  },
+  {
+    "doi": "10.3389/frai.2025.1643292",
+    "title": "Enhancing credit card fraud detection using traditional and deep learning models with class imbalance mitigation",
+    "authors": "Tahani Albalawi; Samia Dardouri",
+    "issuedDate": "2025-10-8",
+    "abstract": "IntroductionThe growing complexity of fraudulent activities presents significant challenges in detecting fraud within financial transactions. Accurate and robust detection methods are essential for minimizing financial losses.MethodsThis study evaluates logistic regression, decision tree, and random forest models on real-world credit card datasets, addressing class imbalance and enhancing predictive accuracy. A deep learning model incorporating focal loss was developed to further improve detection performance. The Synthetic Minority Over-Sampling Technique (SMOTE) was applied to mitigate class imbalance, and hyperparameter tuning was conducted to optimize model configurations.ResultsExperimental results show that the random forest model achieved the best overall performance, with an accuracy of 99.95%, F1 score of 0.8256, and ROC-AUC of 0.9759. The deep learning model provided the highest precision, demonstrating its potential in minimizing false positives.DiscussionA key novelty of this work is the integration of focal loss within the deep learning framework, enabling the model to focus on hard-to-classify fraudulent transactions. Unlike many prior studies limited to the Kaggle dataset, our approach was validated on both the Kaggle credit card dataset and the PaySim synthetic mobile money dataset, demonstrating robustness and cross-domain generalizability. These findings highlight the effectiveness of combining data preprocessing, resampling techniques, and model optimization for robust fraud detection.",
+    "publisher": "Frontiers Media SA",
+    "type": "journal-article",
+    "journal": "Frontiers in Artificial Intelligence"
+  },
+  {
+    "doi": "10.3390/ijerph22101537",
+    "title": "A Review of the Human Health Risks from Microbial Hazards in Recreational Beach Sand",
+    "authors": "Nicola King; Margaret Leonard",
+    "issuedDate": "2025-10-8",
+    "abstract": "At many recreational beaches, the health of visitors is protected through water quality monitoring programmes. However, visitors may also be exposed to microbiological pathogens in sand via ingestion, inhalation and skin contact. Microbiological pathogens that can cause human illness may be naturally found in beach sands, or introduced with people, animals or water entering the beach. The World Health Organization has recommended that recreational water safety plans consider microbial pathogens in beach sand. This review shows that a range of faecal and non-faecal pathogens can be detected in beach sand, but difficulty in determining whether exposure occurred via the sand or water means that there is insufficient evidence to link their presence with adverse human health effects. Proactively integrating beach sand testing into recreational water safety programmes will generate data to assess the impact of risk management activities. The use of faecal indicator bacteria to indicate elevated risk from faeces should be a priority where there are potential sources of contamination. This should be complemented with sanitary surveys and analyses that elucidate faecal contamination sources. The inclusion of non-faecal pathogens into monitoring programmes needs further, locally relevant justification through evidence from epidemiological studies and human health risk assessment.",
+    "publisher": "MDPI AG",
+    "type": "journal-article",
+    "journal": "International Journal of Environmental Research and Public Health"
+  },
+  {
+    "doi": "10.1007/978-3-032-06665-7_50",
+    "title": "Garbage Detection Solution for Smart Cities Using YOLOv8 Image Recognition",
+    "authors": "Deepak Mane; Nandika Bansal; Shreyas Mulavekar; Mayank Mittal; Atharv Mule",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, ICT Systems and Sustainability"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_123",
+    "title": "AI in Cybersecurity: A Systematic Survey of ML and DL Techniques for Enhanced Intrusion Detection",
+    "authors": "Essayad Houda; Aouad Siham",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_35",
+    "title": "High-Accuracy Spasmodic Dysphonia Detection Using Machine Learning",
+    "authors": "Hassan Ezzahori; Abdelkrim Hamimmou; Abdelghani Boudaoud; Mounaim Aqil",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.31677/2072-6724-2025-76-3-249-260",
+    "title": "Application of SNP-panels for targeted sequencing in genotyping young sheep of the Russian meat merino breed",
+    "authors": "A. Yu. Krivoruchko; S. N. Shumaenko; A. A. Kanibolotskaya; A. V. Skokova; E. Yu. Safaryan; O. A. Yatsyk",
+    "issuedDate": "2025-10-8",
+    "abstract": "Targeted sequencing is a promising method for genetic research in agriculture It is highly accurate, scalable and cost-effective, and these characteristics make it an important tool for animal breeding, quality control and genetic analysis. The creation of specialized panels of loci, such as AgriSeq, allows focusing on specific regions of the genome, such as SNPs associated with economically valuable traits (e.g., meat production), allowing breeders to specifically select animals with desired characteristics. This eliminates the randomness of traditional breeding methods, speeds up the process and increases its accuracy due to direct action on target genes. Panels are developed using bioinformatics tools that analyze genomic data and select the most informative SNPs. The aim of the study is to investigate the efficiency of detection and prevalence of loci from the proposed set of SNPs in the survey of new generations of Russian meat merino sheep breed. The object of the study was rams of the Russian meat merino breed born in 2021 and 2022 at the age of 12 months (n = 110). The developed panel of loci using AgriSeq technology contains 544 SNPs suitable for estimation of sheep parentage and 295 SNPs related to meat productivity of animals. After adjusting the list of loci for genotyping by sequencing in Russian meat merino sheep, it was found that the selected polymorphisms can be informative for a sufficiently long time. Analysis of the results showed that after modification of the set of loci, the panel for genotyping by sequencing in lambs showed high efficiency of detection of all variants of genotypes. The proposed panel of SNP loci meets the minimum requirements of the Russian legislation for determining the reliability of origin in breeding farms and will provide transparency and reliability of genetic information, which is important for certification of breeding animals. It is easy to use and can be implemented in breeding programs at the level of breeding farms and large farms.",
+    "publisher": "Federal State Educational Institution of Higher Education Novosibirsk State Agrarian University",
+    "type": "journal-article",
+    "journal": "Bulletin of NSAU (Novosibirsk State Agrarian University)"
+  },
+  {
+    "doi": "10.12732/ijam.v38i5s.323",
+    "title": "ENHANCING BIPOLAR DISORDER DETECTION USING UNSUPERVISED CLUSTERING-DRIVEN OPTIMIZED XGBOOST: A GAUSSIAN MIXTURE MODEL AND SMOTE-BASED HYBRID APPROACH",
+    "authors": "Santosh Rani",
+    "issuedDate": "2025-10-8",
+    "abstract": "Bipolar Disorder (BD) is a serious mental health condition that is often difficult to diagnose correctly due to overlapping symptoms and imbalanced clinical data. Early and accurate diagnosis can help patients receive timely treatment and support. In this study, we developed a hybrid machine learning approach that integrates Gaussian Mixture Model (GMM), Synthetic Minority Over-sampling Technique (SMOTE), and an optimized XGBoost classifier to improve the detection of BD.\r\nFirst, GMM was applied to uncover hidden clusters of patients based on medical and psychometric features, generating informative cluster assignments as additional features. Next, SMOTE was used to address the imbalance between bipolar and non-bipolar cases by generating synthetic samples for the minority class. Finally, an optimized XGBoost model was trained on the enriched and balanced dataset, leveraging both original clinical features and GMM-derived cluster representations for improved predictive power.\r\nThe GMM-SMOTE-XGBoost hybrid model achieved an accuracy of 93.27% on an independent test set. Comparative analysis against conventional classifiers such as Logistic Regression(LR), Decision Tree(DT) and Support Vector Machine(SVM), and  shows that this hybrid approach consistently outperformed all baselines, particularly in sensitivity and overall diagnostic reliability.\r\nThis work demonstrates the potential of combining unsupervised clustering, synthetic data balancing, and optimized gradient boosting to enhance psychiatric disorder classification. Such hybrid frameworks could serve as valuable clinical decision-support tools, improving diagnostic accuracy and robustness in mental health diagnostics",
+    "publisher": "Academic Publications",
+    "type": "journal-article",
+    "journal": "International Journal of Applied Mathematics"
+  },
+  {
+    "doi": "10.1002/mds.70066",
+    "title": "Impaired Predictive Coding in the Somatosensory Mismatch Detection Network in Essential Tremor: A Cerebello‐Cortical Perspective",
+    "authors": "Virginie Destrebecq; Rovai Antonin; Trotta Nicola; Frederic Supiot; De Tiège Xavier; Naeije Gilles",
+    "issuedDate": "2025-10-8",
+    "abstract": "AbstractBackgroundAccording to predictive coding theory, mismatch detection relies on comparing sensory inputs with internal predictions. In the somatosensory domain, this process involves interactions between cerebellar lobule VIII (CL8) and the secondary somatosensory cortex (S2) within the cortical tactile mismatch detection network. Essential tremor (ET) is a cerebellar disorder that provides a model to explore how cerebellar dysfunction affects the tactile mismatch detection network.ObjectivesTo test the hypothesis that cerebello‐cortical interactions between CL8 and S2, involved in tactile predictions, are altered in ET.MethodsTwenty patients with ET and matched healthy individuals underwent two tactile oddball functional magnetic resonance imaging (fMRI) paradigms, manipulating the predictability of deviant stimuli. fMRI signal and functional connectivity were assessed across the cortical somatosensory mismatch detection network and the CL8. Psychophysiological interaction (PPI) analyses were used to evaluate cerebello‐cortical functional connectivity changes related to tactile predictions between ET and healthy individuals.ResultsIn healthy individuals, the predictable condition elicited reduced fMRI signal compared with the unpredictable condition at S2 cortex and within the cortical mismatch detection network. PPI analysis showed that the predictable condition was characterized by a negative correlation of fMRI signals between S2 cortex and CL8 not observed in the unpredictable condition. ET showed no significant difference in the mismatch detection network according to the predictability of tactile stimuli and no functional connectivity change between CL8 and S2 cortex.ConclusionThese results support a contribution of the cerebellum to impaired predictive coding within the cortical network responsible for detecting tactile mismatches in ET. © 2025 International Parkinson and Movement Disorder Society.",
+    "publisher": "Wiley",
+    "type": "journal-article",
+    "journal": "Movement Disorders"
+  },
+  {
+    "doi": "10.1007/s00604-025-07585-0",
+    "title": "Detection of PFAS and nanoplastics in serum by using Ag nanowires film SERS substrate with good reusability and sensitivity",
+    "authors": "Yansheng Liu; Yukun Sun; Guofu Wang; Xiaobo Jia; Jin Zhou; Hongqi Li; Hongli Li; Haixin Chan; Kang Li; Zhicheng Jin; Zhaoxu Li",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "journal": "Microchimica Acta"
+  },
+  {
+    "doi": "10.1007/s10462-025-11375-8",
+    "title": "A systematic review of bias detection methods for non-English word embeddings and language models",
+    "authors": "Alexandre Puttick; Catherine Ikae; Carlotta Rigotti; Eduard Fosch-Villaronga; Mark W. Kharas; Roger A. Søraa; Mascha Kurpicz-Briki",
+    "issuedDate": "2025-10-8",
+    "abstract": "Abstract\n          Biases in applications of machine learning and artificial intelligence are a major limitation of these applications. Stereotypes of the society are reflected in different types of applications, including image generation, machine translation or CV ranking. This is in particular also the case for language models and word embeddings, encoding human language as mathematical vectors. Research addressing the challenging problem of detection (and mitigation) of the bias in these embeddings is often conducted for the English language. However, the stereotypes encoded can be language dependent and impacted by a cultural environment. Thus, dedicated research efforts for languages other than English are required. In this paper, we conduct a systematic literature review to identify and compare existing bias detection methods for non-English word embeddings and language models. In an interdisciplinary team we examine the technical aspects, as well as the definitions of bias used by researchers in the field. Based on our findings, we outline a research plan for making bias detection in the field of NLP more inclusive for languages other than English.",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "journal": "Artificial Intelligence Review"
+  },
+  {
+    "doi": "10.12732/ijam.v38i5s.362",
+    "title": "PRIVACY-PRESERVING INTRUSION DETECTION FOR SMART HOMES USING AI WITH ZERO-KNOWLEDGE PROOFS AND BLOCKCHAIN INTEGRATION",
+    "authors": "Ganga Shirisha M S",
+    "issuedDate": "2025-10-8",
+    "abstract": "This paper presents a privacy-preserving intrusion detection architecture tailored for smart home environments, addressing the dual challenge of maintaining data confidentiality while enabling accurate anomaly detection. The proposed system replaces conventional raw data analysis with a proof-driven mechanism leveraging Zero-Knowledge Proofs (ZKPs). Behavioral patterns from smart devices such as motion sensors, door contacts, and environmental monitors are abstracted into cryptographic representations, which are then processed by a zk-SNARK-compatible machine learning model. Inference results are accompanied by cryptographic proofs verifying the correctness of each decision without disclosing the input data. A private blockchain layer, implemented using Ethereum smart contracts, records event hashes, proof metadata, and decision outcomes to ensure tamper-evident logging and automated response handling. Experimental simulations on synthetic home automation datasets demonstrate that the architecture achieves over 92% anomaly detection accuracy while ensuring zero exposure of raw sensor streams. The system also exhibits low-latency proof generation (~400 ms) and end-to-end response time under 1.2 seconds, confirming its suitability for real-time smart home applications.",
+    "publisher": "Academic Publications",
+    "type": "journal-article",
+    "journal": "International Journal of Applied Mathematics"
+  },
+  {
+    "doi": "10.1097/ms9.0000000000004018",
+    "title": "Short-term function versus long-term stability: rethinking the role of suture-augmented ACL repair",
+    "authors": "Fnu Shahzaib; Arifa Arifa; Haris Afridi; Raghabendra Kumar Mahato",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+    "type": "journal-article",
+    "journal": "Annals of Medicine &amp; Surgery"
+  },
+  {
+    "doi": "10.21203/rs.3.rs-7677623/v1",
+    "title": "Development of a Cost-Effective Human-Machine Interface with Integrated Firewall and AI-Based Intrusion Detection System for SCADA Security",
+    "authors": "Gulab Kumar Mondal; Sangita Roy; Dharampal Singh; Biswarup Neogi",
+    "issuedDate": "2025-10-8",
+    "abstract": "Abstract\n        This research presents a low-cost, custom Human-Machine Interface (HMI) integrated with a built-in firewall and an AI-powered Intrusion Detection and Prevention System (IDS/IPS) designed to enhance cybersecurity in Supervisory Control and Data Acquisition (SCADA) networks. SCADA systems, essential for industrial control, often rely on legacy protocols such as Modbus, Remote Terminal Unit (RTU) and DNP3, which lack robust authentication and are vulnerable to cyber threats. Commercial HMIs and firewalls tend to be expensive and may not effectively address advanced threats like Advanced Persistent Threat (APT) or zero-day exploits, particularly for small and medium enterprises Small and Medium-sized Enterprise (SME). The proposed system is built around the Velocio ACE11 PLC and incorporates a Python-based PyQt5 GUI for real-time monitoring and control of a chemical mixing process. It features a passive firewall for inspecting Modbus serial traffic and a Random Forest–based IDS trained on protocol-specific features, including function codes, packet timing, and command types. The IDS achieves over (&gt; 96 %) detection accuracy with approximately ∼17 ms latency. Upon detection of intrusions, the system blocks malicious commands, activates fail-safe procedures, and alerts operators via the HMI interface. Simulation tests involving misuse of the protocol and unauthorized commands validate the effectiveness of the system [1]–[3]. This solution provides SMEs with an affordable, scalable, and high-performance cybersecurity platform tailored for SCADA environments, without compromising usability or operational continuity.",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "posted-content",
+    "journal": "N/A"
+  },
+  {
+    "doi": "10.1108/add-03-2025-0019",
+    "title": "Mental health problems among women treated for alcohol or other drug problems: long-term trajectories",
+    "authors": "Lisa Skogens; Ninive von Greiff",
+    "issuedDate": "2025-10-8",
+    "abstract": "Purpose\n                  This paper aims to investigate the occurrence and management of alcohol and other drugs (AOD) and mental health problems among women who have initiated a recovery process after treatment, focusing on how the recovery processes from these problems relate to each other over time.\n               \n               \n                  Design/methodology/approach\n                  Thirty women were interviewed three times over a 10-year period. All women had undergone treatment for AOD problems. Trajectories of both AOD use and experiences of mental health problems, based on the women’s own descriptions, were analyzed.\n               \n               \n                  Findings\n                  The results are presented in flowcharts that show heterogeneous trajectories for these problems and how they relate to each other. A qualitative analysis further reveals that remaining and sometimes reoccurring problems are interpreted differently over time. This implies that the need for support varies both with the type of problem and in relation to other contextual factors during the life course.\n               \n               \n                  Originality/value\n                  The results generate new knowledge about how recovery processes from AOD and mental health problems in women relate to each other over time, from a first-person perspective.",
+    "publisher": "Emerald",
+    "type": "journal-article",
+    "journal": "Advances in Dual Diagnosis"
+  },
+  {
+    "doi": "10.1007/978-3-032-07175-0_22",
+    "title": "Enhancing Hate Speech Detection in Social Media Images Using Deep Learning and Synthetic Datasets",
+    "authors": "Nontokozo Manukuza; Skhumbuzo Zwane; Matthew Adigun",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Communications in Computer and Information Science, Applied Informatics"
+  },
+  {
+    "doi": "10.1007/s11046-025-01007-8",
+    "title": "Global, Regional, and National Disability-Adjusted Life Years Burdens of Lower Respiratory Tract Fungal Infections, 1990–2021: A Systematic Analysis of the Global Burden of Disease Study 2021",
+    "authors": "Zhiwei Long; Longzhen Lu; Guisheng Xian; Zhengtu Li; Mingkai Guo; Aguo Li; Zhenlin Guan; Feng Ye; Yan Wang",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "journal": "Mycopathologia"
+  },
+  {
+    "doi": "10.21203/rs.3.rs-7341990/v1",
+    "title": "Analysis of the impact of long working hours on anxiety and work-related musculoskeletal diseases among female workers in electronics manufacturing enterprises in Guangdong Province",
+    "authors": "Xiaoyi Li; Yushuo Liang; Huiqing Chen; Xiqing Liao; Xinyang Yu; Lin Xu; Junle Wu; Jiabin Chen; Min Yang",
+    "issuedDate": "2025-10-8",
+    "abstract": "Abstract\n        Background\nFemale workers were the main force in electronic manufacturing enterprises. This study aims to understand the current status of long working hours among female workers in the electronic manufacturing industry in Guangdong Province, and to explore the impact of long working hours on anxiety and work-related musculoskeletal disorders (WMSDs).\nMethods\nWe conducted a cross-sectional survey using convenience sampling method from July to September 2022, including a total of 193 electronic manufacturing enterprises in Guangdong Province. We distributed a total of 5,300 copies of the Individual questionnaire of the National Key Population Occupational Health Literacy Monitoring Survey, which included general demographic characteristics, and the detection rate of long working hours, anxiety and WMSDs. A total of 4,976 female workers participated in the questionnaires survey after excluding invalid questionnaires, with the effective rate of 93.9%. A binary logistic regression analysis was used to evaluate the impact of weekly working hours on anxiety and WMSDs.\nResults\nThe detection rates of long working hours (working more than 40 hours a week), anxiety and WMSDs among female workers in electronics manufacturing enterprises in Guangdong Province were 67.8%, 23.0%, and 43.2%, respectively. The detection rate of WMSDs in the anxiety group was higher than that in the non-anxiety group (65.2% vs 36.7%, P &lt; 0.001). The logistic regression model showed that long working hours were positively correlated with anxiety and WMSDs after controlling for factors such as age, education level, marital status, length of service, enterprise scale, enterprise nature and night shift (both P &lt; 0.001). Specifically, the longer the weekly working hours, the greater the risk of developing anxiety and WMSDs, with OR (95%CI) values of 1.067 (1.021–1.116) and 1.067 (1.028–1.108), respectively.\nConclusions\nThe female workers in electronics manufacturing enterprises in Guangdong Province generally had long working hours, which increased the risk of occurrence of anxiety and WMSDs.",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "posted-content",
+    "journal": "N/A"
+  },
+  {
+    "doi": "10.5815/ijisa.2025.05.01",
+    "title": "Optimizing Kidney Stone Detection: Exploring YOLOv8 Variants for Computational Efficiency and Enhanced Accuracy",
+    "authors": "Amol Satsangi; Shaurya Jain; Subho Upadhyay",
+    "issuedDate": "2025-10-8",
+    "abstract": "Kidney stones are solid mineral and salt deposits formed within the kidneys, causing excruciating discomfort and pain when they obstruct the urinary tract. The presence of speckle noise in CT-scan images, coupled with the limitations of manual interpretation, makes kidney stone detection challenging and highlighting the need for precise and efficient diagnosis. This research investigates the efficacy of YOLOv8 models for kidney stone detection, aiming to strike a balance between computational efficiency and detection accuracy. This study's novel evaluation framework and practical deployment considerations underscore its contributions to advance kidney stone detection technologies. It evaluates five YOLOv8 variants (nano, small, medium, large, and extra-large) using standard metrics such as precision, recall, F1-score, and mAP@50, alongside computational resources like training time, power consumption, and memory usage. The comprehensive evaluation reveals that while YOLOv8s and YOLOv8e demonstrate superior performance in traditional metrics, YOLOv8s emerges as the optimal model, offering a harmonious balance with its high precision (0.917), highest mAP@50 (0.918), moderate power consumption (150W), and efficient memory usage. Graphical analyses further elucidate the behaviour of each model across different confidence thresholds, confirming the robustness of YOLOv8s. Additionally, this research explores the impact of model size and complexity on inference speed, demonstrating that smaller YOLOv8 variants achieve real-time performance with minimal latency. The study also introduces a method for model scalability, allowing for adjustments in accuracy and computational demand based on specific clinical or resource constraints. These contributions further emphasize the importance of holistic model assessment for real-world medical applications.",
+    "publisher": "MECS Publisher",
+    "type": "journal-article",
+    "journal": "International Journal of Intelligent Systems and Applications"
+  },
+  {
+    "doi": "10.1007/978-3-032-06665-7_36",
+    "title": "Online Payment Fraud Detection Using Machine Learning",
+    "authors": "Ayush Tiwari; Ayushi Tomar; Prabhjot Kaur",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, ICT Systems and Sustainability"
+  },
+  {
+    "doi": "10.1051/0004-6361/202556035",
+    "title": "Realistic consecutive galaxy mergers form eccentric pulsar timing array sources",
+    "authors": "F. Fastidio; E. Bortolas; A. Gualandris; A. Sesana; J.I. Read; W. Dehnen",
+    "issuedDate": "2025-10-8",
+    "abstract": "Results from pulsar timing arrays (PTAs) show evidence of a gravitational wave background (GWB) consistent with a population of unresolved supermassive black hole binaries (BHBs). The observed spectrum shows a flattening at lower frequencies that can be explained by a population of eccentric BHBs. This study aims to determine the dynamical evolution and merger timescales of the most massive BHBs, which are potential sources of the GWB. We selected successive galactic major mergers from the IllustrisTNG100-1 cosmological simulation and re-simulated them at high resolution with the N-body code Griffin down to binary separations of the order of a parsec. Coalescence timescales were estimated using a semi-analytical model that incorporates gravitational wave emission and stellar hardening. Throughout our investigation, we considered the impact of prior mergers on the remnant galaxy in the form of core scouring and anisotropy, which can influence the subsequent formation and evolution of BHBs. We find that all the binaries in our sample enter the PTA band with an eccentricity of e&gt;0.85: such a large eccentricity can impact the shape of the PTA observed GWB spectrum, and it highlights the importance of including the eccentricity of binaries when interpreting the PTA signal. Furthermore, we find that: (i) starting from initial separations of a few tens of kiloparsecs, the dynamical friction phase lasts for a few hundred million years; (ii) the binary formation time is not resolution-dependent; (iii) the scatter on the eccentricity at binary formation decreases with increasing resolution; and (iv) triple systems form whenever a third galaxy interacts with a binary that has not yet reached coalescence.",
+    "publisher": "EDP Sciences",
+    "type": "journal-article",
+    "journal": "Astronomy &amp; Astrophysics"
+  },
+  {
+    "doi": "10.12732/ijam.v38i5s.339",
+    "title": "Rainbow DQN for Intrusion Detection: A Unified Deep Reinforcement Learning Approach Across Benchmark Datasets",
+    "authors": "Vikrant Sharma",
+    "issuedDate": "2025-10-8",
+    "abstract": "This paper presents Rainbow DQN for Intrusion Detection: A Unified Deep Reinforcement Learning Approach Across Benchmark Datasets, designed to address the increasing complexity of cyber threats. By incorporating advanced reinforcement learning components such as Double DQN, Dueling Networks, Prioritized Experience Replay, N-step Learning, Distributional RL, and Noisy Nets, the proposed model enhances both accuracy and stability in intrusion detection. The approach was rigorously evaluated on three benchmark datasets: CIC-IDS2017, KDD CUP 99, and UNSW-NB15. Experimental results demonstrated remarkable performance, achieving 99.8%, 98.4%, and 97.9% accuracy, respectively, with high precision, recall, and F1-scores across diverse attack categories. Compared with baseline DQ-IDS models, Rainbow DQN consistently improved detection capabilities and reduced false positives. These results highlight the robustness, adaptability, and generalizability of Rainbow DQN, making it a promising solution for next-generation intrusion detection systems in dynamic and heterogeneous network environments.",
+    "publisher": "Academic Publications",
+    "type": "journal-article",
+    "journal": "International Journal of Applied Mathematics"
+  },
+  {
+    "doi": "10.1080/21622965.2025.2564084",
+    "title": "Artificial intelligence-driven electroencephalogram analysis for early attention deficit hyperactivity disorder detection in children to prevent learning disabilities and mental health challenges",
+    "authors": "Manjusha Deshmukh; Mahi Khemchandani",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Informa UK Limited",
+    "type": "journal-article",
+    "journal": "Applied Neuropsychology: Child"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_74",
+    "title": "A Performance-Based Comparison of Energy Detection Using Fixed and Adaptive Thresholds for CR-IoT Systems",
+    "authors": "Khadija Lahrouni; Hayat Semlali; Guillaume Andrieux; Jean-François Diouris; Abdelilah Ghammaz",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.1007/978-981-96-7480-0_37",
+    "title": "Effect of Long-Chain Hydrocarbon on the Emissions of SI Engine Fueled with Gasoline-Ethanol Blends",
+    "authors": "Harikrishna Nagwan; Raghubeer Singh Bangari; Shwetank Avikal",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Singapore",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Mechanical Engineering, Recent Advances in Mechanical Engineering"
+  },
+  {
+    "doi": "10.1007/s00138-025-01747-z",
+    "title": "Investigating long-term training for remote sensing object detection",
+    "authors": "JongHyun Park; Yechan Kim; Moongu Jeon",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "journal": "Machine Vision and Applications"
+  },
+  {
+    "doi": "10.5815/ijem.2025.05.05",
+    "title": "Monkeypox Detection Using Support VectorMachine with a Quadratic Polynomial Kernel",
+    "authors": "Michael Chi Seng Tang; Siew Ping Yiiong; Kee Chuong Ting; Sing Ling Ong; Marcella Peter; Khairunnisa Ibrahim",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "MECS Publisher",
+    "type": "journal-article",
+    "journal": "International Journal of Engineering and Manufacturing"
+  },
+  {
+    "doi": "10.1007/978-3-032-06952-8_12",
+    "title": "Platform Powering Cognitive and Memetic Digital Twins: To Boldly Go Where Memes May Live Long and Prosper",
+    "authors": "Ulrich Schmitt",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Computer Science, Cooperative Design, Visualization, and Engineering"
+  },
+  {
+    "doi": "10.1007/978-3-032-06069-3_26",
+    "title": "Towards Semi-supervised Subspace Learning for Outlier Detection in Big Data",
+    "authors": "Muhammad Rajabinasab; Anton D. Lautrup; Peter Schneider-Kamp; Arthur Zimek",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Computer Science, Similarity Search and Applications"
+  },
+  {
+    "doi": "10.3389/fonc.2025.1679528",
+    "title": "Whole-exome sequencing in Saudi colorectal cancer patients reveals distinct mutational patterns and population specific pathogenic variants",
+    "authors": "Hanan E. Alatwi; Amnah A. Alharbi; Rashid Mir; Othman R. Alzahrani; Abdulrahman H. Alessa; Yousef M. Hawsawi; Mohammed Ali Arishi; Aziz Dhaher Albalawi",
+    "issuedDate": "2025-10-8",
+    "abstract": "BackgroundColorectal cancer (CRC) shows significant inter-population heterogeneity in its genomic landscape, yet Middle Eastern populations are underrepresented in large-scale sequencing studies. This exploratory study aims to characterize somatic mutations and disrupted signaling pathways in Saudi Arabian CRC patients.MethodsWe performed whole-exome sequencing (WES) on tumor DNA from 24 Saudi CRC patients. Somatic variants were identified and analyzed in a curated panel of cancer-related genes. Comparative analysis was conducted against The Cancer Genome Atlas colorectal cancer dataset (TCGA-COADREAD), and pathway enrichment analysis was performed.ResultsSomatic variants were identified in 23 tumors, with recurrent mutations in BRCA2 (61%), TCF7L2 (52%), EGFR (43%), and SOS1 (43%). Compared to TCGA-COADREAD, mutation frequencies were significantly higher in BRCA2, EGFR, SLC25A5, and PIK3R2 (adjusted p &amp;lt; 0.0001). Among 258 total variants, 43% were novel, and 25 were classified as pathogenic, likely pathogenic, or deleterious, including 13 novel variants across nine genes. Pathway analysis revealed frequent disruptions in WNT/β-catenin (65%), homologous recombination (61%), PI3K (48%), and RTK/RAS (43%) signaling pathways.ConclusionOur results reveal a distinct mutational profile in Saudi CRC patients, characterized by novel and enriched somatic variants affecting key oncogenic pathways. These findings underscore the necessity of including underrepresented populations in cancer genomics to support globally equitable precision oncology.",
+    "publisher": "Frontiers Media SA",
+    "type": "journal-article",
+    "journal": "Frontiers in Oncology"
+  },
+  {
+    "doi": "10.26434/chemrxiv-2025-762v9-v2",
+    "title": "Anthraquinone-based fluorophore as electrostatic complexation-driven turn-on probe for Cardiolipin detection in model membranes",
+    "authors": "Tathagata Ray",
+    "issuedDate": "2025-10-8",
+    "abstract": "Cardiolipin (CL), being a mitochondria-specific phospholipid, is known to play a pivotal role in cellular respiration, and its levels are intricately connected to various neurodegenerative disorders. Owing to the simplicity compared to mass spectrometry-based lipidomics, optical detection of CL is an attractive option; however, only two probes, namely TTAPE-Me and 10- nonyl acridine orange (NAO), are currently available. Herein, we report the use of an anthraquinone-based fluorophore 1 as a turn-on sensor for CL in phospholipid membranes. 1 exhibited a robust fluorescence turn-on response upon selective binding to CL, with up to 5.8- fold enhancement in dioleoyl phosphatidylcholine (DOPC) vesicles and 5.1-fold in dipalmitoyl phosphatidylcholine (DPPC) vesicles. Based on the results from anisotropy, temperature studies, and salt dependence studies, it was concluded that the formation of an electrostatic complex was the driving factor behind the observed fluorescence enhancement. Mechanistic investigations, including anisotropy, salt-dependence, and temperature studies, revealed that electrostatic complex formation underlies the observed fluorescence enhancement. Interestingly, the probe also showed a high degree of selectivity toward CL compared to other biologically relevant analytes. These findings establish compound 1 as a promising optical probe for quantitative cardiolipin detection, providing an alternative to existing fluorophores.",
+    "publisher": "American Chemical Society (ACS)",
+    "type": "posted-content",
+    "journal": "N/A"
+  },
+  {
+    "doi": "10.30539/8gd4hm63",
+    "title": "In Silico Discovery of Novel Drug and Vaccine Targets in Chlamydia abortus Through Subtractive Genomics",
+    "authors": "Batool Hazim Abdul Wahhab; Zainab Oun Ali; Sura Al-Asadi; Jamila Rampurawala",
+    "issuedDate": "2025-10-8",
+    "abstract": "Chlamydia abortus is a Gram-negative bacterium that causes chlamydiosis, a zoonotic disease leading to abortions and stillbirths in livestock and posing significant public health risks. With rising antimicrobial resistance and limited treatment efficacy, there is a pressing need for novel, targeted therapeutics to mitigate its economic and zoonotic impact. This study employed a subtractive genomics approach to analyze the complete proteome of C. abortus (strain DSM 27085 / S26/3), aiming to identify essential, non-host homologous proteins involved in unique bacterial metabolic pathways. Out of 932 proteins, five integral membrane proteins YidC, YajC, SecY, CAB503, and CAB746 were selected based on their essentiality, pathogen-specific roles, and absence of host homology. Anti-target screening confirmed no similarity to host proteins, ensuring minimal off-target effects. Antigenicity prediction (VaxiJen &gt; 0.4) identified YidC, YajC, SecY, and CAB503 as strong vaccine candidates, while CAB746 exhibited variable antigenicity across species. Conservancy analysis showed YidC and YajC were highly conserved across C. abortus strains, while the others displayed strain-specific variations. Domain analysis revealed conserved motifs (e.g., IPR002208 in SecY) and transmembrane regions, supporting their structural and immunological relevance. In conclusion, YidC, YajC, SecY, CAB503, and CAB746 represent promising drug and vaccine targets. Their bacterial specificity, immunogenicity, and safety profile warrant further experimental validation to support targeted interventions against chlamydiosis‎‎‎.",
+    "publisher": "Baghdad University College of Veterinary Medicine",
+    "type": "journal-article",
+    "journal": "The Iraqi Journal of Veterinary Medicine"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_4",
+    "title": "Comparison of Feature Extraction Methods for Power-Line Insulator Defect Detection",
+    "authors": "Osatohanmwen Noghayin Enehizena; Osemwegie S. Omorogiuwa; Solomon Ogiobadan; Agbotiname Lucky Imoize; Youssef Mejdoub",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_73",
+    "title": "An Improved Phishing URL Detection Using Machine Learning Methods",
+    "authors": "Joseph Bamidele Awotunde; Christiana Oluwakemi Abikoye; Agbotiname Lucky Imoize; Youssef Mejdoub; Olamilekan Abdulazeez Imran",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_89",
+    "title": "Securing Insulin Pumps Against Malicious Injections: A TinyML-Based Anomaly Detection Approach",
+    "authors": "Khadija Tlemçani; Kebira Azbeg; Leila Fetjah; Ouail Ouchetto; Said Jai Andaloussi",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.3389/fpubh.2025.1627448",
+    "title": "Analysis of global, regional, and national burdens of neonatal encephalopathy from 1990 to 2021: insights from the Global Burden of Disease Study 2021",
+    "authors": "Shujun Tan; Shala Mageziyi; Li Long; Naiyiman Dilimulati; Zhang Hui; Nuerya Rejiafu",
+    "issuedDate": "2025-10-8",
+    "abstract": "BackgroundThe Sustainable Development Goal 3.2 urges nations to reduce neonatal mortality rates to no more than 12 deaths per 1,000 live births by 2030. Neonatal encephalopathy (NE), the third leading cause of under-five mortality, significantly impacts global neonatal death rates and long-term health. A comprehensive assessment is essential to inform public health strategies. This study aims to analyze the burden of Neonatal Encephalopathy on global, regional, and national levels.MethodsData on the age-standardized mortality rate (ASMR) and age-standardized incidence rates (ASIR) for NE from 1990 to 2021 were obtained from the Global Burden of Disease Study (GBD) 2021. To evaluate the changes in ASIR and ASMR associated with the burden of NE, estimated annual percentage changes (EAPC) and overall percentage changes were calculated. Furthermore, the relationship between disease burden and the Sociodemographic Index (SDI) was analyzed, along with predictions generated using autoregressive integrated moving average (ARIMA) model.ResultsThe global burden of NE has significantly declined over the past three decades. Between 1990 and 2021, the global ASIR decreased from 20.22 to 17.16, while the number of cases fell from 1,295,891.1 to 1,061,448.15, reflecting an 18.09% reduction. Similarly, the global ASMR declined from 13.81 in 1990 to 9.75 in 2021, with deaths decreasing from 883,082.06 to 603,605.62, representing a 31.65% reduction. Projections based on ARIMA models indicate that from 2022 to 2030, the global ASIR is expected to decline from 17.06 to 16.36, and the ASMR is projected to decrease from 9.55 to 7.98, suggesting a continued reduction in the burden of NE.ConclusionThis study illustrates the global progress made in reducing neonatal encephalopathy from 1990 to 2021; however, significant disparities persist. Targeted interventions are crucial to address these inequities and to achieve Sustainable Development Goal 3.2.",
+    "publisher": "Frontiers Media SA",
+    "type": "journal-article",
+    "journal": "Frontiers in Public Health"
+  },
+  {
+    "doi": "10.12732/ijam.v38i5s.379",
+    "title": "“ENHANCED OBJECT DETECTION IN LOW-LIGHT CONDITIONS USING MODIFIED YOLO ARCHITECTURE FOR NIGHT SURVEILLANCE”",
+    "authors": "Tapas Pramanik,]Burade",
+    "issuedDate": "2025-10-8",
+    "abstract": "This has made night surveillance an irreplaceable part of the security systems, yet object identification under low-light situations is a significant problem owing to noise, low contrast, and blurred objects. Standard deep learning models and traditional computer vision models are not generally able to provide believable accuracy in such circumstances. This paper suggests a modified YOLO (You Only Look Once) architecture, which can be used to detect objects in low-light surveillance systems. The model adds image preprocessing, attention block, and light convolutional blocks to enhance the precision of detection and simultaneously run in real-time. The experimental findings show that the suggested framework is much more effective than the used baseline YOLO models regarding mean Average Precision (mAP) and detection speed (FPS), as well as low-illumination resistance",
+    "publisher": "Academic Publications",
+    "type": "journal-article",
+    "journal": "International Journal of Applied Mathematics"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_94",
+    "title": "Intelligent Cryptosystem Recognition: AI-Driven Approaches for Real-Time Detection",
+    "authors": "Allaga Hamza; Abderrazak Farchane; Mohamed Biniz; Said Hakimi",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.1093/ofid/ofaf634",
+    "title": "Longitudinal patient-reported outcome trajectories in Long COVID: Findings from the STOP-PASC Clinical Trial",
+    "authors": "Prasanna Jagannathan; Haley Hedlin; Jane W Liang; Blake Shaw; Evan Maestri; Michelle Lin; P J Utz; Upinder Singh; Linda N Geng; Hector Bonilla",
+    "issuedDate": "2025-10-8",
+    "abstract": "Abstract\n               \n                  Background\n                  Long COVID is a heterogeneous post-infectious condition. Although patient-reported outcome (PRO) measures for diagnosis or therapeutic monitoring have been adapted from related complex chronic illnesses, no PRO has been validated specifically in Long COVID. The STOP-PASC randomized, placebo-controlled trial of nirmatrelvir/ritonavir (NMV/r) in adults with Long COVID showed no overall treatment effect. This exploratory analysis aimed to identify distinct symptom trajectories and clinical characteristics associated with improvement or worsening over time.\n               \n               \n                  Methods\n                  We performed latent class trajectory modeling (LCTM) on PRO measures—including the Patient Global Impression of Severity (PGIS), Patient Global Impression of Change (PGIC), PROMIS domains, and core symptoms—among 155 randomized participants. Participants were followed for 15 weeks with serial symptom assessments. Trajectory groups were identified using Bayesian Information Criteria and characterized using descriptive statistics and absolute standardized differences.\n               \n               \n                  Results\n                  LCTM revealed heterogeneity in symptom trajectories. Two groups emerged for PGIS (improving n=17, persistent/severe n=136) and PGIC (improving n=130; worsening n=22). PROMIS-Physical Function modeling identified four groups (improving, normal/mild, moderate, and severe), fatigue core symptom modeling identified three (improving; moderate; severe). Worsening groups had higher proportions of NMV/r-treated participants and greater prevalence of cardiovascular symptoms and low-dose naltrexone use. Improving groups had shorter time since infection and higher baseline physical function. No subgroup showed a clear benefit from NMV/r.\n               \n               \n                  Conclusions\n                  Distinct PRO trajectories reflect the clinical heterogeneity of Long COVID. NMV/r showed no clear benefit across subgroups. These findings emphasize the need for validated, Long COVID-specific PRO instruments and targeted therapeutic trials tailored to Long COVID subtypes.",
+    "publisher": "Oxford University Press (OUP)",
+    "type": "journal-article",
+    "journal": "Open Forum Infectious Diseases"
+  },
+  {
+    "doi": "10.1017/s0021859625100336",
+    "title": "Impact of crops and fertilizers on soil respiration in a long-term field experiment",
+    "authors": "Olga Sukhoveeva; Alexander Ryzhov; Alexander Pochikalov; Tatiana Lebedeva; Dmitry Karelin; Igor Zavertkin",
+    "issuedDate": "2025-10-8",
+    "abstract": "Abstract\n\t  Field experiments enable researchers to investigate the impacts of both natural and anthropogenic crop production factors on soil respiration (SR), the largest contributor of CO2 emissions from terrestrial ecosystems to the atmosphere. The hypothesis of this study was that the influence of two key anthropogenic factors — applied fertilizers and cultivated crops — on the respiration rate of arable soils could be separated in a field experiment. The objective was therefore to quantify the influence of these factors on SR and assess its dependence on soil characteristics. The study was conducted on the territory of the long-term field experiment at the Timiryazev Academy (Moscow, Russia), where use of plots of crop rotation involving rye, barley, potatoes, and fallow, with liming and various fertilizer types applied, was considered. Measurements were taken using the closed chamber technique and a portable infrared gas analyzer from May 2023 to November 2024. During the vegetation periods SR varied significantly and was not statistically different for most plots (0.063‒0.276 g C/(m2·h)), except for the NPK+manure variant (0.371‒0.430 g C/(m2·h)). During the bare soil period SR was similar between fertilizer variants and 10‒20 times lower under snow cover than during the vegetation period (0.006‒0.018 g C/(m2·h)). A direct dependence of respiration on soil organic carbon and particulate organic matter content was observed (R=0.552‒0.650). Two-way PERMANOVA revealed significant effects of fertilizers (17.2‒24.0% of the variance) and crops (6.5‒7.1%) on SR, although their interaction was insignificant. Our research could form the basis for developing carbon sequestration compensation measures in response to specific fertilizer doses.",
+    "publisher": "Cambridge University Press (CUP)",
+    "type": "journal-article",
+    "journal": "The Journal of Agricultural Science"
+  },
+  {
+    "doi": "10.21203/rs.3.rs-7464124/v1",
+    "title": "Long COVID: Lung Pathophysiology and its Relationship with Cognitive Dysfunction",
+    "authors": "Keegan R Staab; Marrissa J McIntosh; Abhilash S Kizhakke Puliyakote; Andrew D Hahn; Natally Alarab; Jonathan L Percy; Tara Lanning; Johanna Theeler; Carinda Linkenmeyer; Conner J Wharff; Eric Bruening; Jessica C. Sieren; Eric A. Hoffman; Alejandro P. Comellas; Karin F. Hoth; Sean B. Fain",
+    "issuedDate": "2025-10-8",
+    "abstract": "Abstract\n        Post-acute sequelae of COVID-19 (Long COVID) includes physical and cognitive symptoms that can last long after acute infection. Links between lung pathophysiology and cognitive dysfunction in Long COVID remain largely unexplored. Long COVID participants were recruited from a post-COVID-19 clinic. Participants completed Patient-Reported Outcomes Measurement Information System (PROMIS) symptom questionnaires for Sleep Disturbance, Anxiety, Depression, and Cognitive Function, the National Institute of Health Toolbox Cognition Battery (NIHTB-CB), pulmonary function tests (spirometry, diffusion capacity of the lung), structural and functional brain magnetic resonance imaging (MRI), and 129 Xe MRI for ventilation and regional pulmonary gas exchange evaluation, at the same study visit. Bivariate relationships between lung and cognitive function in Long COVID were assessed using Spearman partial correlations, adjusted for age. Twelve participants (age=54±11 yrs.; 10 females) that were 32±5 months from infection were evaluated. PROMIS symptom scores indicated reduced perceived cognitive function in everyday life along with increased fatigue, anxiety, depressive symptoms, and sleep disturbance. However, objective cognitive function performance on NIHTB-CB were broadly within normal limits. Lower 129 Xe MRI gas exchange was correlated with more severe symptoms of sleep disturbance, reduced executive functioning performance, and elevated cerebral perfusion via brain MRI. These results are suggestive of a link between lung pathophysiology and cognitive dysfunction in this Long COVID population with enduring respiratory and cognitive symptoms more than two years after infection.",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "posted-content",
+    "journal": "N/A"
+  },
+  {
+    "doi": "10.21203/rs.3.rs-7546523/v1",
+    "title": "Determinants of long-term SARS-CoV-2 immune responses in asymptomatic-to- moderate COVID-19 patients in sub-Saharan Africa",
+    "authors": "Víctor L. de Rioja; Odin Goovaerts; Marta Vidal; John Amuasi; Anthony Afum-Adjei Awuah; Christian Kahusu Mwan-za-k'a; Placide Mbala-Kingebeni; Ritha Nyembu Kibambe; Matthieu Tshitamba; Chirac Kazadi; Wendemagegn Embiale Yeshaneh; Dereje Bedane Hunde; Mezgebu Asres; Fitsumbrhan Tajebe; Márcia Mutisse Massinga; Vânia Maphossa; Ricardo Strauss; Oumou Maiga Ascofare; Frederic Monnot; Nabila Ibnou Zekri Lassout; Ahmed Musa; ANTICOV-IMMUNO Consortium; Wim Adriaensen; Gemma Moncunill",
+    "issuedDate": "2025-10-8",
+    "abstract": "Abstract\n        Background\nImmune responses after SARS-CoV-2 infection remain poorly characterized in African populations, despite widespread viral transmission and proportionally lower COVID-19 severity and mortality than in other regions. We aimed to define the determinants and durability of humoral and cellular immunity in sub-Saharan Africa and to identify immune correlates of protection against reinfection.\nMethods\nWe conducted a 12-month longitudinal immunological study involving 513 adults with asymptomatic or mild-to-moderate COVID-19 enrolled across four sub-Saharan African countries (Ghana, Democratic Republic of Congo, Ethiopia, and Mozambique) during four pandemic waves (2020–2022). We profiled levels of IgA, IgG, and IgM against eight SARS-CoV-2 antigens by Luminex, neutralizing antibody activity against ancestral and variant strains, and antigen-specific T- and B-cell responses by flow cytometry. Immune kinetics, decay, immune escape, and reinfection risk were evaluated alongside the impact of clinical and demographic variables, including prior exposure, epidemic wave, geographic site, treatment allocation, and host factors. Statistical analyses included non-parametric tests (Kruskal-Wallis with Benjamini-Hochberg adjustment), Spearman correlations, logistic regression for reinfection, and mixed-effects models for longitudinal determinants.\nResults\nHumoral and cellular immune responses were robust and sustained across participants. Estimated antibody half-lives during the early decay phase exceeded 50 days for IgA and IgG. Higher IgA, IgG, and neutralizing levels were significantly associated with lower odds of reinfection during follow-up. Repurposed COVID-19 treatments showed no measurable impact on immune responses.\nPrior infection and/or vaccination were the main determinants of antibody magnitude and persistence, greatly surpassing the effects of age, sex, symptoms, and comorbidities. Antibody levels also varied significantly by epidemic wave and site, higher in later waves and, across sites, generally higher in Ethiopia and lower in DRC. Comorbidities were primarily associated with increased SARS-CoV-2-specific T-cell activation. Strong correlations were observed between binding and neutralizing antibodies, and variant-specific immune escape was confirmed for Beta, Gamma, and Omicron.\nConclusions\nThis multi-country study provides a comprehensive characterization of SARS-CoV-2 humoral and cellular immune responses in African cohorts and identifies prior exposure and local epidemiological context as the main determinants of immune magnitude, durability, and protection, outweighing other host factors.",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "posted-content",
+    "journal": "N/A"
+  },
+  {
+    "doi": "10.1007/s11145-025-10691-3",
+    "title": "Unveiling beliefs and practices in Chinese vocabulary teaching: a sequential exploratory mixed-methods study",
+    "authors": "Keyi Zhou; Wai-Ming Cheung; Xi Chen; Pui-sze Yeung; Chin-Hsi Lin",
+    "issuedDate": "2025-10-8",
+    "abstract": "Abstract\n          Vocabulary is an essential aspect of first-language (L1) teaching and learning. However, little research has previously investigated teachers’ beliefs about and practices of vocabulary teaching in the L1 Chinese context. Accordingly, this study does so using a sequential exploratory mixed-methods approach. The first of its two phases involved qualitative data collection through interviews, observations, stimulated-recall interviews, and assessment of documents. Based on these data, questionnaires were developed for Phase 2: a quantitative study involving 337 teachers aimed at systematically capturing the above-mentioned beliefs and practices. The findings indicate that the sampled teachers primarily focused on meaning-oriented vocabulary teaching, and were more likely to use interactionist than behaviorist teaching methods. Their use of educational technology was extensive, but peripheral, and they placed little emphasis on self-regulated learning. These findings can usefully inform curriculum alignment, and form the basis of our recommendations for effective instructional strategies, including interactive teaching and technology integration. We also propose a framework that facilitates comprehensive analysis of vocabulary teachers’ beliefs and practices while addressing gaps in the L1 Chinese-teaching literature, notably by emphasizing context-specific approaches.",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "journal": "Reading and Writing"
+  },
+  {
+    "doi": "10.1007/s00586-025-09365-z",
+    "title": "ShPCFHNet: shepherd parallel convolutional forward harmonic net for spinal cord injury detection using CT images",
+    "authors": "Bhagyashri Thakare; Bhushan Chaudhari; Madhuri Patil; Sachin Kamble",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "journal": "European Spine Journal"
+  },
+  {
+    "doi": "10.12732/ijam.v38i5s.351",
+    "title": "EXPLAINABLE ARTIFICIAL INTELLIGENCE MODELS FOR INTRUSION DETECTION SYSTEMS\t TO IMPROVE THE EFFICIENCY AND INTERPRETABILITY OF BLACK BOX MODELS",
+    "authors": "Alycia Sebastian",
+    "issuedDate": "2025-10-8",
+    "abstract": "In the field of cybersecurity, Intrusion Detection Systems (IDS) are commonly used to prevent and minimize threats. Systems for detecting intrusions aid in preventing threats and vulnerable points from entering computer networks. Many Machine Learning (ML) techniques are available for assisting development of IDS  that perform effectively. In a broad range of tasks, ML based systems have demonstrated improved learning performance. But, the problem with the certain cutting-edge models is that they lack in explanation ability, transparency, and reliability. Explainable AI (XAI) approaches are employed in order to comprehend and clarify these AI models to security analysts. The present study proposes an architecture that uses SHAP for Intrusion detection Systems (IDS) to increase the interpretability of the model by extracting the explanations from the black box models like XGBoost, AdaBoost, Support Vector Machines (SVM) and Random Forest (RF) algorithms. The explanations provided by the SHAP analysis are validated with filter based Feature selection method. The experiment’s findings show that the XGBoost model outperforms the other ML models and the SHAP analysis is performed for the ML model to study the efficacy of the explanations and the importance of features.",
+    "publisher": "Academic Publications",
+    "type": "journal-article",
+    "journal": "International Journal of Applied Mathematics"
+  },
+  {
+    "doi": "10.21203/rs.3.rs-7453175/v1",
+    "title": "Long-term Stroke Recurrence in Atrial Fibrillation: Differential Predictors of Ischaemic and Haemorrhagic Risk",
+    "authors": "Daniel Guisado-Alonso; Elisa Cuadrado-Godia; Jordi Jiménez-Conde; Ana Rodriguez-Campello; Isabel Fernández-Pérez; Adrià Macias-Gómez; Antoni Suárez-Pérez; Marta Vallverdú-Prats; Julia Peris-Subiza; Sergio Vidal-Notari; Laia Peraferrer-Montesinos; Angel Ois; Joan Jiménez-Balado; Eva Giralt-Steinhauer",
+    "issuedDate": "2025-10-8",
+    "abstract": "Abstract\n        Background\nPredictors of long-term ischaemic and haemorrhagic stroke recurrence (LTSR) after acute ischaemic stroke (AIS) with AF remain uncertain. This study aimed to identify independent predictors of LTSR in patients with AF-related AIS.\nMethods\nWe conducted a prospective observational study of consecutive AIS patients with AF enrolled in a hospital-based registry (January 2005–June 2022). The primary endpoint was LTSR, defined as any new ischaemic or haemorrhagic cerebrovascular event occurring during follow-up, which began 90 days after the AIS event. Independent predictors of overall, ischaemic, and haemorrhagic LTSR were identified using Fine–Gray competing risk models.\nResults\nA total of 1,212 patients (median age 79 years, 42.3% male) were included. During a median follow-up of 43.0 months, 220 patients (18.1%) experienced LTSR (incidence 0.039 events/person-year), predominantly ischaemic. In multivariable Fine–Gray models, known AF before the index stroke (sHR 2.1), large artery atherosclerosis (LAA) (sHR 2.6), small artery occlusion (SAO) (sHR 1.7), and higher CHA₂DS₂-VASc scores were independently associated with increased LTSR risk, while anticoagulation—particularly with Direct Oral Anticoagulants (DOACs) (sHR 0.46)—was protective. AF detected after stroke (AFDAS) (sHR 0.47) was associated with lower risk of ischaemic LTSR, and LAA defined a high-risk subgroup. Notably, SAO was the only independent predictor of haemorrhagic LTSR (sHR 3.2). DOAC showed a non-significant trend toward protection for haemorrhagic events.\nConclusion\nIn AF-related AIS, AFDAS was associated with lower risk of LTSR, while anticoagulation—particularly with DOACs—was strongly protective. The presence of competing stroke etiologies identified differential high-risk subgroups for ischaemic and haemorrhagic recurrence, highlighting the need for individualized prevention strategies.",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "posted-content",
+    "journal": "N/A"
+  },
+  {
+    "doi": "10.3389/fonc.2025.1606568",
+    "title": "Comparative short- and long-term outcomes of TOETVA, ETGUA, and COT in thyroid cancer: a propensity score-matched study",
+    "authors": "Cong Bian; Zhenmeng Lin; Mingfang Yan; Shaokun Weng; Chao Xie; Wen Pan; Chenlan Huang; Guiren Fang",
+    "issuedDate": "2025-10-8",
+    "abstract": "ObjectiveThis study aims to compare the short-term and long-term outcomes of three surgical approaches for thyroid cancer: Transoral Endoscopic Thyroidectomy Vestibular Approach (TOETVA), Gasless Unilateral Axillary Endoscopic Thyroidectomy (ETGUA), and Conventional Open Thyroidectomy (COT).MethodsA total of 466 thyroid cancer patients who underwent surgery were initially included. After propensity score matching (PSM), 318 patients were analyzed, with 106 patients in each group (TOETVA, ETGUA, and COT). The primary outcomes compared included surgical parameters (incision length, blood loss, operation time, lymph node dissection), postoperative inflammation (WBC, CRP, IL-6), postoperative complications, postoperative pain (Visual Analog Scale, VAS), scar assessment (Vancouver Scar Scale, VSS), wound satisfaction, costs, and quality of life (36-Item Short Form Health Survey, SF-36).ResultsAfter matching, the operation time for TOETVA was longer than that for both ETGUA and COT. The number of lymph nodes dissected in ETGUA was fewer than in TOETVA and COT. There were no significant differences in postoperative complications, VAS scores, costs, or hospital stay among the three groups. On the first postoperative day, TOETVA and ETGUA showed higher levels of WBC and CRP than COT, but no significant differences were observed by day three. TOETVA had the shortest incision and the lowest VSS score. Wound satisfaction was significantly higher in both TOETVA and ETGUA compared to COT, with no significant difference between TOETVA and ETGUA. In terms of quality of life, some dimensions in TOETVA and ETGUA were higher than in COT. Each surgical approach has its own advantages and disadvantages.ConclusionTOETVA demonstrated the shortest incision and the lowest VSS score, while both TOETVA and ETGUA showed the best wound satisfaction and specific domains of quality of life. However, TOETVA had the longest operation time, and ETGUA had the fewest lymph nodes dissected.",
+    "publisher": "Frontiers Media SA",
+    "type": "journal-article",
+    "journal": "Frontiers in Oncology"
+  },
+  {
+    "doi": "10.1007/s00203-025-04494-x",
+    "title": "Multi-omics profiling reveals key microbial and metabolic variations in ischemic stroke: insights into gut and oral microbiota",
+    "authors": "Lihe Yao; Lei Li; Jun Chen; Yuan Ma; Adel I. Alalawy; Yisha Jiang; Wei Zhang; Youquan Gu; Yaming Xi",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "journal": "Archives of Microbiology"
+  },
+  {
+    "doi": "10.3389/fneur.2025.1678073",
+    "title": "Evaluation of two AI techniques for the detection of new T2/FLAIR lesions in the follow-up of multiple sclerosis patients",
+    "authors": "Milica Mastilović; Olivier Heinzlef; Christian Federau; Verónica Muñoz-Ramírez; Marie Blanchere; Jasmina Boban; Francois Cotton; Myriam Edjlali",
+    "issuedDate": "2025-10-8",
+    "abstract": "BackgroundMultiple sclerosis is an inflammatory demyelinating disease of the CNS. Annual MRI exams are crucial for disease monitoring. Interpreting high T2/FLAIR lesion loads can be laborious. AI aids in lesion detection, and choosing between different solutions can be challenging.AimThis study compares two distinct software, Pixyl.Neuro.MS® and Jazz®, to assess their performance in T2/FLAIR lesion detection between two-time points.MethodsRetrospective analysis included follow-up MRIs from 35 MS patients. Pixyl.Neuro.MS® automatically segments and classifies lesions. Jazz® automates the reading process and image display. Two readers (15 and 4 years of experience) conducted radiological analysis, followed by AI-assisted readings. A number of new lesions (NL) and reading times were recorded, with ground truth (GT) established by consensus. AI-detected lesions were classified as true (TP) and false positives (FP). Statistical analysis used SPSS (p &amp;lt; 0.05).ResultsPixyl.Neuro.MS® readings averaged 2 min 46 s ± 1 min 4 s while using Jazz® 3 min 33 s ± 2 min 24 s. Over 50% of the population had a high lesion load (&amp;gt;20 lesions). Both software significantly improved NL detection (p &amp;lt; 0.01 for both), revealing them in more patients than standard readings. Standard reports found 8 NL in 2 patients, while AI-assisted readings detected at least 17 TP in 7 patients and rejected 61 FP lesions. GT detected 21 lesions in 19 patients.ConclusionBoth AI software have been found to enhance NL detection in MS patients, outperforming standard methods. These tools offer crucial advantages for accurate disease monitoring.",
+    "publisher": "Frontiers Media SA",
+    "type": "journal-article",
+    "journal": "Frontiers in Neurology"
+  },
+  {
+    "doi": "10.1007/978-3-032-06665-7_24",
+    "title": "Leveraging Artificial Intelligence for Detection and Filtering of Inappropriate Social Media Content",
+    "authors": "Juttiga Rohita; B. Teja Sree; Ibrapatnam Anusha; Mohammad Sharmila Begum; Nirjogi Mahathi",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, ICT Systems and Sustainability"
+  },
+  {
+    "doi": "10.1142/s0219477525400206",
+    "title": "Quantum Channel FETs for Advanced Biosensors",
+    "authors": "D. Pustovyi; M. Petrychuk; A. Fujiwara; Y. Zhang; H. Long; V. Chekubasheva; S. Vitusevich",
+    "issuedDate": "2025-10-8",
+    "abstract": "Highly sensitive high-speed biosensors are key devices for precise diagnostics, which allows the application of medical treatment in a short time. In this paper, noise spectra and characteristic time constants are studied in nanotransistors with channel sizes below 30[Formula: see text]nm. The quantization effect due to the formation of a quantum dot channel is analyzed based on the transport and noise properties of the device structures. Ultra-low flicker noise at the quantum level with a Hooge parameter of about 10[Formula: see text] is registered. A strong dependence of the characteristic switching time on the modulation effect is revealed with a slope ([Formula: see text]) that considerably exceeds the value of 1, which is typically obtained in large-area device structures. This reflects the fact that a 700% amplification of sensitivity in nanotransistor biosensors can be obtained. A dimensionless R-factor introduced by the ratio of the emission time constant to the capture time constant as a function of gate voltage reveals a slope equal to 20, which is promising for the extraction of very small signals from biomolecules with 20 times higher sensitivity.",
+    "publisher": "World Scientific Pub Co Pte Ltd",
+    "type": "journal-article",
+    "journal": "Fluctuation and Noise Letters"
+  },
+  {
+    "doi": "10.31223/x54t8z",
+    "title": "​Methane and nitrous oxide concentrations and sea-air fluxes in western Long Island Sound, a seasonally hypoxic urban estuary:​ Hourly to seasonal variability",
+    "authors": "Cara Manning; Anagha Payyambally; Josie Mottram; Kelsey Ward",
+    "issuedDate": "2025-10-8",
+    "abstract": "We report the first water column profiles of dissolved methane (CH4) and nitrous oxide (N2O) in western Long Island Sound, an urban estuary in which seasonal hypoxia occurs due to eutrophication and restricted exchange with the ocean. We collected samples at seven stations along an 18 km transect in August 2023, October 2023, and May 2024. CH4 concentrations and sea-air fluxes were highest in August (mean concentration 101 nmol/kg and mean sea-air flux 154 μmol m−2 d−1) and lowest in May (mean concentration 32 nmol/kg and mean sea-air flux 62 μmol m−2 d−1). Conversely, N2O concentrations and sea-air fluxes were highest in May (mean concentration 12.0 nmol/kg and mean sea-air flux 4.8 μmol m−2 d−1) and lowest in August (mean concentration 10.1 nmol/kg and mean sea-air flux 2.5 μmol m−2 d−1). Surface concentrations of CH4 and N2O and sea-air fluxes were highest at the westernmost station in all three seasons. To investigate short-term variability in CH4, N2O, and oxygen (O2), we collected samples every 4 hours over 28 hours at the middle station of the transect, in all three months. Observed changes in gas distributions were linked to water provenance, driven by tidal currents. Our data suggest that there is a persistent source of surface water to western Long Island Sound with high concentrations of CH4 and N2O which drives an along-sound gradient in surface concentrations and sea-air fluxes.",
+    "publisher": "California Digital Library (CDL)",
+    "type": "posted-content",
+    "journal": "N/A"
+  },
+  {
+    "doi": "10.21203/rs.3.rs-7601158/v1",
+    "title": "Halogen (Cl, Br, I) tuning of 3-Methylpiperidine Bismuth Halides for Highly Sensitive, Low-Dose, and Stable X-ray Detection",
+    "authors": "Huayushuo Zhang; Qian Ma; Pan Gao; Bolong Li; Xiaoxia Yang; Chao Li; Mingming Song; Zhiwei Hou; Xiaomei Jiang",
+    "issuedDate": "2025-10-8",
+    "abstract": "Abstract\n        X-ray detection has extensive applications in medical imaging, scientific research, and security inspection. Despite the superior radiation detection properties of lead-based perovskites, including high carrier mobility and superior attenuation efficiency, their toxicity and instability arising from ion migration hinders further development. To address these challenges, a series of halogen-tuned lead-free 3-methylpiperidine bismuth halides, (C6H14N)3Bi2I9, (C6H14N)2BiBr5 and (C6H14N)2BiCl5 (C6H14N = 3-methylpiperidine) single crystals were grown and systematically characterized. 3-methylpiperidine was selected for their steric effect stabilizing the lattice, and the synergistic tuning through halogen variation enabled a structural transition along with modulation of their properties. Notably, lateral-structured (C6H14N)3Bi2I9 single crystal-based X-ray detectors achieved remarkable sensitivity of 388.05 μC Gy⁻¹ cm⁻², a low detection limit of 71.05 nGy s⁻¹ and a dark current drift of 2.16 × 10⁻8 nA cm⁻¹ s⁻¹ V⁻¹. Importantly, the material retained its original morphology after eight months of ambient storage. Furthermore, flexible X-ray devices fabricated via spin-coating (C6H14N)3Bi2I9 exhibited excellent X-ray response with a sensitivity of 121.48 μC Gy⁻¹ cm⁻² and outstanding mechanical stability. This work reveals that halogen tuning effectively optimizes the structure and performance of Bi-based perovskites, providing valuable insights for advancing them in X-ray detection applications.",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "posted-content",
+    "journal": "N/A"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_109",
+    "title": "Analyzing Packet Health in MicaZ-Crossbow WSNs and Error Detection Approach Based on the Gilbert/Elliot Model",
+    "authors": "Karim Lahma; Mohamed Hamraoui",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.1007/978-3-032-06069-3_5",
+    "title": "CF-OOD: Concentration-Free Density Estimation for Reliable Out-of-Distribution Detection",
+    "authors": "Fabrizio Angiulli; Fabio Fassetti; Maria Pia Zupi",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Computer Science, Similarity Search and Applications"
+  },
+  {
+    "doi": "10.1007/978-3-032-06952-8_9",
+    "title": "Cascaded Machine Learning Algorithm for Snoring Detection Based on Audio Signal",
+    "authors": "Wanqi Huang; Xuanyi Chen; Jinyu Du; Dingjuan Chua",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Computer Science, Cooperative Design, Visualization, and Engineering"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_45",
+    "title": "Intrusion Detection in CAV Networks: A Review of Federated Learning and Hybrid Security Architecture",
+    "authors": "Kessabi Salma; Mazri Tomader",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.1007/978-3-032-06069-3_35",
+    "title": "Double Filtering Using Short and Long Quantized Projections",
+    "authors": "Naoya Higuchi; Yasunobu Imamura; Takeshi Shinohara; Kouichi Hirata; Tetsuji Kuboyama",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Computer Science, Similarity Search and Applications"
+  },
+  {
+    "doi": "10.31223/x5cf3f",
+    "title": "LONG-LIVED TOPOGRAPHY ALONG RIFTED MARGINS: INSIGHTS FROM APARADOS DA SERRA ESCARPMENT, SOUTHEAST BRAZIL",
+    "authors": "Mauricio Haag; Scott Jess; Lindsay Schoenbohm; Eva Enkelmann; Taís Pinto",
+    "issuedDate": "2025-10-8",
+    "abstract": "The Brazilian margin is one of the longest elevated passive margins (EPMs) in the world. However, both the timing of uplift and the long-term evolution of this EPM remain highly debated. In this study, we present a new suite of apatite (U-Th-Sm)/He (AHe) and fission track (AFT) ages for the southern end of the Brazilian EPM, in the Aparados da Serra plateau. Our results reveal that mean AHe ages range from 43 – 112 Ma, while AFT ages range from 46 – 222 Ma. Thermal history models suggest monotonic exhumation rates in the Aparados da Serra, with post-rifting rates less than 50 m Myr-1 in the coastal plain and &amp;lt; 25 m Myr-1 in the volcanic plateau. Collectively, our results imply a total erosion of 2 – 4 km of material from the coast and less than 2 km from the plateau since rifting ca. 120 – 100 Ma. AHe and AFT data indicate no detectable exhumation during the Cenozoic, implying that recent uplift along the margin was either absent or minimal, and that the relief observed in the Aparados da Serra is a likely consequence of sustained rift topography. Based on the absence of major recent tectonic events, we argue that Cenozoic exhumation patterns in the Aparados da Serra were largely controlled by geomorphologic processes (e.g., differential erosion). The spatial distribution of AHe ages indicates that the Aparados da Serra evolved through escarpment retreat, at least across the region extending from the present-day coastline to the escarpment position. Lastly, the equivalence between long (AFT and AHe) and short-term (catchment-averaged) erosion rates argues for sustained stability of the margin over geological timescales.",
+    "publisher": "California Digital Library (CDL)",
+    "type": "posted-content",
+    "journal": "N/A"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_87",
+    "title": "Intelligent Spectral Detection with BPSK Modulation: Evaluation of SVM, NBC, TREE and KNN Model",
+    "authors": "Abdessalam El Bandoudi; Mohamed Boulouird",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.3389/fpls.2025.1682365",
+    "title": "PacBio single-molecule long-read transcriptome sequencing and analysis of somatic embryogenesis in Picea mongolica",
+    "authors": "Jinling Dai; Shengli Zhang; Yu’e Bai",
+    "issuedDate": "2025-10-8",
+    "abstract": "IntroductionPicea mongolica is an endangered conifer species endemic to Hunshandak Sandy Land, uniquely adapted to extreme desert conditions. However, it faces critical conservation challenges due to slow regeneration rates, limited seed production, and high susceptibility to pathogens, which collectively threaten its population sustainability and genetic diversity. MethodsWe performed long-read transcriptome sequencing of pooled samples from various somatic embryogenesis stages using PacBio SMRT technology. The obtained transcripts were functionally annotated using the Nr, SwissProt, KEGG, and KOG databases. We conducted comprehensive transcript structure analyses, including identification of alternative splicing, SSR loci, lncRNAs, and transcription factors. Furthermore, we cloned the PmBBM gene and analyzed its sequence characteristics. Expression patterns of PmBBM and other AP2 transcription factor family members during somatic embryogenesis were profiled. ResultsOur analysis generated 12,232 high-quality transcripts. We identified 83 genes with alternative splicing, 1,006 SSR loci, 35 lncRNAs, and 548 transcription factors from 46 distinct families. The PmBBM gene was successfully cloned and characterized. Expression profiling revealed dynamic expression patterns of PmBBM and other AP2 family members across different stages of somatic embryogenesis. DiscussionThis study establishes the first reference-quality transcriptome database for P. mongolica using PacBio long-read sequencing, providing essential genomic resources for this non-model species. Our findings not only enhance the understanding of molecular mechanisms in somatic embryogenesis but also lay a foundation for future functional genomics research, including gene validation and molecular marker-assisted breeding. These results have significant theoretical and practical implications for the conservation and sustainable utilization of this endangered conifer.",
+    "publisher": "Frontiers Media SA",
+    "type": "journal-article",
+    "journal": "Frontiers in Plant Science"
+  },
+  {
+    "doi": "10.1007/s12262-025-04457-y",
+    "title": "Our Long-Term Results and Patient Satisfaction Rates of Thoracoscopic Sympathectomy Performed in Our Vascular Surgery Clinic for Palmar Hyperhidrosis",
+    "authors": "Gencehan Kumtepe; M. Harun Düver; Murat Yıldırım; Yasin İnal; Hakan Güven; Ahmet Yüksel",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "journal": "Indian Journal of Surgery"
+  },
+  {
+    "doi": "10.12732/ijam.v38i5s.370",
+    "title": "DESIGN OF AN INTELLIGENT DEEP LEARNING FRAMEWORK FOR PHISHING URL DETECTION IN CYBERSECURITY APPLICATIONS",
+    "authors": "G.Lingaiah",
+    "issuedDate": "2025-10-8",
+    "abstract": "Phishing is the ubiquitous cyber threat from social engineering and web-deception to compromise user security, which may lead to credential theft, financial loss and data breaches. Originally blacklist-based detection methods cannot be used since the nature of phishing attacks varies and has changed frequently. We present our novel deep learning methodology for phishing URL detection based upon the publicly available PhiUSIIL dataset of large-scale lexical, host-based, content-based URL features in this paper. The new model employs sophisticated feature engineering, correlation analysis, and deep learning techniques to estimate discriminative patterns between benign and malicious URLs. This tool was implemented by a multi-layered deep neural network optimized with Adam optimizer and binary cross-entropy loss with dropout regularization to avoid overfitting. There was an extensive study of the model on the other model classesifiers of machine learning called Logistic Regression, Random Forest and Support Vector Machines. The results show that the deep learning model stands apart from the base models as well with 99.4% accuracy, 98.1% precision, 97.9% recall, 98.0% F1-score, and a strong generalization in absence of test samples. This confirms that the intelligent deep learning model proposed provides ascalable, adaptive, and robust method for phishing URL detection. This framework can be applied to any security applications in real-world such as browser extensions, email filters, and intrusion detection systems to actively defend against phishing threats. For future extensions, hybrid deep learning models will be studied, explained AI processes, and deployment in real-time detection.",
+    "publisher": "Academic Publications",
+    "type": "journal-article",
+    "journal": "International Journal of Applied Mathematics"
+  },
+  {
+    "doi": "10.5815/ijcnis.2025.05.04",
+    "title": "Intelligent Autoencoder with LSTM based Intrusion Detection and Recommender System",
+    "authors": "V. G. Aishvarya Shree; M. Thangaraj",
+    "issuedDate": "2025-10-8",
+    "abstract": "With the swift growth of digital networks and information in both public and private sectors, it is essential to deal with the considerable threat that network attacks pose to data integrity and confidentiality. Consequently, there is a pressing requirement for the establishment of effective mechanisms to detect and provide recommendations for addressing intrusion attacks. In this paper, we propose a semantic-based intrusion detection system that aims to improve performance by incorporating semantic representations consisting of feature groups and their associated weights, leading to the creation of a weighted knowledge graph. The weights of the features are determined using sparse autoencoders. From these weights, the most significant features are normalized to a specific range. This approach comprises a combination of a Deep Auto Encoder (AE) and Long Short-Term Memory (LSTM) networks for intrusion detection. Furthermore, the ensemble method of Extreme Gradient Boosting (XGBoost) is used to identify and recommend high-probability attack scenarios. The dataset used to evaluate is the CSE-CIC-IDS dataset. Performance metrics such as accuracy, precision, recall, false positive rate, receiver operating characteristic metrics, loss, and error rate are used to measure the performance, and the results show the approach demonstrates substantial improvements in detection accuracy, minimizing false positives, enhancing reliability, and outperforming existing models. The combination of semantic knowledge, deep learning, and ensemble learning ensures a proactive and adaptive cybersecurity framework.",
+    "publisher": "MECS Publisher",
+    "type": "journal-article",
+    "journal": "International Journal of Computer Network and Information Security"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_121",
+    "title": "A Majority Voting Scheme in Wireless Sensor Networks for Network Intrusion Detection",
+    "authors": "Said Ouhmi; Abdelkarim Ait Temghart; Mbarek Marwan; Khalid Housni",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.1515/joc-2025-0381",
+    "title": "Signal detection in optical orthogonal time space modulation for efficient VLC application",
+    "authors": "Anjali Shrivastav; S. P. Meharunnisa; Surat Pyari Atti; Arun Kumar; Aziz Nanthaamornphong",
+    "issuedDate": "2025-10-8",
+    "abstract": "Abstract\n               This paper presents a detailed analysis of the bit error rate (BER) performance of a proposed maximum likelihood (ML) detection scheme for optical orthogonal time space modulation (OTSM) systems using 64-QPSK, considering practical optical impairments and diverse channel conditions. The evaluation covers scenarios with 5 % and 10 % channel estimation errors, as well as Rayleigh and Rician fading environments. Simulation results confirm that the proposed machine learning (ML) detector consistently outperforms conventional methods – including OTSM, zero-forcing equalization (ZFE), minimum mean square error (MMSE), and conventional ML – by delivering substantial SNR gains. For instance, under 10 % and 5 % estimation errors, the target BER of 10−3 is achieved at 12.2 dB and 10.8 dB, respectively, providing up to 6 dB improvement over baselines. In Rayleigh fading, the same BER is attained at 9.6 dB with a gain of 7.7 dB, while in Rician fading, the detector achieves optimal performance at only 6 dB, outperforming others by as much as 9.5 dB. These results underscore the robustness of the proposed ML approach against estimation inaccuracies and fading, making it well-suited for low-power, high-reliability applications in 6G, Internet of things (IoT), vehicular networks, and satellite communications.",
+    "publisher": "Walter de Gruyter GmbH",
+    "type": "journal-article",
+    "journal": "Journal of Optical Communications"
+  },
+  {
+    "doi": "10.12732/ijam.v38i5s.329",
+    "title": "A HYBRID DATA MERGING AND AUGMENTATION-BASED DEEP FRAMEWORK FOR NEGATIVE AFFECT DETECTION",
+    "authors": "Suja  Sreejith  Panicker",
+    "issuedDate": "2025-10-8",
+    "abstract": "Emotion Recognition (ER) refers to capturing the different aspects pertaining to detection of emotions. Performance of ER models is hindered by several challenges including lack of generalization. The latter is influenced by factors including class imbalance, intra-domain differences, occlusions, varied image sizes and dimensionality of datasets. While Data Augmentation (DA) remains a prevailing solution, there is a pressing need for large, balanced, and heterogeneous datasets representing diverse real-world scenarios. Additionally, there is lack of comprehensive framework to combine augmentation and merging, particularly for applications in mental health. To address these issues, we propose a Recommendations and Behavioural support-based Framework for Negative Affect detection (RBF-NA). At the core of RBF-NA, we introduce an interesting pipeline, the Hybrid-Multi Stage Augmentation and Merging (H-MSAM). This pipeline is supported by introducing a novel algorithm AG-L1. Furthermore, a custom deep model for emotion detection, the Convolutional-Face Emotion Detection (C-FED) is proposed. C-FED achieves exceptional performance with highest accuracies of 99.75% on CK+ and 85.87% on KDEF datasets. H-MSAM improves the accuracy by 13.31%, 16.96%, and 19.44% on CK+, KDEF, and FER2013, respectively. Furthermore, C-FED outperforms ResNet and VGG16, with accuracy gains of 6.87% and 5.13%, respectively. The granular performance of system demonstrates excellent performance on every emotion class, with the negative emotions including sad, angry achieving superior results. The promising findings in this paper highlight the potential of RBF-NA in advancing ER research and fostering early detection of negative emotions.",
+    "publisher": "Academic Publications",
+    "type": "journal-article",
+    "journal": "International Journal of Applied Mathematics"
+  },
+  {
+    "doi": "10.5815/ijcnis.2025.05.03",
+    "title": "Novel Hybrid LOA-VCS Metaheuristic Approach with Adaptive Parameter Tuning for Network Intrusion Detection",
+    "authors": "Mohammad Othman Nassar; Feras Fares AL-Mashagba",
+    "issuedDate": "2025-10-8",
+    "abstract": "The increasing complexity and dynamism of modern cyber threats necessitate intelligent and adaptive network intrusion detection systems (NIDS). This paper proposes a novel hybrid metaheuristic approach that combines the Lion Optimization Algorithm (LOA) with the Virus Colony Search (VCS), enhanced by adaptive parameter tuning mechanisms. The proposed LOA-VCS hybrid algorithm addresses limitations in prior single and hybrid metaheuristic by alternating exploration and exploitation strategies across epochs, optimizing detection performance in high-dimensional feature spaces. Unlike previous hybrid metaheuristics that use fixed or non-adaptive control, our model uniquely alternates LOA and VCS phases adaptively across epochs to enhance convergence and detection robustness. A real-world intrusion detection dataset evaluated the LOA-VCS model with 98.4% detection accuracy, an F1-score of 0.976, and an AUC of 0.986, consistently outperforming the standalone LOA and VCS baselines. These results emphasize the power of adaptive hybrid met heuristics in maintaining low false alarms while ensuring strong recall for NIDS. The proposed approach can be deployed in scalable, high-speed systems in today’s contemporary cyber security environments.",
+    "publisher": "MECS Publisher",
+    "type": "journal-article",
+    "journal": "International Journal of Computer Network and Information Security"
+  },
+  {
+    "doi": "10.1007/978-3-032-06665-7_7",
+    "title": "Robust Online Action Detection: Advancing Multi-object Tracking in Surveillance Scenarios",
+    "authors": "Shahedhadeennisa Shaik; R. B. Abhinav; S. P. Chaitra; S. M. Sagari",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, ICT Systems and Sustainability"
+  },
+  {
+    "doi": "10.1038/s41390-025-04476-1",
+    "title": "Prenatal vitamin D status and long-term neurocognitive outcomes: building on an emerging evidence base",
+    "authors": "Carol L. Wagner; Bruce W. Hollis",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "journal": "Pediatric Research"
+  },
+  {
+    "doi": "10.1007/978-3-032-07175-0_27",
+    "title": "ROS2 Pipeline for Open-Vocabulary Object Detection and 3D Reconstruction on Jetson Orin Nano",
+    "authors": "Sergio Oliveros; Rubén Manrique",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Communications in Computer and Information Science, Applied Informatics"
+  },
+  {
+    "doi": "10.1007/978-3-032-07175-0_15",
+    "title": "Preliminary Evaluation of Vision-Language Models for Fall Detection",
+    "authors": "Oumaima Guendoul; Adil Bahaj; Youness Tabii; Rachid Oulad Haj Thami",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Communications in Computer and Information Science, Applied Informatics"
+  },
+  {
+    "doi": "10.3389/fpubh.2025.1662574",
+    "title": "The impact of long-term care insurance on the subjective well-being of middle-aged and older individuals in rural China an empirical analysis based on CHARLS data",
+    "authors": "Zhenwei Liu; Yinan Yang; Guoli Mo; Chunzhi Tan; Weiguo Zhang; Wei Jia",
+    "issuedDate": "2025-10-8",
+    "abstract": "The severe, often overlooked, mental health crisis among the aging population in rural China poses a pressing social challenge. This study investigates the role of a major policy intervention, Long-Term Care Insurance (LTCI), in enhancing their subjective well-being (SWB). Using panel data from the China Health and Retirement Longitudinal Study (CHARLS) for 2011–2020 and a multi-period difference-in-differences (DID) model, we find that LTCI implementation significantly improves the SWB of rural middle-aged and older residents. The underlying mechanisms include alleviated medical expenditure burdens, improved health status, and increased consumption. Crucially, our findings reveal a powerful equity-enhancing effect: the well-being benefits are substantially greater for the most vulnerable individuals—those with lower income, poorer health, and limited education. This study highlights LTCI’s vital function not only as a financial safety net but also as a crucial tool for promoting mental wellness and social equity in rural China. Policy should prioritize the expansion and optimization of LTCI to better support this at-risk demographic.",
+    "publisher": "Frontiers Media SA",
+    "type": "journal-article",
+    "journal": "Frontiers in Public Health"
+  },
+  {
+    "doi": "10.1007/s00442-025-05807-z",
+    "title": "Long-term ecological studies must continue: insights from a dryland transition zone",
+    "authors": "V. Huong Le; Scott L. Collins; Rodrigo Vargas",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "journal": "Oecologia"
+  },
+  {
+    "doi": "10.1007/978-3-032-06952-8_15",
+    "title": "Using Miro Collaboration Platform for Semester-Long Group Projects in Communication Design Research",
+    "authors": "Alex Ivanov; Jiashen Wang; Letwin Tawira",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Computer Science, Cooperative Design, Visualization, and Engineering"
+  },
+  {
+    "doi": "10.1007/978-3-032-06665-7_35",
+    "title": "Plant Leaf Disease Detection System Using Deep Learning",
+    "authors": "Soni R. Ragho; Rohan R. Swami; Tanuja S. Gaikwad; Aaditi P. Narke; Shubham M. Atak",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, ICT Systems and Sustainability"
+  },
+  {
+    "doi": "10.1007/978-3-032-06665-7_4",
+    "title": "ODDNet-Object Detection in Dark with Attention-Driven RGB-Event Fusion",
+    "authors": "Safa Imtihaz Sayyad; Jyoti M. Satihal; Ujwala Patil",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, ICT Systems and Sustainability"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_31",
+    "title": "Kolmogorov–Arnold Networks for Speech-Based Alzheimer’s Detection",
+    "authors": "Anass El Hallani; Adil Chakhtouna; Abdellah Adib",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.3389/froh.2025.1687229",
+    "title": "Correction: Blockade of connexin43-containing hemichannel attenuates the LPS-induced inflammatory response in human dental pulp cells by inhibiting the extracellular flux of ATP and HMGB1",
+    "authors": "Peiling Hu; Ping Long; Ruotong Li; Xiaorong Lan; Yuanpei He; Guangwen Li; Shiting Li",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Frontiers Media SA",
+    "type": "journal-article",
+    "journal": "Frontiers in Oral Health"
+  },
+  {
+    "doi": "10.1038/s41598-025-22399-z",
+    "title": "Sex-specific differences in risk factors and outcomes for long-term mechanical ventilation: a longitudinal cohort analysis of claims data",
+    "authors": "Franziska C. Trudzinski; Benjamin Neetz; Jana Dahlhoff; Philipp Höger; Axel Kempa; Claus Neurohr; Armin Schneider; Felix J. F. Herth; Biljana Joves; Joachim Szecsenyi; Elena Biehler; Thomas Fleischhauer; Janina Schubert-Haack; Thomas Grobe; Timm Frerk; Gabriele Iberl; Julia Dorothea Michels-Zetsche; Michael Müller; Andreas Rheinhold; Ahmed Ehab; Alessandro Ghiani; Nina Lutz; Swenja Walcher; Konstantinos Tsitouras; Joanna Paderewska; Selina Briese; Christoph Rauch; Patrick Gehrig; Joachim Sugg; Susanne Hirschmann; Thomas Fleischhhauer; Gerhard Fuchs; Nicola Litke; Markus Qreini; Michel Wensing; Anja Klingenberg; Teresa Byczkowski; Manuel Feißt; Simone Britsch; Christa Straub; Claude Jabbour; Michael Hahn; Jörg Krebs; Peter-Tobias Graf; Petra Denzer; Uta Merle; Monica Boxberger; Mascha Fiedler-Kalenka; Guido Hundt; Jens Regula; Thushira Weerawarna; Miriane Bomeken; Lisa Amega; Shumallah Basit; Sebastian Stier; Matthias Körner; Jens Müller; Sergej Markin; Ute Oltmanns; Oliver Gorgs; Mark Hackbarth; Sebastian Münz; Dominik Scharpf; Thomas J. Dengler; Mathias Borst; Brigitte Mayer; Wolfgang Reikow; Markus Kredel; Patrick Keppeler; Konstantin Frey; Holger Wolff; Florian Seidlitz; Stefanie Bientzle; Boris Nohé; Sebastian Allgäuer; Alexej Schöpp; Jörg Winckelmann; Christoph Schlegel; Imke Hübner; Andrzej Kuzniar; Helene Häberle; Reimer Riessen; Benjamin Schempf; Ingo Rebenschütz; Andreas Straub; Marc Kollum; Markus Winter; Paul Hartveg; Andreas Junginger; Thomas Abt; Mathias Vogel; Ralf Völker; Thomas Wiesmann",
+    "issuedDate": "2025-10-8",
+    "abstract": "Abstract\n          Sex differences in intensive care medicine, particularly regarding risk factors for (MV), are underexplored. This study aimed to investigate sex-related risk factors for long-term MV. We analyzed claims data from patients aged ≥ 30, with at least one comorbidity, who received MV (≥ 96 h) between 2015 and 2018. Data covered 365 days prior to hospitalization and 30 days post-discharge. Sex differences in 29 predefined risk factors were assessed. Over 12,000 hospitalizations were analyzed, with 37.8% of patients being female. Women were older (71.3 ± 11.6 vs. 69.9 ± 11.2 years, p &lt; 0.001) and more often transferred from nursing homes (4.5% vs. 2.7%, p &lt; 0.001). Men required invasive long-term ventilation more often (33.8% vs. 31.2%, p = 0.004) and had more ventilation hours (400.0 ± 377.9 vs. 373.0 ± 341.8, p &lt; 0.001). Among pre-existing conditions, women had more thyroiditis and rheumatic mitral valve disease, while men had more COPD, cardiac arrhythmia, eating disorders, and acute pancreatitis. Men were more likely to undergo bronchoscopy, autologous blood transfusion, or Extracorporeal life support (ECLS) within 96 h of MV. Multivariate analyses revealed stronger associations between certain risk factors and long-term MV by sex. For men, thyroiditis (OR 2.7 vs. 1.4 in women), cerebral infarction (OR 2.3 vs. 1.4), and acute pancreatitis (OR 3.2 vs. 1.0) were more strongly linked to weaning failure. For women, cerebrospinal fluid surgery (OR 5.7 vs. 2.0 in men) and acute pancreatitis (OR 4.7 vs. 3.0 in men) had stronger associations with long-term MV. ECLS and eating disorders were only linked to long-term MV in men. This study highlights sex differences in risk factors and outcomes for long-term MV, suggesting the need for sex-specific management strategies.\n          \n            Trial registration: The PRiVENT study was retrospectively registered at ClinicalTrials.gov (NCT05260853). Registered at March 2, 2022.",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "journal": "Scientific Reports"
+  },
+  {
+    "doi": "10.1007/s40487-025-00377-9",
+    "title": "Sequencing of Radium-223 and Lutetium-177 Vipivotide Tetraxetan: Maximizing the Benefit of Systemic Targeted Radiation Therapy in Metastatic Castration-Resistant Prostate Cancer",
+    "authors": "Samuel Mehr; Ralph Hauke",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "journal": "Oncology and Therapy"
+  },
+  {
+    "doi": "10.1007/978-3-032-01536-5_24",
+    "title": "Smart Diaper System: An IoT-Enabled Solution for Real-Time Urine Detection and Patient Monitoring",
+    "authors": "Yassir Moutia; Achraf Iderdar; Mohammed Rmioui; Aissame Abousalim; Mohamed Salha",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Nature Switzerland",
+    "type": "book-chapter",
+    "journal": "Lecture Notes in Networks and Systems, Connected Objects, Artificial Intelligence, Telecommunications and Electronics Engineering"
+  },
+  {
+    "doi": "10.3389/fpsyg.2025.1641623",
+    "title": "Predicting location emotions of users considering multidimensional spatio-temporal dependencies",
+    "authors": "Wei Jiang; Yiming Wang; Xiaoqing Song; Xinyue Zheng; Xiang Liu; Yi Long; Zuo Wang; Ziran Wei",
+    "issuedDate": "2025-10-8",
+    "abstract": "Emotion has significant spatio-temporal characteristics, and predicting the spatio-temporal changes in emotion is an important premise for monitoring the emotional state of urban residents. Most prediction methods focus on the prediction of emotion in time series without considering the spatial properties of emotion. Based on geotagged image data on the Weibo platform from Shanghai, a user location emotion prediction method that considers multidimensional spatio-temporal dependencies between different emotional states is proposed in this paper. The method introduces the HiSpatialCluster algorithm to identify the users’ stay area. Then, the FaceReader algorithm is applied to determine the emotional quadrant of users from image data, and a graph embedding algorithm is employed to obtain the feature vector representing each stay area. Finally, an attention-based BiLSTM method is applied to construct the multidimensional spatio-temporal dependencies of emotion for prediction. Experiments on the Weibo dataset show that the prediction accuracy of location emotion reaches 75%, which is better than that of the single LSTM and CNN method. The results of this paper can not only deepen the understanding of the spatio-temporal variation patterns of emotion but also optimize location-based recommendation services.",
+    "publisher": "Frontiers Media SA",
+    "type": "journal-article",
+    "journal": "Frontiers in Psychology"
+  },
+  {
+    "doi": "10.3390/e27101045",
+    "title": "Balanced-BiEGCN: A Bidirectional EvolveGCN with a Class-Balanced Learning Network for Dynamic Anomaly Detection in Bitcoin",
+    "authors": "Bo Xiao; Wei Yin",
+    "issuedDate": "2025-10-8",
+    "abstract": "Bitcoin transaction anomaly detection is essential for maintaining financial market stability. A significant challenge is capturing the dynamically evolving transaction patterns within transaction networks. Dynamic graph models are effective for characterizing the temporal evolution of transaction systems. However, current methods struggle to mine long-range temporal dependencies and address the class imbalance caused by the scarcity of abnormal samples. To address these issues, we propose a novel approach, the Bidirectional EvolveGCN with Class-Balanced Learning Network (Balanced-BiEGCN), for Bitcoin transaction anomaly detection. This model integrates two key components: (1) a bidirectional temporal feature fusion mechanism (Bi-EvolveGCN) that enhances the capture of long-range temporal dependencies and (2) a Sample Class Transformation (CSCT) classifier that generates difficult-to-distinguish abnormal samples to balance the positive and negative class distribution. The generation of these samples is guided by two loss functions: the adjacency distance adaptive loss function and the symmetric space adjustment loss function, which optimize the spatial distribution and confusion of abnormal samples. Experimental results on the Elliptic dataset demonstrate that Balanced-BiEGCN outperforms existing baseline methods in anomaly detection.",
+    "publisher": "MDPI AG",
+    "type": "journal-article",
+    "journal": "Entropy"
+  },
+  {
+    "doi": "10.1007/s10916-025-02271-3",
+    "title": "Revisiting Challenges in Real-world Video Colonoscopy using End-to-End Two Stream Polyp Detection Transformer (TS-PDTR)",
+    "authors": "Tianyuan Gan; Chongan Zhang; Peng Wang; Xiao Liang; Xuesong Ye",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "journal-article",
+    "journal": "Journal of Medical Systems"
+  },
+  {
+    "doi": "10.21203/rs.3.rs-7392974/v1",
+    "title": "Knowledge Graph based Visual Reasoning Method for Cabinets Connecting Defect Detection",
+    "authors": "Yizihe Lang; Chunchao Chen; Qiancheng Cai; Shuangzhu Tao; Baoxing Ju; Haiyan Yu",
+    "issuedDate": "2025-10-8",
+    "abstract": "Abstract\n        Existing visual inspection algorithms for wiring defect detection in substation protection panels exhibit limited robustness when handling real-world conditions such as partial character occlusion and ambiguous symbols, achieving field accuracy rates of merely 60%. This paper proposes a novel defect detection algorithm that integrates knowledge graphs with visual reasoning. By constructing a dedicated knowledge graph for substation protection panel wiring systems and synergistically combining Yolov8's rotated object detection with Qwen-2.5 foundation vision model's image reasoning capabilities, the proposed method enables intelligent inference of missing or blurred characters while detecting and correcting ambiguous character recognition. Logical wiring rules are rigorously embedded throughout the process. The approach was validated through defect detection on over 5,000 panel images, with comparative analysis against conventional optical character recognition (OCR) algorithms. Statistical results demonstrate approximately 95% parsing accuracy for wiring images with incomplete local information elements. Compared to traditional PaddleOCR, our method achieves a 29.18% improvement in recognition accuracy for cable markings and significantly mitigates confusion between visually similar characters (e.g., \"0\" and \"O\"). This breakthrough substantially enhances the reliability of visual recognition for wiring defects in protection panels.",
+    "publisher": "Springer Science and Business Media LLC",
+    "type": "posted-content",
+    "journal": "N/A"
+  },
+  {
+    "doi": "10.3847/1538-4357/adfa2b",
+    "title": "Long-period Variable Stars in NGC 147 and NGC 185. II. Their Dust Production",
+    "authors": "Hamidreza Mahani; Atefeh Javadi; Jacco Th. van Loon; Francisca Kemper; Roya Hamedani Golshan; Iain McDonald; Habib G. Khosroshahi; Hedieh Abdollahi; Sajjad Mahdizadeh",
+    "issuedDate": "2025-10-8",
+    "abstract": "Abstract\n               This study presents a comparative analysis of mass-loss and dust production rates in the dwarf galaxies NGC 147 and NGC 185, focusing on long-period variables (LPVs) and pulsating asymptotic giant branch stars as primary indicators of dust feedback into the interstellar medium. For NGC 147, the total mass-loss rate is calculated as (9.44 ± 3.78) × 10−4\n                  M\n                  ⊙ yr−1, with LPV luminosities ranging from (6.20 ± 0.25) × 102\n                  L\n                  ⊙ to (7.87 ± 0.32) × 103\n                   \n                  L\n                  ⊙. In NGC 185, the total mass-loss rate is higher, at (1.58 ± 0.63) × 10−3\n                  M\n                  ⊙ yr−1, with LPV luminosities spanning (5.68 ± 0.23) × 102\n                  L\n                  ⊙ to (1.54 ± 0.66) × 104\n                  L\n                  ⊙. A positive correlation is observed between stellar luminosity, intrinsic reddening due to circumstellar dust self-extinction, and elevated mass-loss rates. Additionally, comparisons of calculated dust injection rates, two-dimensional dust distribution maps, and observed dust masses provide evidence for a gravitational interaction between NGC 147 and the Andromeda galaxy, which influences the dust distribution within the system.",
+    "publisher": "American Astronomical Society",
+    "type": "journal-article",
+    "journal": "The Astrophysical Journal"
+  },
+  {
+    "doi": "10.3389/fsoc.2025.1626458",
+    "title": "The systemic marginalisation of long-term casualised researchers in UK higher education",
+    "authors": "Cecile B. Menard",
+    "issuedDate": "2025-10-8",
+    "abstract": "While casualisation of academic labour has garnered significant scholarly attention, much has focused on “early career researchers” (ECRs), an all-encompassing term that masks the long-term precarity many academics face. This study challenges that narrative by centering long-term researchers (LTRs)—defined as those in casualised research roles for 8 years or more—who are overlooked in policy and discourse. Drawing on a survey of LTRs (n = 179) in UK universities integrating qualitative and quantitative data, this study examines their career trajectories, academic contributions and barriers to progression. The study highlights systemic and structural mechanisms within universities and funding bodies that marginalise and invisibilise LTRs, such as exclusionary career frameworks, exploitative hierarchies and lack of mentoring, as well as the normalisation of precarity as an academic “rite of passage.” The findings expose a disconnect between the value LTRs bring—e.g. when securing grants, sustaining research continuity, teaching and supervising—and the lack of recognition or progression routes available to them. It shows how widespread bullying and discrimination at the intersection of ageism, gender discrimination and caring responsibilities—experienced by 40% of participants—combined with trajectorism and the illusion of meritocracy entrench inequities in HE. This study calls for actionable policy interventions, such as formal recognition of LTRs as a distinct category, greater transparency on the true extent of casualisation and career opportunities that prioritise intellectual contributions over arbitrary employment status. Such sector-wide structural reforms are imperative to dismantle the very systems that enable and profit from the exploitation of precarious academic labour and to put an end to long-term insecurity in HE.",
+    "publisher": "Frontiers Media SA",
+    "type": "journal-article",
+    "journal": "Frontiers in Sociology"
+  },
+  {
+    "doi": "10.1111/jdv.70078",
+    "title": "Comment on the article by Zouboulis on secukinumab efficacy in <scp>HS</scp> assessed by <scp>IHS4</scp>",
+    "authors": "Qing Long; Yan Li",
+    "issuedDate": "2025-10-8",
+    "abstract": "N/A",
+    "publisher": "Wiley",
+    "type": "journal-article",
+    "journal": "Journal of the European Academy of Dermatology and Venereology"
+  }
+]

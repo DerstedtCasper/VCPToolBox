@@ -1,0 +1,5153 @@
+[[VCP元思考:default::Group:2-1-1-1-1]]
+{
+  "last_node_id": 355,
+  "last_link_id": 577,
+  "nodes": [
+    {
+      "id": 5,
+      "type": "EmptyLatentImage",
+      "pos": {
+        "0": 30,
+        "1": 56
+      },
+      "size": {
+        "0": 210,
+        "1": 106
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            320
+          ],
+          "slot_index": 0,
+          "label": "Latent"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        968,
+        1296,
+        1
+      ]
+    },
+    {
+      "id": 6,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 4338.48388671875,
+        "1": -717.8355102539062
+      },
+      "size": {
+        "0": 210,
+        "1": 54
+      },
+      "flags": {},
+      "order": 52,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 389,
+          "label": "CLIP"
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 150,
+          "widget": {
+            "name": "text"
+          },
+          "label": "鏂囨湰"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            370,
+            542,
+            574
+          ],
+          "slot_index": 0,
+          "label": "鏉′欢"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 21,
+      "type": "VAEDecode",
+      "pos": {
+        "0": 2042.7032470703125,
+        "1": -662.3662109375
+      },
+      "size": {
+        "0": 170.9729766845703,
+        "1": 46
+      },
+      "flags": {},
+      "order": 61,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 351,
+          "label": "Latent"
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 275,
+          "label": "VAE"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            314,
+            528
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "鍥惧儚"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 34,
+      "type": "CLIPSetLastLayer",
+      "pos": {
+        "0": 25,
+        "1": -76
+      },
+      "size": {
+        "0": 210,
+        "1": 78.39045715332031
+      },
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 480,
+          "label": "CLIP"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            100,
+            364,
+            375,
+            389,
+            390,
+            534
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "CLIP"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPSetLastLayer"
+      },
+      "widgets_values": [
+        -2
+      ]
+    },
+    {
+      "id": 42,
+      "type": "UltralyticsDetectorProvider",
+      "pos": {
+        "0": 2469.12548828125,
+        "1": -938.1107788085938
+      },
+      "size": {
+        "0": 315,
+        "1": 78
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "BBOX_DETECTOR",
+          "type": "BBOX_DETECTOR",
+          "links": [
+            544
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "BBox妫€娴?
+        },
+        {
+          "name": "SEGM_DETECTOR",
+          "type": "SEGM_DETECTOR",
+          "links": null,
+          "shape": 3,
+          "label": "SEGM妫€娴?
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UltralyticsDetectorProvider"
+      },
+      "widgets_values": [
+        "bbox/face_yolov8m.pt"
+      ]
+    },
+    {
+      "id": 48,
+      "type": "Note",
+      "pos": {
+        "0": -1896,
+        "1": 33
+      },
+      "size": {
+        "0": 901.2803955078125,
+        "1": 491.5892028808594
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "<lora:2.5DCartoonV2:1>,  鍔ㄦ极鐪熷疄鍖杔ora\n<lora:2.5DRealisticV2:1>,2.5D鍔ㄦ极鎷熺湡lora\n<lora:xl_more_art-full_v1:1>,澶ч噺鐪熷疄鑹烘湳缁嗚妭锛屽綋闇€瑕佸湪鍔ㄦ极鍥剧墖閲岀敓鎴愭洿澶氬啓瀹炲満鏅椂鎺ㄨ崘浣跨敤lora\n<lora:Xenomorph1024:1>,寮傛槦鐢靛奖涓撶敤lora锛堝惈鏈夊瓙lora寮傛槦铔?<lora:Xenomorph_Egg_SDXL:1>,锛塡n<lora:add-detail-xl:1>, 寮哄寲鏌愪簺涓嶅父鐢ㄧ敾闈㈢粏鑺傜殑lora\n<lora:Master_Tigress:1>,鐢熸垚鍔熷か鐔婄尗鎮嶅▏铏庣殑lora锛屻€愯繖閲屾湁涓€浠藉畼鏂逛娇鐢ㄧず渚婱aster tigress, cat girl, furry, beautiful anthro tigress, body fur, abs, sideboob, ,hot spring, pinup pose, naked, nude, pussy, nipples,<lora:Master_Tigress:1>,銆慭n<lora:sinfully_stylish_SDKL:1>,寮哄寲瀹ゅ唴鍐欏疄绯荤殑鍔ㄦ€佸厜婧恖ora\n<lora:Aether_Ghost_v1.1_LoRA:1>,鐢熸垚楝奸瓊绫诲崐閫忔槑鍖栫殑lora\n<Lora:Char-Genshin-Clorinde-Pony-V1:1>锛岀敓鎴愪换浣曞師绁炶鑹瞝ora\n<lora:Alien_Concept_Art:1>,鐢熸垚澶栨槦鐢熺墿锛屽紓褰㈢殑鑲綋鐗瑰寲lora锛堝缓璁厤鍚?lora:xl_more_art-full_v1:1>锛変娇鐢紝瀹樻柟浣跨敤绀轰緥銆恆nthropomorphic, unusual creature, creature, concept art, creature, beautiful alien, anthropomorphic, concept art, creature, alien, anthropomorphic, completely white, thin legs,(((completely white body)))), wings銆慭n<lora:Alien_Concept_Art 2:1>,鍚屼綔鑰咃紝鐢熸垚鍙︿竴绫诲鏄熺敓鐗╋紝鏇村姞鎶借薄鍖栵紝鍙互2涓猯ora娣风敤锛孿n<lora:caricart:1>,3d缇庡紡鍔ㄦ极澶稿紶绫?.5d椋庢牸鐨刲ora\n<lora:Concept Art Eclipse Style LoRA_Pony XL v6:1>,鐢熸垚绫荤編寮忔补鐢诲厜褰辫川鎰熺殑lora,鍙互闄嶄綆浜屾鍏冮鏍肩殑鈥滃崱閫氭劅鈥濓紝闈炲父妫抃n<lora:Concept Art Ultimatum Style LoRA_Pony XL v6:1>,鍔犲叆澶ч噺椋庢牸浼樺寲鐨刲ora,闇€瑕侀厤鍚堟彁绀鸿瘝浣跨敤(concept art, digital art, realistic,)\n<lora:Ghosts:1>,寮哄寲鐢婚潰閫忔槑璐ㄦ劅鐨刲ora锛屽拰aether娣风敤寰堟\n<lora:princess_xl_v2:1>,杩＋灏?d鐢婚lora锛屼篃鍙敤浜?d浣滃搧鎻愬崌椋庢牸\n<lora:OldAnimeStyle_XL_v3:1>,鏃ョ郴80-90骞翠唬鎬€鏃у姩婕敾椋巐ora锛岃壊璋冨緢妫抃n<lora:Sadamoto Yoshiyuki_XL_PONY:1>,璐炴湰涔夎椋庢牸鐨勮壊璋僱ora锛岀被90骞翠唬鐢婚锛屼粎浣滀负鑹茶皟lora浣跨敤涔熻秴绾ф\n<lora:Smooth Anime Style LoRA XL:1>,浼樺寲浜屾鍏冪敾闈㈢嚎鏉＄殑lora锛屼娇鐢婚潰鏇存祦鐣匼n<lora:incase_v14:1>,澧炲姞缇庣郴娴佽鍔ㄦ极鑹烘湳椋庢牸鐨刲ora\n<lora:Rebecca_Kadath_PonyXL:1>,鑹烘湳瀹惰暰璐濆崱椋庢牸鐨勭編寮廸urry鐢婚lora\nzPDXL,缇庡紡姊﹀够鐢婚鐨勫祵鍏mbedding锛岄渶瑕佹闈㈡彁绀鸿瘝zpdxl锛岃礋闈㈡彁绀鸿瘝zPDXL-neg\nUpdn,furry椋庢牸鐨勭敾椋庡祵鍏mbedding锛岄渶瑕佹闈㈡彁绀鸿瘝updn\n<lora:skinbodysuit e3-000009:1>,鏄熷垉鎴樻湇lora锛屼娇鐢ㄥ悗鍙互璁╄鑹茬┛涓婃槦鍒冩垬鏈嶇揣韬。锛岄渶瑕侀厤鍚堟彁绀鸿瘝skinbodysuit鍜宐odysuit浣跨敤鍝︼紒锛堢ず渚?<lora:skinbodysuit e3-000009:1>,(skinbodysuit, bodysuit:1.3),锛塡n<lora:ncaaoo33:1>,鐢熸垚澶ч噺Nai3缃戠珯涓婂彲鐖辨棩绯诲彲鐖遍鏍肩殑lora锛屼篃鏄痶pony妯″瀷鐨勫畼鏂筶ora涔嬩竴锛岄渶瑕侀厤鍚堟彁绀鸿瘝ncaaoo33浣跨敤锛乗n<lora:Suzuran_pony:1>,鐢熸垚鏄庢棩鏂硅垷閾冨叞鐨刲ora,[瀹樻柟鎻愮ず璇嶇ず渚嬶細suzuran,animal ears,animal ear fluff,blonde hair,green eyes,tails,multiple tails,<lora:Suzuran_pony:1>,]\n<lora:Ultimate_Bunny_Suit>锛屽彲浠ョ敓鎴愭満鍣ㄥ厰浜篣B鐨凩ora锛侀渶瑕侀厤鍚堝涓媡ag,UltBunny,white bodysuit,helmet\n<lora:takeda_hiromitsu_style_xl_goofy:1>,浣跨敤姝︾敯寮樺厜鐨勭敾椋庯紒闇€瑕佽Е鍙戣瘝takeda hiromitsu style,\n<lora:ellen_joe_pony:1>,鍙互鐢熸垚銆婄粷鍖洪浂ZZZ銆嬮噷鐨勯波楸煎コ浠嗙埍鑾猜蜂箶鐨凩ora锛岄渶瑕侀厤鍚堝涓媡ag鈥斺€?girl,ellen_joe,maid_headdress,black_dress,wrist_cuffs,puffy_short_sleeves,mole_under_eye,large_breasts,frilled_dress,black_pantyhose,medium_breasts,\n<lora:Mechanism-pdxl-1:1>,闇€瑕侀厤鍚堟彁绀鸿瘝mcnm锛屽彲浠ョ敓鎴愬悇绉嶇偒閰风殑鏈虹敳鎴栬€呯敓鍖栦汉lora\n<lora:ArsMJStylePony_-_Art_Nouveau:1>,閰嶅悎鎻愮ず璇岮rsMJStyle, Art Nouveau锛屽疄鐜版补鐢诲Nouveau椋庢牸鐨勭敾椋嶾n<lora:standing_split:1>,涓€瀛楅┈lora锛岄渶瑕乼agstanding split,leg hold,leg lift,\n<lora:IshikePony:1>,鐭虫儬鐢诲笀椋庢牸lora\n<lora:Artist_-_Nezumin_Full:1>,Nezumin鐢诲笀椋庢牸lora\n<lora:AiHaibaraDCXL:1>,AiHaibaraDCXL, child woman, retro artstyle, big eyes, blue eyes, brown hair, hair between eyes, short hair, flat chest, collarbone,鐏板師鍝€鎻愮ず璇峔n<lora:Ghibli_1:1>,瀹磶楠忓悏鍗滃姏椋庢牸lora锛実hibli_style锛宻ource_anime锛宎nime_coloring锛孿n<lora:VRP-000012:1>鍦ㄨ鑹叉梺娣诲姞涓€涓猵ussy鍜屽濂宠啘鐩告鐗瑰啓鐨刲ora锛岄渶瑕侀厤鍚堟彁绀鸿瘝VRP01,multiple views, uncensored, solo, 1girl,\n<lora:mesugaki_Pony_v1:1>,mesugaki闆屽皬楝糽ora锛侀厤鍚坢esugaki瑙﹀彂锛佺嫚鐙犲湴鈥滄潅楸尖€濓紝鍢垮樋~\n<lora:PonyXLCaninePussy_v1:1>,furry绯荤姮绉戠敓娈栬厰lora锛岃礋璐ｄ骇鐢熺湡瀹炵殑鐘鐢熸畺鑵旂粨鏋勶紝canine pussy锛宑anine genitalia锛宑anine spade锛孎reeCookie\n<lora:human-vase_1:1>,鐢熸垚浜鸿倝澹剁殑lora锛宧uman-vase锛宧andles, long neck锛宐reasts apart, between breasts, crotch cutout\n<lora:csm_fallingdevil_ponyXL-04:1>锛屼骇鐢熻鑹猜蜂笅钀芥伓榄旂殑lora锛宖allingdevil, disembodied head, blood on face, extra arms锛宑hef hat, black apron, elbow gloves\n<Lora:Expressive_H-000001:1>,瓒呯骇鑹茶壊lora锛乗n<lora:nalaniv1.19xl-000080:1>,浜х敓榫欏鎴樺＋Nalani鐨刲ora锛岄渶瑕侀厤鍚坱ag n4l4ni銆備韩鍙楀ス鐨勯碁鐗囧拰鑲岃倝鍚э紒\n<Lora:zx_style09-000015:1>,浜х敓閫愭ⅵ鑰佸笀椋庢牸鐨刲ora锛岄渶瑕侀厤鍚堟彁绀鸿瘝zx銆俓n<lora:Morikoke_Pony_V1:1>锛屼骇鐢烳orikoke鑰佸笀鐨勫摜甯冩灄涓庡コ瑙掕壊鈥滀簰鍔ㄢ€濈殑lora锛岄潪甯稿ソ鐜╋紝浼氳浣犺緭鍑鸿壊鎯呮极鐢伙紝闇€瑕侀厤鍚堝畼鏂规彁绀鸿瘝锛歮orikoke, (comic:1.25), (Multi view, Frame, Text, speech bubble, frame, heart, trembling, focus line, vibrating line, comic expression, Sound effect) 2+girls, multiple girls, solo focus, breasts, navel, nipples, pussy, clitoris, vaginal, anus, ass, nude, torn clothes, pussy juice, female masturbation, 3+boys, multiple boys, erection, penis, multiple penises,  (Orcs, goblins, other races, green skin, monster, penis,  tusks), chain, chain leash, collar, restrained, saliva,  testicles, cum,  hetero, sex, group sex,  oral, fellatio,  spread legs, spitroast, irrumatio, sweat, gangbang, double penetration, bangs, folded, thick thighs,\n<lora:Mineru_2.0:1>,浜х敓钀ㄥ皵杈剧背鍕掗瞾瑙掕壊鐨刲ora锛孧ineru,female, jewelry, fennec ears, necklace, grey skin, short hair, white hair, white ears, earrings, blue eyes, furry, facial mark, ring, fingernails, bracelet\n<Lora:RanniV4LoRA:1>锛岄瓟濂宠張濡甽ora锛坰d1.5锛夛紝IncrsRanni,wavy hair, cracked skin, colored skin, blue skin,extra faces, extra arms,doll, joints, doll joints,white dress, hat, cloak\n\n<lora:DBBattle_Pony_V2:1>锛屼骇鐢熼緳鐝犻鏍兼极鐢荤殑lora锛屽畼鏂规彁绀鸿瘝搴擄細DBBattle, (duel:1.25), (comic:1.25), battle, emphasis lines, speed lines, motion lines, !?, !!, style parody, Frame, Text, English Text, speech bubble, trembling, focus line, vibrating line, comic expression, Sound effect, 1 girl, girl forcas, 2+ boys, Monster Boy, Creature Boy, Mutant Boy, fighting stance, aura, simple backgraund,, injury, torn clothes, ((energy, explosion)),\n<lora:seaart-quality-v1:1>,鎻愬崌Furry绫荤粯鐢绘彃鍥捐川閲忕殑lora锛岄潪甯稿ソ鐢紝瑙﹀彂璇峛est quality锛堟闈㈡彁绀鸿瘝涓? 锛寃orst quality锛堣礋闈㈡彁绀鸿瘝涓級\n<lora:magazine-cover-ponyxl-lora-nochekaiser:1>锛屼骇鐢熸潅蹇楀皝闈㈢殑lora锛屾彁绀鸿瘝涓猴細<lora:magazine-cover-ponyxl-lora-nochekaiser:1>, magazine cover, fake magazine cover, cover, fake cover, price, cover page, text focus, barcode, content rating, dated,\n<lora:Pony_XL_TYGS_Ink_Anime_Art_Style:1>锛岄挗绗旂敾椋庢牸鐨刲ora锛屽緢鍞編\n<lora:erotic_book_pony_v1:1>锛屼骇鐢熻壊鑹叉极鐢诲皝闈㈢殑lora,鎻愮ず璇嶄负锛歟rotic_book, magazine cover, cover page,\n<lora:Sinozick_Style_XL_Pony:1>,锛岀敾甯堥鏍糽ora锛宻inozick style锛宖lat color, dark theme锛岃秴绾ч叿鐨勭嚎鏉★紒\n<lora:PullingDownJeansPony.1.0:1>,瑁ゅ瓙鍗婅劚lora锛?pulling jeans trousers far down,no panties underneath锛孿n<lora:AssUpSDXLv1Pony:1>锛屾拝灞佸眮lora锛宎ssup锛宐ending down锛宖rom behind锛宲ussy锛宎nus锛宭ooking back锛宲antie pull锛宲ants down锛宻kirt up锛孿n<lora:Spread the pussy_v1_pony:1>,鎺板紑灏忕┐lora锛宺uanyi0483,pussy juice,after sex,cum in pussy,ass grab,cum,cervix,grabbing own ass,urethra,spread pussy,clitoris,leaning,pussy,nsfw\n<Lora:lora-sdxl-perfect-eyes:1>,浠や汉鎯婂徆鐨勭溂閮ㄧ粏鑺俵ora锛侀渶瑕乼ag瑙﹀彂璇嶏紝perfecteyes銆俓n\n\n绯诲垪lora 婕敾涔︾敓鎴愬櫒锛乗n<lora:FComic1To3Page_Pony_V1:1>锛岀敤浜庝骇鐢熻壊鎯呮极鐢讳功寮€濮嬬殑涓夐〉锛屾彁绀鸿瘝鍒嗗埆涓猴細\n(1page),comic,Multi view, Frame, Text, speech bubble, frame, heart, trembling, focus line, vibrating line, comic expression, Sound effect, 1girl, solo focus,  (full body:1.3), (cowboy shot),\n(2page),(comic),Multi view, Frame, Text, speech bubble, frame, heart, trembling, focus line, vibrating line, comic expression, Sound effect, 1girl, solo focus, skirt lift, shirt lift, show off nipple, show off pussy , nipple , pussy , hetero, oral, fellatio,  irrumatio, paizuri, (full body:1.3), (cowboy shot),\n(3page),comic,Multi view, Frame, Text, speech bubble, frame, heart, trembling, focus line, vibrating line, comic expression, Sound effect, 1girl, solo focus, breasts, navel, nipples, pussy, clitoris, vaginal, anus, ass, nude, torn clothes, pussy juice, female masturbation, hetero, sex, oral, fellatio,  irrumatio, paizuri, spread legs,  (full body:1.3), (cowboy shot),\n\n<lora:FComic_1to1000_Pony_V1:1>,鐢ㄤ簬鐢熸垚涓棿鍋氱埍鐨勮繃绋嬶紝瑙﹀彂鎻愮ず璇嶅垎鍒负锛歕nfcomic_1to1000_pony, (comic:1.25), (Multi view, Frame, Text, speech bubble, frame, heart, trembling, focus line, vibrating line, comic expression, Sound effect) 1girl, solo focus, breasts, navel, nipples, pussy, clitoris, vaginal, anus, ass, nude, torn clothes, pussy juice, female masturbation, 2boys, mmf threesome, erection, penis, multiple penises, testicles, cum,  hetero, sex, group sex,  oral, fellatio,  spread legs, spitroast, irrumatio, sweat, gangbang, double penetration, bangs, folded, thick thighs,\nfcomic_1to1000_pony, (comic:1.25), (Multi view, Frame, Text, speech bubble, frame, heart, trembling, focus line, vibrating line, comic expression, Sound effect) 3+girls, solo focus, breasts, navel, nipples, pussy, clitoris, vaginal, anus, ass, nude, torn clothes, pussy juice, female masturbation, 1boy, erection, penis, cum, hetero, sex,\nfcomic_1to1000_pony, (comic:1.25), (Multi view:1.1, Frame, Text, speech bubble, frame, heart, trembling, focus line, vibrating line, comic expression, Sound effect) 3+girls, solo focus, breasts, navel, nipples, pussy, clitoris, vaginal, anus, ass, nude, torn clothes, pussy juice, female masturbation,\n\n<lora:FComic_HardCore_Pony_V1:1>锛岀敤浜庝腑闂存縺鐑堝仛鐖辩殑杩囩▼锛岃Е鍙戞彁绀鸿瘝涓猴細(comic:1.25),(Multi view, Frame, Text, speech bubble, frame, heart, trembling, focus line, vibrating line, comic expression, Sound effect), 1girl, solo focus, breasts, navel, nipples, pussy, clitoris, vaginal, anus, ass, nude, torn clothes, pussy juice, female masturbation,  2boys, mmf threesome, erection, penis, multiple penises, testicles, cum, hetero, sex, group sex,  oral, fellatio,  irrumatio, paizuri,  spread legs, spitroast, sweat, gangbang, double penetration,  triple penetration\n\n<lora:FComic_lastPage_Pony_V1:1>锛岀敤浜庣敓鎴愯壊鑹叉极鐢荤殑缁撳熬锛岃Е鍙戞彁绀鸿瘝涓猴細lastpage, (comic:1.25), (Multi view, Frame, Text, speech bubble, frame, heart, trembling, focus line, vibrating line, comic expression, Sound effect) 1girl, solo focus, breasts, navel, nipples, pussy, clitoris, vaginal, anus, ass, nude, torn clothes, pussy juice,  boy, hetero, cum, (After Sex), orgasm, afterglow, spread legs, pillow talk, (punch line),(happy end), the end,\n\n<Lora:Expressive_H-000001:1>,瓒呯骇鑹茶壊lora锛佸寮哄仛鐖辩殑鐢婚潰鍔ㄦ劅锛乗n\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 65,
+      "type": "LoraTagLoader",
+      "pos": {
+        "0": 624,
+        "1": 215
+      },
+      "size": {
+        "0": 210,
+        "1": 86
+      },
+      "flags": {},
+      "order": 39,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 479,
+          "label": "model"
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 100,
+          "label": "clip"
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 450,
+          "widget": {
+            "name": "text"
+          },
+          "label": "text"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            498
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "MODEL"
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [],
+          "slot_index": 1,
+          "shape": 3,
+          "label": "CLIP"
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 2,
+          "shape": 3,
+          "label": "STRING"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoraTagLoader"
+      },
+      "widgets_values": [
+        "<lora:carles_style:1>,<lora:pony_001:1>,"
+      ]
+    },
+    {
+      "id": 86,
+      "type": "Note",
+      "pos": {
+        "0": -1404,
+        "1": -848
+      },
+      "size": {
+        "0": 560.58642578125,
+        "1": 354.83026123046875
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "ningen mame, akita hika, nanaken nana, ciloranko, tianliang duohe fangdongye, touhou, hijiri byakuren, \n缁嗚吇娓╂鼎鏌斿拰鐨勮壊褰╁拰绾挎潯\n[artist:ningenmame], [artist:ciloranko], [artist:ixy],\n绮捐嚧鍙埍锛岀粡鍏镐簩娆″厓poi\n[artist:ningenmame], [artist:ciloranko], [artist:sho{{sho_lwlw}}], [[artist:tianliang_duohe_fangdongye, artist:as109]], \n鍐疯壋绮剧粏鐨勭粍鍚圽n(quasarcake:0.5) \n娆х編鏆楅粦濂囧够椋嶾nBy parororo, by anna dittmann, by raikoart, \n娌硅吇绮剧粏娆х編椋嶾n[artist:ciloranko],[artist:ningen mame],{{artist:sushineko8}},(artist:tianliangduohefangdongye:1),\n鑹茶皟骞冲疄鐢婚绮剧粏锛屾爣鍑唗pony椋庢牸\n[[artist:fuzichoco,shiratama_(shiratamaco),momozu komamochi]],{tianliangduohefangdongye},,year 2023,\n鍙埍鐨勪覆锛岄潪甯稿彲鐖盶n<lora:nyalia:0.8>,nyalia\n寰堢粏鑵荤殑绾挎潯鍜屽厜褰憋紝濂界湅锛屾湁鐐?.5d鐨勬劅瑙塡nblankk,konya_karasue,\n澶嶅彜锛岀簿鑷达紝鐏拌皟\n(wanke),(pigeon666),(rei_(sanbonzakura)),2 blankk,konya_karasue,\n鐙傛皵锛岀伆璋冿紝绮剧粏锛岀‖绾挎潯\nartist:john_kafka,artist:nixeu,artist:quasarcake,\n鍐欏疄锛岀伆璋冿紝缁嗙嚎\n(artist:ribiadan:1.1),(artist:stu_dts:0.8),artist:gawako,(artist:kurumi_(recycllamo):0.9),\n鍘氭秱锛屾补褰╋紝绮剧粏\n(artist:betabeet:1.2),artist:john_kafka,artist:nixeu,artist:quasarcake,\n瓒呯幇瀹烇紝鍗曡壊寮犲姏锛屽己瀵规瘮锛岀簿缁嗭紝monochrome,spot color,\nartist:john_kafka,artist:nixeu,artist:quasarcake,\n寮虹儓寮犲姏锛屾孩鑹瞈n((artist:betabeet)),artist:john_kafka,artist:nixeu,artist:quasarcake,\n鏇村己鐑堢殑寮犲姏锛岀伆璋冿紝婧㈣壊娴撶儓\n(cogecha:0.907),ryou\\(ryoutarou\\),year 2023,\n鏃犻槾褰憋紝寮虹儓杩囬ケ鍜岃壊璋僜n(kedama milk:0.9524),mika pikazo,(wlop, reoen,tianliang duohe fangdongye:1.05),(ask \\(askzy\\):0.9524),(kantoku:0.907),year 2023,\n绮剧粏浣庨ケ鍜岋紝浼?d鑹茶皟\nartist:betabeet,sakimichan,wlop, \n3d璐ㄦ劅锛屾嫙鐪焅n(ask \\\\(askzy\\\\):1.1),fkey,(tianliang_duohe_fangdongye:1.1),(gorgeous_mushroom:0.9),\n缁嗚吇娓╂鼎鐨勮悓绯昏壊璋冿紝寰堝彲鐖辩殑绾挎潯\nCogecha,(ningen mame:0.9524),(wlop:1.05),(sho \\(sho lwlw\\):0.9524),\n鍐欏疄姘村僵锛屼綆楗卞拰\n(amazuyu tatsuki,shiro9jira:1.05),ciloranko,ask (askzy:1.05),(wlop:1.05),(tianliang duohe fangdongye:0.907),year 2023,\n2.5d鍏夊奖缁嗚吇鏍囧噯鑹茶皟锛屽緢妫掔殑绗旇Е\ntianliang duohe fangdongye,\n鏍囧噯鐨勫彲鐖眏iojio鐢诲笀\n (ru_zhai:0.5),(niliu_chahui:0.5),(omone_hokoma_agm:0.5), \n绾挎潯缁嗚吇鐨勮悓绯荤敾椋庯紝\nartist:qys3\n鑹插僵娴佺晠鐨勮悓绯籠nartist:qys3,(ask \\\\(askzy\\\\):0.7),fkey,(tianliang_duohe_fangdongye:0.4),(gorgeous_mushroom:0.9),\n涓€涓潎琛＄殑钀岀郴涓瞈nEndou Okito\n琚佽棨娌栦汉\nBoujin\n闃蹭汉\nartist:yoneyama mai\n鍐疯壊璋冧赴瀵岀嚎鏉★紝寰窛妯＄硦\nartist:akizero1510,[artist:say_hana],[[artist:dd_(ijigendd)]],[[artist:diyokama]],[artist:poharo],[[artist:mafuyu_(chibi21)]],artist:ke-ta,artist:na_tarapisu153,{artist:alp},\n绮楃硻绾挎潯锛屾棤闃村奖锛屽啓褰遍鏍硷紝楂橀ケ鍜孿n[quasarcake],\n鏃犵嚎鏉★紝钖勭矇褰╋紝瑙掕壊绮剧粏\ntakeuchi_takashi, \n姝﹀唴宕?\n[[kuzuvine]],[wang-x],[[artist:dsmile]],[[artist:ningen_mame]],[[[[wlop]]]],[[[butterchalk]]],\n2.5d绮剧粏鍙埍涓瞈nask_(askzy),chen bin,tianliang_duohe_fangdongye,[[artist:as109]],\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 98,
+      "type": "CR Text Replace",
+      "pos": {
+        "0": 2037.512451171875,
+        "1": -932.0850830078125
+      },
+      "size": {
+        "0": 245.58595275878906,
+        "1": 215.0363311767578
+      },
+      "flags": {},
+      "order": 51,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 148,
+          "widget": {
+            "name": "text"
+          },
+          "label": "鏂囨湰"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "*",
+          "links": [
+            187
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "瀛楃涓?
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1,
+          "shape": 3,
+          "label": "鏄剧ず甯姪"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text Replace"
+      },
+      "widgets_values": [
+        "",
+        "anus",
+        "anus:0.2",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 100,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 4337.48388671875,
+        "1": -820.8353271484375
+      },
+      "size": {
+        "0": 210,
+        "1": 54
+      },
+      "flags": {},
+      "order": 55,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 390,
+          "label": "CLIP"
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 187,
+          "widget": {
+            "name": "text"
+          },
+          "label": "鏂囨湰"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            347
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "鏉′欢"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 103,
+      "type": "CR Text",
+      "pos": {
+        "0": 4336.00927734375,
+        "1": -609.0505981445312
+      },
+      "size": {
+        "0": 210,
+        "1": 66
+      },
+      "flags": {},
+      "order": 46,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 523,
+          "widget": {
+            "name": "text"
+          },
+          "label": "鏂囨湰"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "*",
+          "links": [
+            148,
+            150,
+            360,
+            399,
+            412,
+            453,
+            504
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "鏂囨湰"
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鏄剧ず甯姪"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text"
+      },
+      "widgets_values": [
+        "((artist:betabeet)),artist:john_kafka,artist:nixeu,artist:quasarcake,masterpiece, best quality, (1girl:1.1),human face锛宑yborg centaur, heavy tank robot, silver ponytail, metallic skin, glowing eyes, mechanical limbs, detailed power armor, intricate details, masterpiece, best quality, horse body armor, equine armor, robotic horse, mechanical horse, (centaur:1.2), (power armor:1.3), (robot:1.1), red armor, blue armor, yellow armor, white armor, black armor, detailed color separation, gundam style,cyberpunk city,night锛宱range goggles,"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 112,
+      "type": "Note",
+      "pos": {
+        "0": -1455,
+        "1": -416
+      },
+      "size": {
+        "0": 452.63671875,
+        "1": 390.88311767578125
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "闆屽皬楝?mesugaki\n闃块粦棰?ahegao\n鑵归儴鍑歌捣 stomach bulge\nbig belly\ncum inflation\n鏉傚織椋?(magazine cover:1.1), \n楂樻姮鑵?(standing split:1.2),\n<lora:Pussy_Lily_v5_XL:0.5>锛屽畬缇巔ussy.閰嶅悎鎻愮ず璇峱ussy_front锛宲ussy_rear锛宼oys_front锛宼oys_rear\n<lora:add-detail-xl:1>, 寮哄寲鏌愪簺涓嶅父鐢ㄧ敾闈㈢粏鑺傜殑lora\n<lora:Expressive_H-000001:1>,瓒呯骇鑹茶壊lora锛佽鐢婚潰鍙樺緱瓒呯骇鏈夆€滃姩鎰熲€濆拰鑹叉皵锛乗n<lora:Wai-style00*:1>,WaiAnime涓撶敤lora锛?0绉嶉鏍硷紝璇﹁椋庢牸琛ㄣ€俓n<lora:Concept Art Eclipse Style LoRA_Pony XL v6:1>,pony娌圭敾璐ㄦ劅\nferal,anthro,骞挎硾鎰忎箟涓婄殑furry瑙掕壊锛屽寘鎷ぇ閮ㄥ垎闈炰汉绫诲舰鎬併€俓nslit pupils,淇閮ㄥ垎lora涓嬪鑷磃urry瑙掕壊鐪肩潧鑹插潡鐨則ag\nmonochrome,spot color,榛戠櫧鍗曡壊\n浠庝笅寰€涓婄湅/瑁欏簳椋庡厜 from below,\n瓒呭己瀵规瘮锛宒ark lighting, high contrast,\n瑙掕壊鍗＄敓鎴愬櫒锛?card_\\(theme\\):1.1), character card,\n涓婚锛?cyberpunk (theme)锛宖antasy (theme)锛宻teampunk (theme)\n锛宯oir (theme)锛寁intage (theme)锛?holy_(\\theme\\):1.2)\n绗旇Е椋庢牸锛実raphite \\(medium\\),charcoal (medium)銆乮nk (medium)锛寃atercolor (medium)锛宱il painting (medium)锛宻ketch (medium)锛宒igital art (medium)锛宲ixel art (medium)\n鎯呯华涓婚锛宺omantic (theme)锛宧orror \\(theme\\), mystical (theme)锛宒ark (theme)\n锛宐right (theme)锛宮elancholic (theme)\n鐜涓婚锛宖orest (theme)锛宑ityscape (theme)锛寀nderwater (theme)锛宻pace (theme)锛宒esert (theme)\nuncensored锛屾棤鐮併€俓ntop-down_bottom-up, jack-o'_challenge, 缁忓吀鐨勮洞鍦扮繕灞佽偂澶у紑鑵垮姩浣淺n reflection,鍙嶅皠鍔ㄤ綔锛焌bs, 锛焜aggy lines,trembling,"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 120,
+      "type": "VAEDecode",
+      "pos": {
+        "0": 958.1678466796875,
+        "1": 176.1946563720703
+      },
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 63,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 490,
+          "label": "Latent"
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 273,
+          "label": "VAE"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            310,
+            460,
+            551
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "鍥惧儚"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 122,
+      "type": "CR Simple Image Compare",
+      "pos": {
+        "0": 3038.15185546875,
+        "1": 170.98268127441406
+      },
+      "size": {
+        "0": 400,
+        "1": 266
+      },
+      "flags": {},
+      "order": 36,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "image1",
+          "type": "IMAGE",
+          "link": 307,
+          "label": "鍥惧儚1",
+          "shape": 7
+        },
+        {
+          "name": "image2",
+          "type": "IMAGE",
+          "link": null,
+          "label": "鍥惧儚2",
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            452,
+            469
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "鍥惧儚"
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鏄剧ず甯姪"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Simple Image Compare"
+      },
+      "widgets_values": [
+        "鍘熷浘",
+        "K-D鏀惧ぇ+闈慨",
+        100,
+        "鏂规娓呭埢鏈偊瀹嬬畝浣?TTF",
+        50,
+        "normal",
+        20
+      ]
+    },
+    {
+      "id": 127,
+      "type": "PreviewImage",
+      "pos": {
+        "0": 2048.703125,
+        "1": -38.36621856689453
+      },
+      "size": {
+        "0": 332.3728332519531,
+        "1": 307.1397399902344
+      },
+      "flags": {},
+      "order": 64,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 314,
+          "label": "鍥惧儚"
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 141,
+      "type": "VAEEncode",
+      "pos": {
+        "0": 2230.703125,
+        "1": -662.3662109375
+      },
+      "size": {
+        "0": 164.8395538330078,
+        "1": 46
+      },
+      "flags": {},
+      "order": 49,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 219,
+          "label": "鍥惧儚"
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 274,
+          "label": "VAE"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            349
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "Latent"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEEncode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 143,
+      "type": "Reroute",
+      "pos": {
+        "0": -391,
+        "1": -347
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 37,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 313
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            240
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 178,
+      "type": "LoadImage",
+      "pos": {
+        "0": -912.0709838867188,
+        "1": -347.3031921386719
+      },
+      "size": {
+        "0": 441.45123291015625,
+        "1": 493.1322021484375
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            294,
+            378,
+            567
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "鍥惧儚"
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3,
+          "label": "閬僵"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ComfyUI_184703_918936272165153_00043.png",
+        "image"
+      ]
+    },
+    {
+      "id": 187,
+      "type": "Reroute",
+      "pos": {
+        "0": -165,
+        "1": -439
+      },
+      "size": [
+        82,
+        26
+      ],
+      "flags": {},
+      "order": 68,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 306
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            552
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      },
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 189,
+      "type": "Note",
+      "pos": {
+        "0": -805,
+        "1": -902
+      },
+      "size": {
+        "0": 213.57028198242188,
+        "1": 152.26087951660156
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "榛戣壊涓哄浘鍍忓姞杞藉櫒\n绾㈣壊涓鸿劯閮ㄤ慨澶峔n缁胯壊涓烘墜閮ㄤ慨澶峔n榛勮壊涓烘斁澶ф祦绋嬪嚭鍙n涓嬮潰鐨勫€兼槸鏀惧ぇ绯绘暟銆俓n绱壊涓鸿繘鍏ユ斁澶ф祦绋媆n钃濊壊涓烘枃鐢熷浘杈撳嚭鍑哄彛"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 190,
+      "type": "Reroute",
+      "pos": {
+        "0": 257,
+        "1": -104
+      },
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 483
+        }
+      ],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            273,
+            274,
+            275,
+            285,
+            535
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 193,
+      "type": "DetailerForEach",
+      "pos": {
+        "0": 3494.1669921875,
+        "1": -683.01904296875
+      },
+      "size": {
+        "0": 390.0787658691406,
+        "1": 620
+      },
+      "flags": {},
+      "order": 56,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 292,
+          "label": "鍥惧儚"
+        },
+        {
+          "name": "segs",
+          "type": "SEGS",
+          "link": 281,
+          "label": "Seg"
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 495,
+          "label": "妯″瀷"
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 375,
+          "label": "CLIP"
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 285,
+          "label": "VAE"
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 370,
+          "label": "姝ｉ潰鏉′欢"
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 371,
+          "label": "璐熼潰鏉′欢"
+        },
+        {
+          "name": "detailer_hook",
+          "type": "DETAILER_HOOK",
+          "link": null,
+          "label": "缁嗗寲绾︽潫",
+          "shape": 7
+        },
+        {
+          "name": "scheduler_func_opt",
+          "type": "SCHEDULER_FUNC",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            410,
+            472
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "鍥惧儚"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DetailerForEach"
+      },
+      "widgets_values": [
+        512,
+        true,
+        1024,
+        1026497041547411,
+        "randomize",
+        20,
+        8,
+        "euler",
+        "normal",
+        0.65,
+        5,
+        true,
+        true,
+        "",
+        1,
+        false,
+        20
+      ]
+    },
+    {
+      "id": 196,
+      "type": "UltralyticsDetectorProvider",
+      "pos": {
+        "0": 3678.07080078125,
+        "1": -3.6337854862213135
+      },
+      "size": {
+        "0": 210,
+        "1": 98.07160949707031
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "BBOX_DETECTOR",
+          "type": "BBOX_DETECTOR",
+          "links": [
+            280
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "BBox妫€娴?
+        },
+        {
+          "name": "SEGM_DETECTOR",
+          "type": "SEGM_DETECTOR",
+          "links": null,
+          "shape": 3,
+          "label": "SEGM妫€娴?
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UltralyticsDetectorProvider"
+      },
+      "widgets_values": [
+        "bbox/hand_yolov8s.pt"
+      ]
+    },
+    {
+      "id": 197,
+      "type": "BboxDetectorSEGS",
+      "pos": {
+        "0": 3494.1669921875,
+        "1": -936.01904296875
+      },
+      "size": {
+        "0": 400,
+        "1": 212
+      },
+      "flags": {},
+      "order": 29,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "bbox_detector",
+          "type": "BBOX_DETECTOR",
+          "link": 280,
+          "label": "BBox妫€娴?
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 378,
+          "label": "鍥惧儚"
+        },
+        {
+          "name": "detailer_hook",
+          "type": "DETAILER_HOOK",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "SEGS",
+          "type": "SEGS",
+          "links": [
+            281
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "Seg"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BboxDetectorSEGS"
+      },
+      "widgets_values": [
+        0.5,
+        10,
+        3,
+        10,
+        "all"
+      ]
+    },
+    {
+      "id": 202,
+      "type": "Reroute",
+      "pos": {
+        "0": -165,
+        "1": -395
+      },
+      "size": [
+        82,
+        26
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "*",
+          "links": [
+            292
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 203,
+      "type": "Reroute",
+      "pos": {
+        "0": -395,
+        "1": -440
+      },
+      "size": [
+        82,
+        26
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 294
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            307,
+            313
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 204,
+      "type": "Reroute",
+      "pos": {
+        "0": -166,
+        "1": -346
+      },
+      "size": [
+        82,
+        26
+      ],
+      "flags": {},
+      "order": 65,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 528
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            306
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 206,
+      "type": "Reroute",
+      "pos": {
+        "0": -394,
+        "1": -394
+      },
+      "size": [
+        82,
+        26
+      ],
+      "flags": {},
+      "order": 66,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 310
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      },
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 211,
+      "type": "KSampler",
+      "pos": {
+        "0": 942,
+        "1": -355
+      },
+      "size": {
+        "0": 315,
+        "1": 474
+      },
+      "flags": {},
+      "order": 60,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 497,
+          "label": "妯″瀷"
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 575,
+          "label": "姝ｉ潰鏉′欢"
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 577,
+          "label": "璐熼潰鏉′欢"
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 320,
+          "label": "Latent"
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "link": 428,
+          "widget": {
+            "name": "seed"
+          },
+          "label": "闅忔満绉?
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            490
+          ],
+          "shape": 3,
+          "label": "Latent"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        117189510458157,
+        "randomize",
+        28,
+        7,
+        "euler_ancestral",
+        "normal",
+        1
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 216,
+      "type": "KSampler",
+      "pos": {
+        "0": 2038.703369140625,
+        "1": -565.3662109375
+      },
+      "size": {
+        "0": 367.59490966796875,
+        "1": 474.0953369140625
+      },
+      "flags": {},
+      "order": 58,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 499,
+          "label": "妯″瀷"
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 347,
+          "label": "姝ｉ潰鏉′欢"
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 366,
+          "label": "璐熼潰鏉′欢"
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 349,
+          "label": "Latent"
+        },
+        {
+          "name": "denoise",
+          "type": "FLOAT",
+          "link": 350,
+          "widget": {
+            "name": "denoise"
+          },
+          "label": "闄嶅櫔"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            351
+          ],
+          "shape": 3,
+          "label": "Latent"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        9384093489009,
+        "randomize",
+        20,
+        7.5,
+        "euler_ancestral",
+        "normal",
+        1
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 219,
+      "type": "SDPromptSaver",
+      "pos": {
+        "0": 1288,
+        "1": -388
+      },
+      "size": {
+        "0": 340,
+        "1": 850
+      },
+      "flags": {},
+      "order": 69,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 551,
+          "label": "鍥惧儚"
+        },
+        {
+          "name": "lora_name",
+          "type": "*",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "positive",
+          "type": "STRING",
+          "link": 360,
+          "widget": {
+            "name": "positive"
+          },
+          "label": "姝ｉ潰鎻愮ず璇?
+        },
+        {
+          "name": "negative",
+          "type": "STRING",
+          "link": 367,
+          "widget": {
+            "name": "negative"
+          },
+          "label": "璐熼潰鎻愮ず璇?
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "link": 429,
+          "widget": {
+            "name": "seed"
+          },
+          "label": "闅忔満绉?
+        },
+        {
+          "name": "extra_info",
+          "type": "STRING",
+          "link": 445,
+          "widget": {
+            "name": "extra_info"
+          },
+          "label": "棰濆淇℃伅"
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "link": 462,
+          "widget": {
+            "name": "width"
+          },
+          "label": "瀹藉害"
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "link": 461,
+          "widget": {
+            "name": "height"
+          },
+          "label": "楂樺害"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "FILENAME",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鏂囦欢鍚?
+        },
+        {
+          "name": "FILE_PATH",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1,
+          "shape": 3,
+          "label": "鏂囦欢璺緞"
+        },
+        {
+          "name": "METADATA",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鍏冩暟鎹?
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SDPromptSaver"
+      },
+      "widgets_values": [
+        "ComfyUI_%time_%seed_%counter",
+        "%date/",
+        "noobaiXLNAIXL_vPredTestVersion.safetensors",
+        "sdxl_vae.safetensors",
+        345357291620534,
+        "randomize",
+        28,
+        8,
+        "euler_ancestral",
+        "normal",
+        1,
+        1,
+        "",
+        "",
+        "png",
+        true,
+        true,
+        true,
+        100,
+        "%Y-%m-%d",
+        "%H%M%S",
+        false,
+        ""
+      ]
+    },
+    {
+      "id": 221,
+      "type": "CR Text",
+      "pos": {
+        "0": 4568.48388671875,
+        "1": -921.8355102539062
+      },
+      "size": {
+        "0": 210,
+        "1": 66
+      },
+      "flags": {},
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 566,
+          "widget": {
+            "name": "text"
+          },
+          "label": "鏂囨湰"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "*",
+          "links": [
+            363,
+            367,
+            400,
+            408,
+            413,
+            454
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "鏂囨湰"
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鏄剧ず甯姪"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text"
+      },
+      "widgets_values": [
+        "worst quality, low quality, bad anatomy, bad hands,blurry, deformed, disfigured, "
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 222,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 4340.00927734375,
+        "1": -922.0503540039062
+      },
+      "size": {
+        "0": 210,
+        "1": 54
+      },
+      "flags": {},
+      "order": 48,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 364,
+          "label": "CLIP"
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 363,
+          "widget": {
+            "name": "text"
+          },
+          "label": "鏂囨湰"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            366,
+            371,
+            543,
+            576
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "鏉′欢"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 235,
+      "type": "SDPromptSaver",
+      "pos": {
+        "0": 3915.537109375,
+        "1": -936.6483764648438
+      },
+      "size": {
+        "0": 360.7374267578125,
+        "1": 897.4349365234375
+      },
+      "flags": {},
+      "order": 62,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 410,
+          "label": "鍥惧儚"
+        },
+        {
+          "name": "lora_name",
+          "type": "*",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "positive",
+          "type": "STRING",
+          "link": 412,
+          "widget": {
+            "name": "positive"
+          },
+          "label": "姝ｉ潰鎻愮ず璇?
+        },
+        {
+          "name": "negative",
+          "type": "STRING",
+          "link": 413,
+          "widget": {
+            "name": "negative"
+          },
+          "label": "璐熼潰鎻愮ず璇?
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "link": 458,
+          "widget": {
+            "name": "seed"
+          },
+          "label": "闅忔満绉?
+        },
+        {
+          "name": "extra_info",
+          "type": "STRING",
+          "link": 446,
+          "widget": {
+            "name": "extra_info"
+          },
+          "label": "棰濆淇℃伅"
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "link": 473,
+          "widget": {
+            "name": "height"
+          },
+          "label": "楂樺害"
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "link": 474,
+          "widget": {
+            "name": "width"
+          },
+          "label": "瀹藉害"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "FILENAME",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鏂囦欢鍚?
+        },
+        {
+          "name": "FILE_PATH",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鏂囦欢璺緞"
+        },
+        {
+          "name": "METADATA",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鍏冩暟鎹?
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SDPromptSaver"
+      },
+      "widgets_values": [
+        "ComfyUI_%time_%seed_%counter",
+        "%date/",
+        "noobaiXLNAIXL_vPredTestVersion.safetensors",
+        "animevae.pt",
+        559726205010347,
+        "randomize",
+        28,
+        8,
+        "euler",
+        "normal",
+        1,
+        1,
+        "",
+        "",
+        "png",
+        true,
+        true,
+        true,
+        100,
+        "%Y-%m-%d",
+        "%H%M%S",
+        false,
+        ""
+      ]
+    },
+    {
+      "id": 236,
+      "type": "SDPromptSaver",
+      "pos": {
+        "0": 2465.12548828125,
+        "1": 373.88934326171875
+      },
+      "size": {
+        "0": 360.7374267578125,
+        "1": 897.4349365234375
+      },
+      "flags": {},
+      "order": 72,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 545,
+          "label": "鍥惧儚"
+        },
+        {
+          "name": "lora_name",
+          "type": "*",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "positive",
+          "type": "STRING",
+          "link": 504,
+          "widget": {
+            "name": "positive"
+          },
+          "label": "姝ｉ潰鎻愮ず璇?
+        },
+        {
+          "name": "negative",
+          "type": "STRING",
+          "link": 408,
+          "widget": {
+            "name": "negative"
+          },
+          "label": "璐熼潰鎻愮ず璇?
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "link": 459,
+          "widget": {
+            "name": "seed"
+          },
+          "label": "闅忔満绉?
+        },
+        {
+          "name": "extra_info",
+          "type": "STRING",
+          "link": 447,
+          "widget": {
+            "name": "extra_info"
+          },
+          "label": "棰濆淇℃伅"
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "link": 468,
+          "widget": {
+            "name": "width"
+          },
+          "label": "瀹藉害"
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "link": 467,
+          "widget": {
+            "name": "height"
+          },
+          "label": "楂樺害"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "FILENAME",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鏂囦欢鍚?
+        },
+        {
+          "name": "FILE_PATH",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鏂囦欢璺緞"
+        },
+        {
+          "name": "METADATA",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鍏冩暟鎹?
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SDPromptSaver"
+      },
+      "widgets_values": [
+        "ComfyUI_%time_%seed_%counter",
+        "%date/",
+        "noobaiXLNAIXL_vPredTestVersion.safetensors",
+        "animevae.pt",
+        1100780226240301,
+        "randomize",
+        27,
+        8,
+        "euler",
+        "normal",
+        1,
+        1,
+        "",
+        "",
+        "png",
+        true,
+        true,
+        true,
+        100,
+        "%Y-%m-%d",
+        "%H%M%S",
+        false,
+        ""
+      ]
+    },
+    {
+      "id": 237,
+      "type": "SDPromptSaver",
+      "pos": {
+        "0": 1686.98583984375,
+        "1": 77.2216567993164
+      },
+      "size": {
+        "0": 305.1505126953125,
+        "1": 563.4285888671875
+      },
+      "flags": {},
+      "order": 54,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 395,
+          "label": "鍥惧儚"
+        },
+        {
+          "name": "lora_name",
+          "type": "*",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "positive",
+          "type": "STRING",
+          "link": 399,
+          "widget": {
+            "name": "positive"
+          },
+          "label": "姝ｉ潰鎻愮ず璇?
+        },
+        {
+          "name": "negative",
+          "type": "STRING",
+          "link": 400,
+          "widget": {
+            "name": "negative"
+          },
+          "label": "璐熼潰鎻愮ず璇?
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "link": 456,
+          "widget": {
+            "name": "seed"
+          },
+          "label": "闅忔満绉?
+        },
+        {
+          "name": "extra_info",
+          "type": "STRING",
+          "link": 448,
+          "widget": {
+            "name": "extra_info"
+          },
+          "label": "棰濆淇℃伅"
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "link": 465,
+          "widget": {
+            "name": "width"
+          },
+          "label": "瀹藉害"
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "link": 464,
+          "widget": {
+            "name": "height"
+          },
+          "label": "楂樺害"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "FILENAME",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鏂囦欢鍚?
+        },
+        {
+          "name": "FILE_PATH",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鏂囦欢璺緞"
+        },
+        {
+          "name": "METADATA",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鍏冩暟鎹?
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SDPromptSaver"
+      },
+      "widgets_values": [
+        "ComfyUI_%time_%seed_%counter",
+        "%date/",
+        "noobaiXLNAIXL_vPredTestVersion.safetensors",
+        "animevae.pt",
+        183166889706432,
+        "randomize",
+        28,
+        8,
+        "euler",
+        "normal",
+        1,
+        1,
+        "",
+        "",
+        "png",
+        true,
+        true,
+        true,
+        100,
+        "%Y-%m-%d",
+        "%H%M%S",
+        false,
+        ""
+      ]
+    },
+    {
+      "id": 242,
+      "type": "Seed (rgthree)",
+      "pos": {
+        "0": 28,
+        "1": 215
+      },
+      "size": {
+        "0": 227.0678253173828,
+        "1": 130
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "SEED",
+          "type": "INT",
+          "links": [
+            428,
+            429,
+            456,
+            457,
+            458,
+            459
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "闅忔満绉?,
+          "dir": 4
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        -1,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": 244,
+      "type": "VAELoader",
+      "pos": {
+        "0": 9,
+        "1": -382
+      },
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "sdxl_vae.safetensors"
+      ]
+    },
+    {
+      "id": 247,
+      "type": "CR Text Concatenate",
+      "pos": {
+        "0": 378,
+        "1": 358
+      },
+      "size": {
+        "0": 315,
+        "1": 126
+      },
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text1",
+          "type": "STRING",
+          "link": 451,
+          "widget": {
+            "name": "text1"
+          },
+          "label": "鏂囨湰1"
+        },
+        {
+          "name": "text2",
+          "type": "STRING",
+          "link": 481,
+          "widget": {
+            "name": "text2"
+          },
+          "label": "鏂囨湰2"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "*",
+          "links": [
+            445,
+            446,
+            447,
+            448,
+            455
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "瀛楃涓?
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鏄剧ず甯姪"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text Concatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "|浣跨敤鐨勬ā鍨嬩负锛?
+      ]
+    },
+    {
+      "id": 252,
+      "type": "CR Text",
+      "pos": {
+        "0": 365,
+        "1": 53
+      },
+      "size": {
+        "0": 506.8341064453125,
+        "1": 101.96925354003906
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "*",
+          "links": [
+            450,
+            451
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "鏂囨湰"
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鏄剧ず甯姪"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 255,
+      "type": "SDPromptSaver",
+      "pos": {
+        "0": 3034.15185546875,
+        "1": -777.017333984375
+      },
+      "size": {
+        "0": 360.7374267578125,
+        "1": 897.4349365234375
+      },
+      "flags": {},
+      "order": 53,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 452,
+          "label": "鍥惧儚"
+        },
+        {
+          "name": "lora_name",
+          "type": "*",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "positive",
+          "type": "STRING",
+          "link": 453,
+          "widget": {
+            "name": "positive"
+          },
+          "label": "姝ｉ潰鎻愮ず璇?
+        },
+        {
+          "name": "negative",
+          "type": "STRING",
+          "link": 454,
+          "widget": {
+            "name": "negative"
+          },
+          "label": "璐熼潰鎻愮ず璇?
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "link": 457,
+          "widget": {
+            "name": "seed"
+          },
+          "label": "闅忔満绉?
+        },
+        {
+          "name": "extra_info",
+          "type": "STRING",
+          "link": 455,
+          "widget": {
+            "name": "extra_info"
+          },
+          "label": "棰濆淇℃伅"
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "link": 470,
+          "widget": {
+            "name": "height"
+          },
+          "label": "楂樺害"
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "link": 471,
+          "widget": {
+            "name": "width"
+          },
+          "label": "瀹藉害"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "FILENAME",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鏂囦欢鍚?
+        },
+        {
+          "name": "FILE_PATH",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鏂囦欢璺緞"
+        },
+        {
+          "name": "METADATA",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鍏冩暟鎹?
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SDPromptSaver"
+      },
+      "widgets_values": [
+        "ComfyUI_%time_%seed_%counter",
+        "%date/",
+        "noobaiXLNAIXL_vPredTestVersion.safetensors",
+        "animevae.pt",
+        720217621754174,
+        "randomize",
+        28,
+        8,
+        "euler",
+        "normal",
+        1,
+        1,
+        "",
+        "",
+        "png",
+        true,
+        true,
+        true,
+        100,
+        "%Y-%m-%d",
+        "%H%M%S",
+        false,
+        ""
+      ]
+    },
+    {
+      "id": 256,
+      "type": "ImpactImageInfo",
+      "pos": {
+        "0": 957.1678466796875,
+        "1": 280.19476318359375
+      },
+      "size": {
+        "0": 210,
+        "1": 86
+      },
+      "flags": {},
+      "order": 67,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "value",
+          "type": "IMAGE",
+          "link": 460,
+          "label": "鍥惧儚"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "batch",
+          "type": "INT",
+          "links": null,
+          "shape": 3,
+          "label": "鎵规澶у皬"
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            461
+          ],
+          "slot_index": 1,
+          "shape": 3,
+          "label": "楂樺害"
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            462
+          ],
+          "slot_index": 2,
+          "shape": 3,
+          "label": "瀹藉害"
+        },
+        {
+          "name": "channel",
+          "type": "INT",
+          "links": null,
+          "shape": 3,
+          "label": "閫氶亾"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImpactImageInfo"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 257,
+      "type": "ImpactImageInfo",
+      "pos": {
+        "0": 1685.98583984375,
+        "1": -54.77832794189453
+      },
+      "size": {
+        "0": 210,
+        "1": 86
+      },
+      "flags": {},
+      "order": 50,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "value",
+          "type": "IMAGE",
+          "link": 463,
+          "label": "鍥惧儚"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "batch",
+          "type": "INT",
+          "links": null,
+          "shape": 3,
+          "label": "鎵规澶у皬"
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            464
+          ],
+          "slot_index": 1,
+          "shape": 3,
+          "label": "楂樺害"
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            465
+          ],
+          "slot_index": 2,
+          "shape": 3,
+          "label": "瀹藉害"
+        },
+        {
+          "name": "channel",
+          "type": "INT",
+          "links": null,
+          "shape": 3,
+          "label": "閫氶亾"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImpactImageInfo"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 259,
+      "type": "ImpactImageInfo",
+      "pos": {
+        "0": 3037.15185546875,
+        "1": -918.017333984375
+      },
+      "size": {
+        "0": 210,
+        "1": 86
+      },
+      "flags": {},
+      "order": 43,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "value",
+          "type": "IMAGE",
+          "link": 469,
+          "label": "鍥惧儚"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "batch",
+          "type": "INT",
+          "links": null,
+          "shape": 3,
+          "label": "鎵规澶у皬"
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            470
+          ],
+          "slot_index": 1,
+          "shape": 3,
+          "label": "楂樺害"
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            471
+          ],
+          "slot_index": 2,
+          "shape": 3,
+          "label": "瀹藉害"
+        },
+        {
+          "name": "channel",
+          "type": "INT",
+          "links": null,
+          "shape": 3,
+          "label": "閫氶亾"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImpactImageInfo"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 260,
+      "type": "ImpactImageInfo",
+      "pos": {
+        "0": 3499.07080078125,
+        "1": -2.6337854862213135
+      },
+      "size": {
+        "0": 158.6798858642578,
+        "1": 93.61702728271484
+      },
+      "flags": {},
+      "order": 59,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "value",
+          "type": "IMAGE",
+          "link": 472,
+          "label": "鍥惧儚"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "batch",
+          "type": "INT",
+          "links": null,
+          "shape": 3,
+          "label": "鎵规澶у皬"
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            473
+          ],
+          "slot_index": 1,
+          "shape": 3,
+          "label": "楂樺害"
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            474
+          ],
+          "slot_index": 2,
+          "shape": 3,
+          "label": "瀹藉害"
+        },
+        {
+          "name": "channel",
+          "type": "INT",
+          "links": null,
+          "shape": 3,
+          "label": "閫氶亾"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImpactImageInfo"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 263,
+      "type": "Checkpoint Loader (Simple)",
+      "pos": {
+        "0": 9,
+        "1": -266
+      },
+      "size": {
+        "0": 315,
+        "1": 118
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            479
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "妯″瀷"
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            480
+          ],
+          "slot_index": 1,
+          "shape": 3,
+          "label": "CLIP"
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            483
+          ],
+          "slot_index": 2,
+          "shape": 3,
+          "label": "VAE"
+        },
+        {
+          "name": "NAME_STRING",
+          "type": "STRING",
+          "links": [
+            481
+          ],
+          "slot_index": 3,
+          "shape": 3,
+          "label": "鍚嶇О瀛楃涓?
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Checkpoint Loader (Simple)"
+      },
+      "widgets_values": [
+        "noobaiXLNAIXL_vPredTestVersion.safetensors"
+      ]
+    },
+    {
+      "id": 275,
+      "type": "ModelSamplingDiscrete",
+      "pos": {
+        "0": 847.169189453125,
+        "1": -561.3377685546875
+      },
+      "size": {
+        "0": 210,
+        "1": 82
+      },
+      "flags": {},
+      "order": 45,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 498,
+          "label": "妯″瀷"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            495,
+            497,
+            499,
+            550
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ModelSamplingDiscrete"
+      },
+      "widgets_values": [
+        "v_prediction",
+        false
+      ]
+    },
+    {
+      "id": 289,
+      "type": "ControlNetLoader",
+      "pos": {
+        "0": 1091.23681640625,
+        "1": -559.8248901367188
+      },
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CONTROL_NET",
+          "type": "CONTROL_NET",
+          "links": [
+            573
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "ControlNet"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ControlNetLoader"
+      },
+      "widgets_values": [
+        "diffusion_pytorch_model_promax.safetensors"
+      ]
+    },
+    {
+      "id": 290,
+      "type": "LoadImage",
+      "pos": {
+        "0": 1094.137451171875,
+        "1": -932.1264038085938
+      },
+      "size": {
+        "0": 315,
+        "1": 314
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            569
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "鍥惧儚"
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [],
+          "slot_index": 1,
+          "shape": 3,
+          "label": "閬僵"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ComfyUI_033158_121162899764489_00010.png",
+        "image"
+      ]
+    },
+    {
+      "id": 296,
+      "type": "PreviewImage",
+      "pos": {
+        "0": 1769.0146484375,
+        "1": -932.6029052734375
+      },
+      "size": {
+        "0": 220.19825744628906,
+        "1": 258.4618225097656
+      },
+      "flags": {},
+      "order": 40,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 570,
+          "label": "鍥惧儚"
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 308,
+      "type": "ImpactWildcardProcessor",
+      "pos": {
+        "0": 8.732589721679688,
+        "1": -722.0986328125
+      },
+      "size": {
+        "0": 400,
+        "1": 222
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            522
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "瀛楃涓?
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImpactWildcardProcessor"
+      },
+      "widgets_values": [
+        "__Tag缁凬SFW鍔ㄤ綔鏈嶈__,",
+        "1girl, solo, breasts, looking_at_viewer, blush, smile, bare_shoulders, standing, ponytail, ass, cowboy_shot, small_breasts, looking_back, indoors, from_behind, covered_nipples, leotard, lips, wet, see-through, window, anus, back, thigh_gap, steam, freckles, adjusting_clothes, white_leotard, wedgie, body_freckles, ,",
+        true,
+        663652858598292,
+        "randomize",
+        "Select the Wildcard to add to the text"
+      ]
+    },
+    {
+      "id": 312,
+      "type": "CR Text",
+      "pos": {
+        "0": 356,
+        "1": -403
+      },
+      "size": {
+        "0": 525.2176513671875,
+        "1": 197.07620239257812
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "*",
+          "links": [
+            561
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "鏂囨湰"
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鏄剧ず甯姪"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text"
+      },
+      "widgets_values": [
+        "artist:betabeet,artist:john_kafka,artist:nixeu,artist:quasarcake,\nmasterpiece, best quality, arlecchino \\(genshin impact\\), black hands,\n"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 314,
+      "type": "CR Text Concatenate",
+      "pos": {
+        "0": 376,
+        "1": 222
+      },
+      "size": {
+        "0": 210,
+        "1": 78
+      },
+      "flags": {},
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text1",
+          "type": "STRING",
+          "link": 563,
+          "widget": {
+            "name": "text1"
+          },
+          "label": "鏂囨湰1"
+        },
+        {
+          "name": "text2",
+          "type": "STRING",
+          "link": 522,
+          "widget": {
+            "name": "text2"
+          },
+          "label": "鏂囨湰2"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "*",
+          "links": [
+            523,
+            527
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "瀛楃涓?
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鏄剧ず甯姪"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text Concatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 318,
+      "type": "CR Text",
+      "pos": {
+        "0": 6.7325897216796875,
+        "1": -975.0986328125
+      },
+      "size": {
+        "0": 801.2652587890625,
+        "1": 201.51687622070312
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "*",
+          "links": null,
+          "shape": 3,
+          "label": "鏂囨湰"
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鏄剧ず甯姪"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text"
+      },
+      "widgets_values": [
+        "__闅忔満鍔ㄦ极钀濊帀__锛宊_濂虫€у姩婕鑹睺AG__锛宊_闅忔満鍔ㄦ极瑙掕壊澶栬鍔ㄤ綔鏈嶈__锛宊_闅忔満NSFW__锛宊_Tag缁凬SFW澶栬鍔ㄤ綔鏈嶈__锛宊_Tag缁凬SFW鍔ㄤ綔鏈嶈__锛宊_Tag缁勫瑙傚姩浣滄湇瑁卂_锛宊_Tag缁勫姩浣滄湇瑁卂_,__琛ㄦ儏鍖呬覆__,__鑷姩鐢诲笀椋庢牸涓瞋_"
+      ]
+    },
+    {
+      "id": 324,
+      "type": "ShowText|pysssss",
+      "pos": {
+        "0": 432.7325744628906,
+        "1": -706.0986328125
+      },
+      "size": {
+        "0": 367.6765441894531,
+        "1": 209.7740936279297
+      },
+      "flags": {},
+      "order": 47,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 527,
+          "widget": {
+            "name": "text"
+          },
+          "label": "鏂囨湰"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6,
+          "label": "瀛楃涓?
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "artist:betabeet,artist:john_kafka,artist:nixeu,artist:quasarcake,\nmasterpiece, best quality, arlecchino \\(genshin impact\\), black hands,\n1girl, solo, breasts, looking_at_viewer, blush, smile, bare_shoulders, standing, ponytail, ass, cowboy_shot, small_breasts, looking_back, indoors, from_behind, covered_nipples, leotard, lips, wet, see-through, window, anus, back, thigh_gap, steam, freckles, adjusting_clothes, white_leotard, wedgie, body_freckles, ,"
+      ]
+    },
+    {
+      "id": 338,
+      "type": "FaceDetailer",
+      "pos": {
+        "0": 2465.12548828125,
+        "1": -812.1106567382812
+      },
+      "size": {
+        "0": 519,
+        "1": 1120
+      },
+      "flags": {},
+      "order": 70,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 552,
+          "label": "鍥惧儚"
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 550,
+          "label": "妯″瀷"
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 534,
+          "label": "CLIP"
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 535,
+          "label": "VAE"
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 542,
+          "label": "姝ｉ潰鏉′欢"
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 543,
+          "label": "璐熼潰鏉′欢"
+        },
+        {
+          "name": "bbox_detector",
+          "type": "BBOX_DETECTOR",
+          "link": 544,
+          "label": "BBox妫€娴?
+        },
+        {
+          "name": "sam_model_opt",
+          "type": "SAM_MODEL",
+          "link": null,
+          "label": "SAM妯″瀷",
+          "shape": 7
+        },
+        {
+          "name": "segm_detector_opt",
+          "type": "SEGM_DETECTOR",
+          "link": null,
+          "label": "Segm妫€娴?,
+          "shape": 7
+        },
+        {
+          "name": "detailer_hook",
+          "type": "DETAILER_HOOK",
+          "link": null,
+          "label": "缁嗗寲绾︽潫",
+          "shape": 7
+        },
+        {
+          "name": "scheduler_func_opt",
+          "type": "SCHEDULER_FUNC",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            545,
+            546
+          ],
+          "shape": 3,
+          "label": "鍥惧儚"
+        },
+        {
+          "name": "cropped_refined",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 6,
+          "label": "缁嗗寲鍥惧儚"
+        },
+        {
+          "name": "cropped_enhanced_alpha",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 6,
+          "label": "缁嗗寲閮ㄥ垎"
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": null,
+          "shape": 3,
+          "label": "閬僵"
+        },
+        {
+          "name": "detailer_pipe",
+          "type": "DETAILER_PIPE",
+          "links": null,
+          "shape": 3,
+          "label": "缁嗗寲鑺傜偣鏉?
+        },
+        {
+          "name": "cnet_images",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 6,
+          "label": "ControlNet鍥惧儚"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FaceDetailer"
+      },
+      "widgets_values": [
+        512,
+        true,
+        1024,
+        703951660468186,
+        "randomize",
+        20,
+        8,
+        "euler",
+        "normal",
+        0.5,
+        5,
+        true,
+        true,
+        0.5,
+        10,
+        3,
+        "center-1",
+        0,
+        0.93,
+        0,
+        0.7,
+        "False",
+        10,
+        "",
+        1,
+        false,
+        20
+      ]
+    },
+    {
+      "id": 340,
+      "type": "CR Text",
+      "pos": {
+        "0": 843.2508544921875,
+        "1": -907.1721801757812
+      },
+      "size": {
+        "0": 210,
+        "1": 96
+      },
+      "flags": {},
+      "order": 20,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "*",
+          "links": [
+            559
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "鏂囨湰"
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鏄剧ず甯姪"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text"
+      },
+      "widgets_values": [
+        "(score_9,score_8_up,score_7_up),"
+      ]
+    },
+    {
+      "id": 341,
+      "type": "CR Text",
+      "pos": {
+        "0": 844.267333984375,
+        "1": -770.2392578125
+      },
+      "size": {
+        "0": 210,
+        "1": 97.50776672363281
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "*",
+          "links": [
+            560
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "鏂囨湰"
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鏄剧ず甯姪"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text"
+      },
+      "widgets_values": [
+        "(score_4,score_3,score_2,score_1),"
+      ]
+    },
+    {
+      "id": 343,
+      "type": "CR Text Concatenate",
+      "pos": {
+        "0": 4332.8046875,
+        "1": -490.88128662109375
+      },
+      "size": {
+        "0": 210,
+        "1": 78.92601013183594
+      },
+      "flags": {},
+      "order": 35,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text1",
+          "type": "STRING",
+          "link": 560,
+          "widget": {
+            "name": "text1"
+          },
+          "label": "鏂囨湰1"
+        },
+        {
+          "name": "text2",
+          "type": "STRING",
+          "link": 565,
+          "widget": {
+            "name": "text2"
+          },
+          "label": "鏂囨湰2"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "*",
+          "links": [
+            566
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "瀛楃涓?
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鏄剧ず甯姪"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text Concatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 344,
+      "type": "CR Text",
+      "pos": {
+        "0": 357,
+        "1": -168
+      },
+      "size": {
+        "0": 517.7196044921875,
+        "1": 181.01512145996094
+      },
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "*",
+          "links": [
+            565
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "鏂囨湰"
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鏄剧ず甯姪"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text"
+      },
+      "widgets_values": [
+        "worst quality, low quality, bad anatomy, bad hands, 4koma, comic, 3d, realistic, disfigured, poorly drawn hands, poorly drawn feet, extra limbs, missing limbs, floating limbs, disconnected limbs, mutation, deformed, blurry, out of focus\n"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 348,
+      "type": "Note",
+      "pos": {
+        "0": -413,
+        "1": -755
+      },
+      "size": {
+        "0": 384.9364318847656,
+        "1": 290.53167724609375
+      },
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "artist:ciloranko,artist:wlop, ask_askzy, mochirong,cui_(jidanhaidaitang),yuzuyomogi,miv4t,matsunaga_kouyou,"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 349,
+      "type": "Note",
+      "pos": {
+        "0": -806,
+        "1": -692
+      },
+      "size": {
+        "0": 367.1142272949219,
+        "1": 204.73167419433594
+      },
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "fuzichoco,qys3,morikura en,ciloranko锛孿n鍙埍缁勫悎涓瞈nSWAV,blankk,john_kafka,quasarcake\n鍐蜂覆,\nartist:ciloranko,artist:wlop, ask_askzy, mochirong,cui_(jidanhaidaitang),yuzuyomogi,miv4t,matsunaga_kouyou,\n绮剧粏3d鍖栬悓涓?
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 350,
+      "type": "Note",
+      "pos": {
+        "0": -1725,
+        "1": -633
+      },
+      "size": {
+        "0": 286.6145324707031,
+        "1": 143.48316955566406
+      },
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "鎺ㄨ崘閲囨牱锛欴PM++2S_Ancestral\n鎺ㄨ崘姝ユ暟: 40-50\n鎺ㄨ崘cfg: 5-7\n寤鸿浣跨敤姝ｉ潰鎻愮ず璇峴oft_nai,soft,\nsoft-noob 绗旇鏈?
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 352,
+      "type": "WD14Tagger|pysssss",
+      "pos": {
+        "0": -943,
+        "1": 267
+      },
+      "size": {
+        "0": 497.901611328125,
+        "1": 458.3963317871094
+      },
+      "flags": {},
+      "order": 27,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 567,
+          "label": "鍥惧儚"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0,
+          "shape": 6,
+          "label": "瀛楃涓?
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "WD14Tagger|pysssss"
+      },
+      "widgets_values": [
+        "wd-eva02-large-tagger-v3",
+        0.35,
+        0.85,
+        false,
+        false,
+        ""
+      ]
+    },
+    {
+      "id": 354,
+      "type": "OpenposePreprocessor",
+      "pos": {
+        "0": 1434.7822265625,
+        "1": -932.7346801757812
+      },
+      "size": {
+        "0": 315,
+        "1": 174
+      },
+      "flags": {},
+      "order": 33,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 569,
+          "label": "鍥惧儚"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            570,
+            572
+          ],
+          "slot_index": 0,
+          "label": "鍥惧儚"
+        },
+        {
+          "name": "POSE_KEYPOINT",
+          "type": "POSE_KEYPOINT",
+          "links": null,
+          "label": "濮挎€佸叧閿偣"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenposePreprocessor"
+      },
+      "widgets_values": [
+        "enable",
+        "enable",
+        "enable",
+        512,
+        "enable"
+      ]
+    },
+    {
+      "id": 355,
+      "type": "ControlNetApplyAdvanced",
+      "pos": {
+        "0": 1435.0146484375,
+        "1": -701.6029052734375
+      },
+      "size": {
+        "0": 315,
+        "1": 186
+      },
+      "flags": {},
+      "order": 57,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 574,
+          "label": "姝ｉ潰鏉′欢"
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 576,
+          "label": "璐熼潰鏉′欢"
+        },
+        {
+          "name": "control_net",
+          "type": "CONTROL_NET",
+          "link": 573,
+          "label": "ControlNet"
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 572,
+          "label": "鍥惧儚"
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            575
+          ],
+          "slot_index": 0,
+          "label": "姝ｉ潰鏉′欢"
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            577
+          ],
+          "label": "璐熼潰鏉′欢"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ControlNetApplyAdvanced"
+      },
+      "widgets_values": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": 342,
+      "type": "CR Text Concatenate",
+      "pos": {
+        "0": 4570,
+        "1": -809
+      },
+      "size": {
+        "0": 210,
+        "1": 83.99402618408203
+      },
+      "flags": {},
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text1",
+          "type": "STRING",
+          "link": 559,
+          "widget": {
+            "name": "text1"
+          },
+          "label": "鏂囨湰1"
+        },
+        {
+          "name": "text2",
+          "type": "STRING",
+          "link": 561,
+          "widget": {
+            "name": "text2"
+          },
+          "label": "鏂囨湰2"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "*",
+          "links": [
+            563
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "瀛楃涓?
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "鏄剧ず甯姪"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text Concatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        ""
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 113,
+      "type": "Evaluate Floats",
+      "pos": {
+        "0": 4569,
+        "1": -679
+      },
+      "size": {
+        "0": 268.2394104003906,
+        "1": 170
+      },
+      "flags": {},
+      "order": 38,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "FLOAT",
+          "link": 175,
+          "widget": {
+            "name": "a"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": null,
+          "shape": 3,
+          "label": "鏁存暟"
+        },
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": [
+            350
+          ],
+          "slot_index": 1,
+          "shape": 3,
+          "label": "娴偣"
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "瀛楃涓?
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Evaluate Floats"
+      },
+      "widgets_values": [
+        "(a-1)/(1.25*a)+0.1",
+        "False",
+        0,
+        0,
+        0
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 111,
+      "type": "easy float",
+      "pos": {
+        "0": 4573,
+        "1": -459
+      },
+      "size": [
+        210,
+        34
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "value",
+          "type": "FLOAT",
+          "link": 262,
+          "widget": {
+            "name": "value"
+          },
+          "label": "鍊?
+        }
+      ],
+      "outputs": [
+        {
+          "name": "float",
+          "type": "FLOAT",
+          "links": [
+            175,
+            225
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "娴偣"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy float"
+      },
+      "widgets_values": [
+        1.6
+      ]
+    },
+    {
+      "id": 181,
+      "type": "ImpactFloat",
+      "pos": {
+        "0": -375,
+        "1": -236
+      },
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": [
+            262
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "娴偣"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImpactFloat"
+      },
+      "widgets_values": [
+        1.7000000000000002
+      ]
+    },
+    {
+      "id": 138,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": {
+        "0": -397,
+        "1": -123
+      },
+      "size": {
+        "0": 353.4048156738281,
+        "1": 418
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null,
+          "slot_index": 0,
+          "label": "鍙€夎繛鎺?
+        }
+      ],
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "",
+        "showNav": true,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default"
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 140,
+      "type": "CR Upscale Image",
+      "pos": {
+        "0": 1682,
+        "1": -376
+      },
+      "size": {
+        "0": 315,
+        "1": 222
+      },
+      "flags": {},
+      "order": 44,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 240,
+          "label": "鍥惧儚"
+        },
+        {
+          "name": "rescale_factor",
+          "type": "FLOAT",
+          "link": 225,
+          "widget": {
+            "name": "rescale_factor"
+          },
+          "label": "缂╂斁绯绘暟"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            219,
+            395,
+            463
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "鍥惧儚"
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Upscale Image"
+      },
+      "widgets_values": [
+        "4x-AnimeSharp.pth",
+        "rescale",
+        2,
+        1024,
+        "bicubic",
+        "true",
+        8
+      ]
+    },
+    {
+      "id": 258,
+      "type": "ImpactImageInfo",
+      "pos": {
+        "0": 2838,
+        "1": 377
+      },
+      "size": {
+        "0": 158.42318725585938,
+        "1": 163.77838134765625
+      },
+      "flags": {},
+      "order": 71,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "value",
+          "type": "IMAGE",
+          "link": 546,
+          "label": "鍥惧儚"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "batch",
+          "type": "INT",
+          "links": null,
+          "shape": 3,
+          "label": "鎵规澶у皬"
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            467
+          ],
+          "slot_index": 1,
+          "shape": 3,
+          "label": "楂樺害"
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            468
+          ],
+          "slot_index": 2,
+          "shape": 3,
+          "label": "瀹藉害"
+        },
+        {
+          "name": "channel",
+          "type": "INT",
+          "links": null,
+          "shape": 3,
+          "label": "閫氶亾"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImpactImageInfo"
+      },
+      "widgets_values": []
+    }
+  ],
+  "links": [
+    [
+      100,
+      34,
+      0,
+      65,
+      1,
+      "CLIP"
+    ],
+    [
+      148,
+      103,
+      0,
+      98,
+      0,
+      "STRING"
+    ],
+    [
+      150,
+      103,
+      0,
+      6,
+      1,
+      "STRING"
+    ],
+    [
+      175,
+      111,
+      0,
+      113,
+      0,
+      "FLOAT"
+    ],
+    [
+      187,
+      98,
+      0,
+      100,
+      1,
+      "STRING"
+    ],
+    [
+      219,
+      140,
+      0,
+      141,
+      0,
+      "IMAGE"
+    ],
+    [
+      225,
+      111,
+      0,
+      140,
+      1,
+      "FLOAT"
+    ],
+    [
+      240,
+      143,
+      0,
+      140,
+      0,
+      "IMAGE"
+    ],
+    [
+      262,
+      181,
+      0,
+      111,
+      0,
+      "FLOAT"
+    ],
+    [
+      273,
+      190,
+      0,
+      120,
+      1,
+      "VAE"
+    ],
+    [
+      274,
+      190,
+      0,
+      141,
+      1,
+      "VAE"
+    ],
+    [
+      275,
+      190,
+      0,
+      21,
+      1,
+      "VAE"
+    ],
+    [
+      280,
+      196,
+      0,
+      197,
+      0,
+      "BBOX_DETECTOR"
+    ],
+    [
+      281,
+      197,
+      0,
+      193,
+      1,
+      "SEGS"
+    ],
+    [
+      285,
+      190,
+      0,
+      193,
+      4,
+      "VAE"
+    ],
+    [
+      292,
+      202,
+      0,
+      193,
+      0,
+      "IMAGE"
+    ],
+    [
+      294,
+      178,
+      0,
+      203,
+      0,
+      "*"
+    ],
+    [
+      306,
+      204,
+      0,
+      187,
+      0,
+      "*"
+    ],
+    [
+      307,
+      203,
+      0,
+      122,
+      0,
+      "IMAGE"
+    ],
+    [
+      310,
+      120,
+      0,
+      206,
+      0,
+      "*"
+    ],
+    [
+      313,
+      203,
+      0,
+      143,
+      0,
+      "*"
+    ],
+    [
+      314,
+      21,
+      0,
+      127,
+      0,
+      "IMAGE"
+    ],
+    [
+      320,
+      5,
+      0,
+      211,
+      3,
+      "LATENT"
+    ],
+    [
+      347,
+      100,
+      0,
+      216,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      349,
+      141,
+      0,
+      216,
+      3,
+      "LATENT"
+    ],
+    [
+      350,
+      113,
+      1,
+      216,
+      4,
+      "FLOAT"
+    ],
+    [
+      351,
+      216,
+      0,
+      21,
+      0,
+      "LATENT"
+    ],
+    [
+      360,
+      103,
+      0,
+      219,
+      2,
+      "STRING"
+    ],
+    [
+      363,
+      221,
+      0,
+      222,
+      1,
+      "STRING"
+    ],
+    [
+      364,
+      34,
+      0,
+      222,
+      0,
+      "CLIP"
+    ],
+    [
+      366,
+      222,
+      0,
+      216,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      367,
+      221,
+      0,
+      219,
+      3,
+      "STRING"
+    ],
+    [
+      370,
+      6,
+      0,
+      193,
+      5,
+      "CONDITIONING"
+    ],
+    [
+      371,
+      222,
+      0,
+      193,
+      6,
+      "CONDITIONING"
+    ],
+    [
+      375,
+      34,
+      0,
+      193,
+      3,
+      "CLIP"
+    ],
+    [
+      378,
+      178,
+      0,
+      197,
+      1,
+      "IMAGE"
+    ],
+    [
+      389,
+      34,
+      0,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      390,
+      34,
+      0,
+      100,
+      0,
+      "CLIP"
+    ],
+    [
+      395,
+      140,
+      0,
+      237,
+      0,
+      "IMAGE"
+    ],
+    [
+      399,
+      103,
+      0,
+      237,
+      2,
+      "STRING"
+    ],
+    [
+      400,
+      221,
+      0,
+      237,
+      3,
+      "STRING"
+    ],
+    [
+      408,
+      221,
+      0,
+      236,
+      3,
+      "STRING"
+    ],
+    [
+      410,
+      193,
+      0,
+      235,
+      0,
+      "IMAGE"
+    ],
+    [
+      412,
+      103,
+      0,
+      235,
+      2,
+      "STRING"
+    ],
+    [
+      413,
+      221,
+      0,
+      235,
+      3,
+      "STRING"
+    ],
+    [
+      428,
+      242,
+      0,
+      211,
+      4,
+      "INT"
+    ],
+    [
+      429,
+      242,
+      0,
+      219,
+      4,
+      "INT"
+    ],
+    [
+      445,
+      247,
+      0,
+      219,
+      5,
+      "STRING"
+    ],
+    [
+      446,
+      247,
+      0,
+      235,
+      5,
+      "STRING"
+    ],
+    [
+      447,
+      247,
+      0,
+      236,
+      5,
+      "STRING"
+    ],
+    [
+      448,
+      247,
+      0,
+      237,
+      5,
+      "STRING"
+    ],
+    [
+      450,
+      252,
+      0,
+      65,
+      2,
+      "STRING"
+    ],
+    [
+      451,
+      252,
+      0,
+      247,
+      0,
+      "STRING"
+    ],
+    [
+      452,
+      122,
+      0,
+      255,
+      0,
+      "IMAGE"
+    ],
+    [
+      453,
+      103,
+      0,
+      255,
+      2,
+      "STRING"
+    ],
+    [
+      454,
+      221,
+      0,
+      255,
+      3,
+      "STRING"
+    ],
+    [
+      455,
+      247,
+      0,
+      255,
+      5,
+      "STRING"
+    ],
+    [
+      456,
+      242,
+      0,
+      237,
+      4,
+      "INT"
+    ],
+    [
+      457,
+      242,
+      0,
+      255,
+      4,
+      "INT"
+    ],
+    [
+      458,
+      242,
+      0,
+      235,
+      4,
+      "INT"
+    ],
+    [
+      459,
+      242,
+      0,
+      236,
+      4,
+      "INT"
+    ],
+    [
+      460,
+      120,
+      0,
+      256,
+      0,
+      "IMAGE"
+    ],
+    [
+      461,
+      256,
+      1,
+      219,
+      7,
+      "INT"
+    ],
+    [
+      462,
+      256,
+      2,
+      219,
+      6,
+      "INT"
+    ],
+    [
+      463,
+      140,
+      0,
+      257,
+      0,
+      "IMAGE"
+    ],
+    [
+      464,
+      257,
+      1,
+      237,
+      7,
+      "INT"
+    ],
+    [
+      465,
+      257,
+      2,
+      237,
+      6,
+      "INT"
+    ],
+    [
+      467,
+      258,
+      1,
+      236,
+      7,
+      "INT"
+    ],
+    [
+      468,
+      258,
+      2,
+      236,
+      6,
+      "INT"
+    ],
+    [
+      469,
+      122,
+      0,
+      259,
+      0,
+      "IMAGE"
+    ],
+    [
+      470,
+      259,
+      1,
+      255,
+      6,
+      "INT"
+    ],
+    [
+      471,
+      259,
+      2,
+      255,
+      7,
+      "INT"
+    ],
+    [
+      472,
+      193,
+      0,
+      260,
+      0,
+      "IMAGE"
+    ],
+    [
+      473,
+      260,
+      1,
+      235,
+      6,
+      "INT"
+    ],
+    [
+      474,
+      260,
+      2,
+      235,
+      7,
+      "INT"
+    ],
+    [
+      479,
+      263,
+      0,
+      65,
+      0,
+      "MODEL"
+    ],
+    [
+      480,
+      263,
+      1,
+      34,
+      0,
+      "CLIP"
+    ],
+    [
+      481,
+      263,
+      3,
+      247,
+      1,
+      "STRING"
+    ],
+    [
+      483,
+      263,
+      2,
+      190,
+      0,
+      "*"
+    ],
+    [
+      490,
+      211,
+      0,
+      120,
+      0,
+      "LATENT"
+    ],
+    [
+      495,
+      275,
+      0,
+      193,
+      2,
+      "MODEL"
+    ],
+    [
+      497,
+      275,
+      0,
+      211,
+      0,
+      "MODEL"
+    ],
+    [
+      498,
+      65,
+      0,
+      275,
+      0,
+      "MODEL"
+    ],
+    [
+      499,
+      275,
+      0,
+      216,
+      0,
+      "MODEL"
+    ],
+    [
+      504,
+      103,
+      0,
+      236,
+      2,
+      "STRING"
+    ],
+    [
+      522,
+      308,
+      0,
+      314,
+      1,
+      "STRING"
+    ],
+    [
+      523,
+      314,
+      0,
+      103,
+      0,
+      "STRING"
+    ],
+    [
+      527,
+      314,
+      0,
+      324,
+      0,
+      "STRING"
+    ],
+    [
+      528,
+      21,
+      0,
+      204,
+      0,
+      "*"
+    ],
+    [
+      534,
+      34,
+      0,
+      338,
+      2,
+      "CLIP"
+    ],
+    [
+      535,
+      190,
+      0,
+      338,
+      3,
+      "VAE"
+    ],
+    [
+      542,
+      6,
+      0,
+      338,
+      4,
+      "CONDITIONING"
+    ],
+    [
+      543,
+      222,
+      0,
+      338,
+      5,
+      "CONDITIONING"
+    ],
+    [
+      544,
+      42,
+      0,
+      338,
+      6,
+      "BBOX_DETECTOR"
+    ],
+    [
+      545,
+      338,
+      0,
+      236,
+      0,
+      "IMAGE"
+    ],
+    [
+      546,
+      338,
+      0,
+      258,
+      0,
+      "IMAGE"
+    ],
+    [
+      550,
+      275,
+      0,
+      338,
+      1,
+      "MODEL"
+    ],
+    [
+      551,
+      120,
+      0,
+      219,
+      0,
+      "IMAGE"
+    ],
+    [
+      552,
+      187,
+      0,
+      338,
+      0,
+      "IMAGE"
+    ],
+    [
+      559,
+      340,
+      0,
+      342,
+      0,
+      "STRING"
+    ],
+    [
+      560,
+      341,
+      0,
+      343,
+      0,
+      "STRING"
+    ],
+    [
+      561,
+      312,
+      0,
+      342,
+      1,
+      "STRING"
+    ],
+    [
+      563,
+      342,
+      0,
+      314,
+      0,
+      "STRING"
+    ],
+    [
+      565,
+      344,
+      0,
+      343,
+      1,
+      "STRING"
+    ],
+    [
+      566,
+      343,
+      0,
+      221,
+      0,
+      "STRING"
+    ],
+    [
+      567,
+      178,
+      0,
+      352,
+      0,
+      "IMAGE"
+    ],
+    [
+      569,
+      290,
+      0,
+      354,
+      0,
+      "IMAGE"
+    ],
+    [
+      570,
+      354,
+      0,
+      296,
+      0,
+      "IMAGE"
+    ],
+    [
+      572,
+      354,
+      0,
+      355,
+      3,
+      "IMAGE"
+    ],
+    [
+      573,
+      289,
+      0,
+      355,
+      2,
+      "CONTROL_NET"
+    ],
+    [
+      574,
+      6,
+      0,
+      355,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      575,
+      355,
+      0,
+      211,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      576,
+      222,
+      0,
+      355,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      577,
+      355,
+      1,
+      211,
+      2,
+      "CONDITIONING"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "妯″瀷鏀惧ぇ",
+      "bounding": [
+        1672,
+        -457,
+        342,
+        318
+      ],
+      "color": "#a1309b",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "K鏀惧ぇ",
+      "bounding": [
+        2024,
+        -1012,
+        408,
+        1522
+      ],
+      "color": "#b58b2a",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "鍔犺浇鍘熷浘",
+      "bounding": [
+        -962,
+        -456,
+        540,
+        630
+      ],
+      "color": "#444",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "鐩存帴鏀惧ぇ淇濆瓨",
+      "bounding": [
+        1671,
+        -132,
+        344,
+        798
+      ],
+      "color": "#A88",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "鎵嬮儴淇",
+      "bounding": [
+        3471,
+        -1009,
+        839,
+        1187
+      ],
+      "color": "#8AA",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "瀵圭収缁?,
+      "bounding": [
+        3018,
+        -1011,
+        442,
+        1472
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "K闈㈤儴缁嗗寲",
+      "bounding": [
+        2442,
+        -1011,
+        567,
+        2451
+      ],
+      "color": "#A88",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "鍒濇K閲囨牱",
+      "bounding": [
+        920,
+        -459,
+        741,
+        961
+      ],
+      "color": "#8AA",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "鏂囩敓鍥炬牳蹇?,
+      "bounding": [
+        -6,
+        -459,
+        918,
+        962
+      ],
+      "color": "#b06634",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "V閲囨牱",
+      "bounding": [
+        832,
+        -649,
+        231,
+        179
+      ],
+      "color": "#444",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "鎻愮ず璇峆ony鍖?,
+      "bounding": [
+        833,
+        -990,
+        232,
+        331
+      ],
+      "color": "#8A8",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "閫氶厤绗︽彁绀鸿瘝鍣?,
+      "bounding": [
+        -5,
+        -1049,
+        828,
+        580
+      ],
+      "color": "#b58b2a",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "ConrtolNet",
+      "bounding": [
+        1078,
+        -1014,
+        936,
+        543
+      ],
+      "color": "#8AA",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "鏂囨湰鐞嗙嚎鍣?,
+      "bounding": [
+        4322,
+        -1008,
+        534,
+        618
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "WD14",
+      "bounding": [
+        -962,
+        186,
+        541,
+        560
+      ],
+      "color": "#8AA",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.46650738020973354,
+      "offset": [
+        3104.0629935599704,
+        1526.3788012585142
+      ]
+    },
+    "workspace_info": {
+      "id": "q1FCvlRmAuKjOMB8KnmFf",
+      "saveLock": false,
+      "cloudID": null,
+      "coverMediaPath": null
+    }
+  },
+  "version": 0.4,
+  "topics": [
+    {
+      "id": "default",
+      "name": "涓昏瀵硅瘽",
+      "createdAt": 1759561801209
+    }
+  ],
+  "name": "鏂囩敓鍥惧伐浣滄祦",
+  "systemPrompt": "",
+  "model": "gemini-2.5-flash-preview-09-2025",
+  "temperature": 0.7,
+  "contextTokenLimit": 4000,
+  "maxOutputTokens": 1000,
+  "streamOutput": true,
+  "ttsVoicePrimary": "",
+  "ttsRegexPrimary": "",
+  "ttsVoiceSecondary": "",
+  "ttsRegexSecondary": "",
+  "ttsSpeed": 1
+}

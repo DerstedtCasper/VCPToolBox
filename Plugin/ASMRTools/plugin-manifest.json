@@ -1,0 +1,74 @@
+{
+    "manifestVersion": "1.0.0",
+    "name": "ASMRTools",
+    "version": "1.0.0",
+    "displayName": "ASMR.one 下载工具",
+    "description": "基于ASMR.one API的音声作品下载工具，支持搜索等功能",
+    "author": "VCP Plugin Developer",
+    "pluginType": "asynchronous",
+    "entryPoint": {
+        "type": "python",
+        "command": "python plugin_main.py"
+    },
+    "communication": {
+        "protocol": "stdio",
+        "timeout": 30000000
+    },
+    "configSchema": {
+        "ASMR_USERNAME": {
+            "type": "string",
+            "description": "ASMR.one 用户名",
+            "default": ""
+        },
+        "ASMR_PASSWORD": {
+            "type": "string",
+            "description": "ASMR.one 密码",
+            "default": ""
+        },
+        "ASMR_DOWNLOAD_PATH": {
+            "type": "string",
+            "description": "下载目录路径",
+            "default": "./downloads/asmr"
+        },
+        "ASMR_PROGRESS_UPDATE_INTERVAL": {
+            "type": "number",
+            "description": "进度更新时间间隔(秒)",
+            "default": 5
+        }
+    },
+    "capabilities": {
+        "invocationCommands": [
+            {
+                "commandIdentifier": "SearchWorks",
+                "description": "搜索ASMR.one上的音声作品。\n参数:\n- keyword (字符串, 必需): 搜索关键词，如作品名称、社团名、声优名等\n- tags (字符串, 可选): 包含的标签，多个标签用逗号分隔\n- no_tags (字符串, 可选): 排除的标签，多个标签用逗号分隔\n- circle (字符串, 可选): 指定社团名称\n- age (字符串, 可选): 年龄限制 (general/r15/adult)\n- limit (整数, 可选): 返回结果数量限制，默认20\n调用格式:\n<<<[TOOL_REQUEST]>>>\ntool_name:「始」ASMRTools「末」,\ncommand:「始」SearchWorks「末」,\nkeyword:「始」催眠「末」,\ntags:「始」治愈,ASMR「末」,\nlimit:「始」10「末」\n<<<[END_TOOL_REQUEST]>>>",
+                "example": "<<<[TOOL_REQUEST]>>>\ntool_name:「始」ASMRTools「末」,\ncommand:「始」SearchWorks「末」,\nkeyword:「始」雨音「末」,\ntags:「始」治愈「末」\n<<<[END_TOOL_REQUEST]>>>"
+            },
+            {
+                "commandIdentifier": "GetWorkInfo",
+                "description": "获取指定音声作品的详细信息，包括文件结构、大小和各文件的详细信息。\n参数:\n- work_id (字符串, 必需): 作品ID，如RJ123456、VJ123456或BJ123456\n调用格式:\n<<<[TOOL_REQUEST]>>>\ntool_name:「始」ASMRTools「末」,\ncommand:「始」GetWorkInfo「末」,\nwork_id:「始」RJ123456「末」\n<<<[END_TOOL_REQUEST]>>>",
+                "example": "<<<[TOOL_REQUEST]>>>\ntool_name:「始」ASMRTools「末」,\ncommand:「始」GetWorkInfo「末」,\nwork_id:「始」RJ01405234「末」\n<<<[END_TOOL_REQUEST]>>>"
+            },
+            {
+                "commandIdentifier": "DownloadWorkAsync",
+                "description": "（异步）下载指定的音声作品。此任务将在后台运行。\n参数:\n- work_id (字符串, 必需): 作品ID，如RJ123456、VJ123456或BJ123456\n- target_path (字符串, 可选): 指定要下载的文件夹或文件路径，不指定则下载全部内容。路径格式如：'音声/SEなし' 或 '音声/track01.wav'\n调用格式:\n<<<[TOOL_REQUEST]>>>\ntool_name:「始」ASMRTools「末」,\ncommand:「始」DownloadWorkAsync「末」,\nwork_id:「始」RJ123456「末」,\ntarget_path:「始」音声/SEなし「末」\n<<<[END_TOOL_REQUEST]>>>",
+                "example": "<<<[TOOL_REQUEST]>>>\ntool_name:「始」ASMRTools「末」,\ncommand:「始」DownloadWorkAsync「末」,\nwork_id:「始」RJ01405234「末」\n<<<[END_TOOL_REQUEST]>>>"
+            },
+            {
+                "commandIdentifier": "GetRecommendations",
+                "description": "获取当前账户的推荐作品列表。\n参数:\n- limit (整数, 可选): 返回结果数量限制，默认10\n调用格式:\n<<<[TOOL_REQUEST]>>>\ntool_name:「始」ASMRTools「末」,\ncommand:「始」GetRecommendations「末」,\nlimit:「始」15「末」\n<<<[END_TOOL_REQUEST]>>>",
+                "example": "<<<[TOOL_REQUEST]>>>\ntool_name:「始」ASMRTools「末」,\ncommand:「始」GetRecommendations「末」\n<<<[END_TOOL_REQUEST]>>>"
+            },
+            {
+                "commandIdentifier": "GetPopularWorks",
+                "description": "获取当前热门作品列表。\n参数:\n- limit (整数, 可选): 返回结果数量限制，默认10\n调用格式:\n<<<[TOOL_REQUEST]>>>\ntool_name:「始」ASMRTools「末」,\ncommand:「始」GetPopularWorks「末」,\nlimit:「始」20「末」\n<<<[END_TOOL_REQUEST]>>>",
+                "example": "<<<[TOOL_REQUEST]>>>\ntool_name:「始」ASMRTools「末」,\ncommand:「始」GetPopularWorks「末」\n<<<[END_TOOL_REQUEST]>>>"
+            }
+        ]
+    },
+    "webSocketPush": {
+        "enabled": true,
+        "messageType": "asmr_download_status",
+        "usePluginResultAsMessage": true,
+        "targetClientType": "VCPLog"
+    }
+}

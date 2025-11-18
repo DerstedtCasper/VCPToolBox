@@ -1,0 +1,21 @@
+{
+  "name": "vcp-todo-manager",
+  "version": "1.0.0",
+  "description": "VCP TodoManager Plugin - A comprehensive todo management plugin",
+  "main": "TodoManager.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
+  },
+  "keywords": [
+    "vcp",
+    "todo",
+    "task",
+    "management",
+    "plugin"
+  ],
+  "author": "VCP Developer",
+  "license": "MIT"
+}

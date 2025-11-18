@@ -1,0 +1,10 @@
+# MissAV API 依赖
+eaf_base_api>=1.0.0
+requests>=2.25.0
+urllib3>=1.26.0
+
+# GUI 进度条依赖 (tkinter 是 Python 内置模块，无需额外安装)
+# 在某些 Linux 发行版中可能需要安装: python3-tk
+
+# 多线程支持
+# threading
