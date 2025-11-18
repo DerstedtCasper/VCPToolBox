@@ -93,6 +93,14 @@ class VectorDBManager {
             debug: process.env.VECTORDB_DEBUG === 'true',
         };
 
+        // 🚀 快速检查日记本列表（从环境变量读取，逗号分隔）
+        this.fastCheckDiaries = new Set(
+            (process.env.VECTORDB_FAST_CHECK_DIARIES || 'MusicDiary')
+                .split(',')
+                .map(name => name.trim())
+                .filter(name => name.length > 0)
+        );
+
         this.apiKey = process.env.API_Key;
         this.apiUrl = process.env.API_URL;
         this.embeddingModel = process.env.WhitelistEmbeddingModel;
@@ -143,6 +151,7 @@ class VectorDBManager {
             cacheSize: this.config.cacheSize,
             cacheTTL: this.config.cacheTTL,
             retryAttempts: this.config.retryAttempts,
+            fastCheckDiaries: Array.from(this.fastCheckDiaries),
         });
     }
 
@@ -498,6 +507,22 @@ class VectorDBManager {
         if (this.storage.isRebuildPaused(diaryName)) {
             this.debugLog(`[VectorDB] Update check for "${diaryName}" is paused`);
             return false;
+        }
+
+        // 🚀 对于配置的大型日记本，使用快速检查
+        if (this.fastCheckDiaries.has(diaryName)) {
+            const safeFileNameBase = Buffer.from(diaryName, 'utf-8').toString('base64url');
+            const indexPath = path.join(VECTOR_STORE_PATH, `${safeFileNameBase}.bin`);
+            const indexExists = await this.fileExists(indexPath);
+            const dbChunkCount = this.storage.getChunkCount(diaryName);
+            
+            if (indexExists && dbChunkCount > 0) {
+                console.log(`[VectorDB] 🚀 Fast-path check for "${diaryName}" - index exists and database has ${dbChunkCount} chunks`);
+                return false; // 跳过详细检查
+            }
+            
+            console.log(`[VectorDB] Fast-path check for "${diaryName}" - needs full check (index: ${indexExists}, chunks: ${dbChunkCount})`);
+            // 继续执行完整检查流程
         }
 
         const safeFileNameBase = Buffer.from(diaryName, 'utf-8').toString('base64url');
