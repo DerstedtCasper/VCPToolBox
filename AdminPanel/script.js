@@ -83,6 +83,10 @@ document.addEventListener('DOMContentLoaded', () => {
                        const iframe = targetSection.querySelector('iframe');
                        if (iframe) iframe.src = iframe.src; // Force reload
                        break;
+                    case 'workflow-orchestrator-editor-section':
+                        const woIframe = targetSection.querySelector('iframe');
+                        if (woIframe) woIframe.src = woIframe.src; // Force reload
+                        break;
                 }
             }
         } else {

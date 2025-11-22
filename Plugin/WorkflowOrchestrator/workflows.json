@@ -1,0 +1,99 @@
+{
+  "agents": [
+    {
+      "id": "planner",
+      "agent_name": "灏忓悏",
+      "enabled": true
+    },
+    {
+      "id": "executor",
+      "agent_name": "策略代码手",
+      "enabled": true
+    },
+    {
+      "id": "reviewer",
+      "agent_name": "错误调试顾问",
+      "enabled": true
+    },
+    {
+      "id": "summarizer",
+      "agent_name": "全能写作优化专家",
+      "enabled": true
+    }
+  ],
+  "workflows": {
+    "GenericTaskFlow": {
+      "participants": [
+        "planner",
+        "executor",
+        "reviewer",
+        "summarizer"
+      ],
+      "common_prompt": "你正在参与一个多 Agent 工作流，请严格按步骤执行并简要回复，必要时总结关键信息以便后续步骤引用。",
+      "steps": [
+        {
+          "id": "S1_optimize_prompt",
+          "role": "planner",
+          "type": "prompt_optimize",
+          "input_template": "优化用户任务描述，补全缺失信息和边界条件：{{user_task}}",
+          "outputs": [
+            "optimized_prompt"
+          ]
+        },
+        {
+          "id": "S2_plan",
+          "role": "planner",
+          "depend_on": [
+            "S1_optimize_prompt"
+          ],
+          "input_template": "基于优化后的任务 {{S1_optimize_prompt.optimized_prompt}} 拆解为可执行步骤，列出负责人与预期产出。",
+          "outputs": [
+            "plan"
+          ]
+        },
+        {
+          "id": "S3_execute",
+          "role": "executor",
+          "depend_on": [
+            "S2_plan"
+          ],
+          "input_template": "根据计划 {{S2_plan.plan}} 执行任务，给出操作结果/代码/变更说明。",
+          "outputs": [
+            "execution_result"
+          ]
+        },
+        {
+          "id": "S4_review",
+          "role": "reviewer",
+          "depend_on": [
+            "S3_execute"
+          ],
+          "input_template": "审核执行结果 {{S3_execute.execution_result}}，指出问题并给出改进建议。",
+          "outputs": [
+            "review_notes"
+          ]
+        },
+        {
+          "id": "S5_summary",
+          "role": "summarizer",
+          "depend_on": [
+            "S3_execute",
+            "S4_review"
+          ],
+          "input_template": "整合执行结果 {{S3_execute.execution_result}} 与审核意见 {{S4_review.review_notes}}，输出最终总结与后续动作建议。",
+          "outputs": [
+            "final_report"
+          ]
+        }
+      ],
+      "retry_policy": {
+        "max_retries_per_step": 3,
+        "fallback_agent": "错误调试顾问"
+      },
+      "log_options": {
+        "diary_folder": "WorkflowDebugLogs",
+        "diary_tag": "WorkflowDebug"
+      }
+    }
+  }
+}

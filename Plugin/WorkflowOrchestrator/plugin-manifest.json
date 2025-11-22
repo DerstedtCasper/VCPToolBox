@@ -1,0 +1,41 @@
+{
+  "name": "WorkflowOrchestrator",
+  "displayName": "Workflow Orchestrator",
+  "version": "0.1.0",
+  "pluginType": "hybridservice",
+  "communication": {
+    "protocol": "direct"
+  },
+  "entryPoint": {
+    "script": "WorkflowOrchestrator.js"
+  },
+  "configSchema": {
+    "WORKFLOW_MAX_RETRIES_PER_STEP": {
+      "type": "integer",
+      "default": 3,
+      "description": "Maximum number of retries for a failed step"
+    },
+    "WORKFLOW_DEBUG_MODE": {
+      "type": "boolean",
+      "default": false,
+      "description": "Enable detailed debug logging"
+    },
+    "WORKFLOW_DEFAULT_LOG_FOLDER": {
+      "type": "string",
+      "default": "WorkflowDebugLogs",
+      "description": "Folder for workflow execution logs under dailynote/"
+    }
+  },
+  "capabilities": {
+    "invocationCommands": [
+      {
+        "commandIdentifier": "StartWorkflow",
+        "description": "Start a workflow instance.\nParams:\n- workflow_name (string, required)\n- user_task (string, required)\n- session_id (string, optional)\nCall format:\n<<<[TOOL_REQUEST]>>>\ntool_name:「始」WorkflowOrchestrator「末」,\ncommand:「始」StartWorkflow「末」,\nworkflow_name:「始」GenericTaskFlow「末」,\nuser_task:「始」README 优化与总结「末」\n<<<[END_TOOL_REQUEST]>>>"
+      },
+      {
+        "commandIdentifier": "GetWorkflowStatus",
+        "description": "Query status of a workflow instance.\nParams:\n- workflowInstanceId (string, required)"
+      }
+    ]
+  }
+}

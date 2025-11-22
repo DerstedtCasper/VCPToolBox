@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workflow Orchestrator 配置</title>
+    <link rel="stylesheet" href="workflow_orchestrator_editor.css">
+</head>
+<body>
+    <div class="container">
+        <header class="page-header">
+            <div class="header-text">
+                <p class="eyebrow">AA Workflow</p>
+                <h1>Workflow Orchestrator 配置</h1>
+                <p class="description">多 Agent 协作编排与状态查看</p>
+            </div>
+            <div class="header-actions">
+                <button id="reload-button" class="ghost">重新加载</button>
+                <button id="save-button" class="primary">保存配置</button>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <aside class="left-panel">
+                <div class="filter-section">
+                    <input type="search" id="workflow-search" placeholder="搜索工作流...">
+                    <button id="create-workflow-btn" class="full-width">+ 新建工作流</button>
+                </div>
+                <div class="workflows-list" id="workflows-list">
+                    <div class="placeholder">加载中...</div>
+                </div>
+            </aside>
+
+            <section class="right-panel">
+                <div class="editor-container">
+                    <div class="editor-section">
+                        <h2>基础信息</h2>
+                        <div class="form-group">
+                            <label for="workflow-id">工作流名称 (ID)</label>
+                            <input type="text" id="workflow-id" placeholder="例如：GenericTaskFlow">
+                        </div>
+                    </div>
+
+                    <div class="editor-section">
+                        <h2>参与 Agent</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="commander-select">总指挥</label>
+                                <select id="commander-select"></select>
+                            </div>
+                            <div class="form-group helper-text">
+                                <p>提示：Agent 列表来自 AgentAssistant 配置。</p>
+                            </div>
+                        </div>
+                        <div class="agents-grid" id="participants-grid">
+                            <div class="placeholder">加载中...</div>
+                        </div>
+                    </div>
+
+                    <div class="editor-section">
+                        <h2>通用 Prompt</h2>
+                        <div class="form-group">
+                            <label for="common-prompt" class="sr-label">公共补充提示</label>
+                            <textarea id="common-prompt" rows="6" placeholder="所有 Agent 共享的补充提示，留空则不添加"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="editor-section">
+                        <h2>阶段描述 (每行一段，总指挥会在此基础上细化)</h2>
+                        <div class="form-group">
+                            <label for="stages-text" class="sr-label">阶段描述</label>
+                            <textarea id="stages-text" rows="8" placeholder="阶段1：检查代码并安装依赖&#10;阶段2：运行测试并收集日志&#10;阶段3：汇总结果并输出报告"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="editor-section">
+                        <div class="section-header">
+                            <h2>原始数据</h2>
+                            <button id="refresh-workflows-button" class="ghost">刷新列表</button>
+                        </div>
+                        <pre id="workflows-raw" class="raw-view">等待加载...</pre>
+                    </div>
+                </div>
+
+                <div class="bottom-bar">
+                    <span id="status-text" class="status-text">就绪</span>
+                    <div class="actions">
+                        <button id="delete-button" class="danger">删除当前</button>
+                        <button id="save-button-bottom" class="primary">保存配置</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="workflow_orchestrator_editor.js?v=2"></script>
+</body>
+</html>
